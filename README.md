@@ -1,5 +1,7 @@
 ## GSW Dashboard
 
+<br>
+
 ## :mortar_board: Equipe 
 
 |Nome|Função|Linkedin|GitHub|Avatar|
