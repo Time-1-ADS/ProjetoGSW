@@ -1,4 +1,39 @@
+<br>
+
 ## GSW Dashboard
+
+<hr>
+
+<p align="center">
+  <a href ="#rocket-o-projeto"> Projeto </a>  • 
+  <a href ="#dart-proposta"> Proposta </a>  • 
+  <a href ="#hourglass_flowing_sand-planejamento-de-entregas"> Planejamento </a>  • 
+  <a href ="#calendar-as-sprints"> Sprints </a>  • 
+  <a href ="#card_index_dividers-cards-das-sprints"> Cards </a>  •
+  <a href ="#computer-tecnologias-utilizadas"> Tecnologias </a>  • 
+  <a href ="#bulb-metodologia-utilizada"> Metodologia </a>  • 
+  <a href ="#bar_chart-backlog-do-produto"> Backlog </a>  •
+  <a href ="#mortar_board-equipe"> Equipe </a> 
+</p>
+
+<h4 align="center"> 
+ <img src = "https://camo.githubusercontent.com/7998890254268d8ed476c9f66d3fa59d21dd354d2090036083c82af4cda2a0eb/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d776974682d6c6f76652e737667" />
+ <img src = "https://camo.githubusercontent.com/8ace38ba3196d3dbc3996a906819fc3e4907364ba189553b70dc0cea1a66edfc/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f706f77657265642d62792d636f666665652e737667"/>
+ <img src = "https://camo.githubusercontent.com/702d860cec5f91062f1a27bb98768596914ddf9849190fc3b2871dc5cea4397f/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f757365732d6373732e737667"/>
+ <img src = "https://camo.githubusercontent.com/897aaf91c01b0ed99f2021be8b8e4c6b38659d4012a81de2fafab52f8ed66a41/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f757365732d68746d6c2e737667"/>
+ <img src = "https://camo.githubusercontent.com/bf160c4d8bd34965398250eb1cfffcc099fef4c3be1610e932116b166f472180/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f757365732d6a732e737667"/>
+</h4>
+
+
+<br>
+
+## :rocket: O Projeto
+O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhamentos dos Projetos, através de diferentes fontes de dados. E fornecê-los para o cliente.
+
+> Status do Projeto: Concluído <img src = "/Imagens Geral/concluido.png" width="50" height="10" />
+
+## :dart: Proposta
+Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, e crie um Dashboard para acompanhamento do andamento dos projetos.
 
 <br>
 
