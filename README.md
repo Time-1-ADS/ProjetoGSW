@@ -1,8 +1,11 @@
- <h5 align="center"> <img src = "https://raw.githubusercontent.com/Grupo-1-2020-PI-FATEC-ADS/SOS-EDUCA/master/Imagens%20Geral/fatec.png" width="20" height="20" /> Projeto Integrador - Fatec São José dos Campos </h5>
+ <h5 align="center"> <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/Fatec_logo.png" width="20" height="20" /> Projeto Integrador - Fatec São José dos Campos </h5>
 
 <br>
 
-## GSW Dashboard
+<p align="center">
+      <img src="https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/dashboard_logo.png" width="200" height="150">
+      <h3 align="center"> GSW Darshboard </h3>
+<p align="center">
 
 <hr>
 
