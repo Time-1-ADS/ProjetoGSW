@@ -1,3 +1,5 @@
+ <h5 align="center"> <img src = "https://raw.githubusercontent.com/Grupo-1-2020-PI-FATEC-ADS/SOS-EDUCA/master/Imagens%20Geral/fatec.png" width="20" height="20" /> Projeto Integrador - Fatec São José dos Campos </h5>
+
 <br>
 
 ## GSW Dashboard
@@ -30,7 +32,9 @@
 ## :rocket: O Projeto
 O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhamentos dos Projetos, através de diferentes fontes de dados. E fornecê-los para o cliente.
 
-> Status do Projeto: Concluído <img src = "/Imagens Geral/concluido.png" width="50" height="10" />
+> Status do Projeto: <img src = "/Imagens Geral/concluido.png" width="50" height="10" />
+
+<br>
 
 ## :dart: Proposta
 Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, e crie um Dashboard para acompanhamento do andamento dos projetos.
@@ -51,3 +55,6 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 |**Elias Ferreira**|Desenvolvedor 6| [@LinkedIn](https://www.linkedin.com/in/elias-ferreira-525ba41b6/)|[@GitHub](https://github.com/elias31072002)|<img src = "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" width="50" height="50"/>|
 |**Danilo Pires**|Desenvolvedor 7| [@LinkedIn]()|[@GitHub](https://github.com/Danilo2010)|<img src = "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" width="50" height="50"/>|
 
+<br>
+
+ <h1 align="center"> <img src = "https://raw.githubusercontent.com/Grupo-1-2020-PI-FATEC-ADS/SOS-EDUCA/master/Imagens%20Geral/logo%20fatec.png" /></h1>
