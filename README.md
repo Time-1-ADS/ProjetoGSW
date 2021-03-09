@@ -4,7 +4,7 @@
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/dashboard_logo.png" width="200" height="150">
-      <h2 align="center"> GSW Darshboard </h2>
+      <h1 align="center"> GSW Darshboard </h1>
 <p align="center">
 
 <hr>
