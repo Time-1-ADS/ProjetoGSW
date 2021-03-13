@@ -17,7 +17,7 @@
   <a href ="#card_index_dividers-cards-das-sprints"> Cards </a>  •
   <a href ="#computer-tecnologias-utilizadas"> Tecnologias </a>  • 
   <a href ="#bulb-metodologia-utilizada"> Metodologia </a>  • 
-  <a href ="#bar_chart-backlog-do-produto"> Backlog </a>  •
+  <a href ="#bar_chart-backlog-das-sprints"> Backlog </a>  •
   <a href ="#mortar_board-equipe"> Equipe </a> 
 </p>
 
