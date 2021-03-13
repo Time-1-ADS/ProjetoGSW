@@ -105,7 +105,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <br>
 
-## :bar_chart: Backlog do Produto
+## :bar_chart: Backlog das Sprints
 
 <h1 align="center"> <img src = "/Imagens Geral/backlog_sprints.png" /></h1>
 
