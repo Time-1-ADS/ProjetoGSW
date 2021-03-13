@@ -62,7 +62,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
-- [x] KickOff do Projeto - 28/02/2021 a 06/03/2021
+- [x] Kickoff      - 28/02/2021 a 06/03/2021
 
 - [x] [SPRINT 1]() - 08/03/2021 a 28/03/2021
 
@@ -93,6 +93,15 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 ## :bulb: Metodologia Utilizada
 
 * **Metodologia Ágil:** Framework [Scrum](https://www.desenvolvimentoagil.com.br/scrum/)
+
+<br>
+
+## :computer: Tecnologias Utilizadas
+
+* **Banco de Dados:** PostgreSQL
+* **Back-end:** JavaScript e Python
+* **Front-end:** CSS e Bootstrap
+* **Ferramentas:** Visual Studio Code e Figma
 
 <br>
 
