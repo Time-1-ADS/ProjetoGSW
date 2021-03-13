@@ -42,6 +42,22 @@ O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhame
 ## :dart: Proposta
 Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, e crie um Dashboard para acompanhamento do andamento dos projetos.
 
+**Requisitos:**
+
+ > **Status dos Projetos**
+
+ - [x]  Quantidade de tasks em aberto;
+ - [x]  Quantidade de tasks fechadas;
+ - [x]  Porcentagem de dedicação de cada integrante da equipe por projeto.<br><br>
+
+ > **Ranking de Horas**
+
+ - [x]  Quantidade de horas por pessoa;
+ - [x]  Quantidade de horas por mês;
+ - [x]  Quantidade de horas por ano;
+ - [x]  Quantidade de horas por projeto;
+ - [x]  Ranking de quantidades de horas por pessoa.<br><br>
+
 <br>
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
