@@ -82,11 +82,11 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ☑️ SPRINT 1 ([Link da Pasta]()):  Em Andamento 🕗 
 
-☑️ SPRINT 2 ([Link da Pasta]()): Volte Depois 📁
+☑️ SPRINT 2 ([Link da Pasta]()): Em Construção 🚧
 
-☑️ SPRINT 3 ([Link da Pasta]()): Volte Depois 📁
+☑️ SPRINT 3 ([Link da Pasta]()): Em Construção 🚧
 
-☑️ SPRINT 4 ([Link da Pasta]()): Volte Depois 📁
+☑️ SPRINT 4 ([Link da Pasta]()): Em Construção 🚧
 
 <br>
 
@@ -107,7 +107,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :bar_chart: Backlog do Produto
 
-* **Em Andamento**
+<h1 align="center"> <img src = "/Imagens Geral/backlog_sprints.png" /></h1>
 
 <br>
 
