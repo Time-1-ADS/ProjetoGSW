@@ -42,7 +42,7 @@ O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhame
 ## :clipboard: Proposta
 Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, e crie um Dashboard para acompanhamento do andamento dos projetos.
 
-**Requisitos:**
+**Pré-requisitos:**
 
  > **Status dos Projetos**
 
@@ -102,6 +102,12 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 * **Back-end:** JavaScript e Python
 * **Front-end:** CSS e Bootstrap
 * **Ferramentas:** Visual Studio Code e Figma
+
+<br>
+
+## :page_facing_up: Licença MIT
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/LICENSE.md) para mais detalhes.
 
 <br>
 
