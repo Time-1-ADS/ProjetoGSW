@@ -80,7 +80,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :date: As Sprints
 
-🔖 SPRINT 1 ([Link da Pasta]()):  Em Andamento 🕗 
+🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Em Andamento 🕗 
 
 🔖 SPRINT 2 ([Link da Pasta]()): Em Construção 🚧
 
