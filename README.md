@@ -10,14 +10,14 @@
 <hr>
 
 <p align="center">
-  <a href ="#rocket-o-projeto"> Projeto </a>  • 
-  <a href ="#dart-proposta"> Proposta </a>  • 
+  <a href ="#pencil2-o-projeto"> Projeto </a>  • 
+  <a href ="#clipboard-proposta"> Proposta </a>  • 
   <a href ="#hourglass_flowing_sand-planejamento-de-entregas"> Planejamento </a>  • 
-  <a href ="#calendar-as-sprints"> Sprints </a>  • 
+  <a href ="#date-as-sprints"> Sprints </a>  • 
   <a href ="#card_index_dividers-cards-das-sprints"> Cards </a>  •
   <a href ="#computer-tecnologias-utilizadas"> Tecnologias </a>  • 
   <a href ="#bulb-metodologia-utilizada"> Metodologia </a>  • 
-  <a href ="#bar_chart-backlog-das-sprints"> Backlog </a>  •
+  <a href ="#dart-backlog-das-sprints"> Backlog </a>  •
   <a href ="#mortar_board-equipe"> Equipe </a> 
 </p>
 
@@ -32,14 +32,14 @@
 
 <br>
 
-## :rocket: O Projeto
+## :pencil2: O Projeto
 O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhamentos dos Projetos, através de diferentes fontes de dados. E fornecê-los para o cliente.
 
 > Status do Projeto: <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/andamento_inicial.png" width="90" height="20" />
 
 <br>
 
-## :dart: Proposta
+## :clipboard: Proposta
 Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, e crie um Dashboard para acompanhamento do andamento dos projetos.
 
 **Requisitos:**
@@ -62,7 +62,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
-- [x] Kickoff      - 28/02/2021 a 06/03/2021
+- [x] [Kickoff]() - 28/02/2021 a 06/03/2021
 
 - [x] [SPRINT 1]() - 08/03/2021 a 28/03/2021
 
@@ -78,15 +78,15 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <br>
 
-## :calendar: As Sprints
+## :date: As Sprints
 
-☑️ SPRINT 1 ([Link da Pasta]()):  Em Andamento 🕗 
+🔖 SPRINT 1 ([Link da Pasta]()):  Em Andamento 🕗 
 
-☑️ SPRINT 2 ([Link da Pasta]()): Em Construção 🚧
+🔖 SPRINT 2 ([Link da Pasta]()): Em Construção 🚧
 
-☑️ SPRINT 3 ([Link da Pasta]()): Em Construção 🚧
+🔖 SPRINT 3 ([Link da Pasta]()): Em Construção 🚧
 
-☑️ SPRINT 4 ([Link da Pasta]()): Em Construção 🚧
+🔖 SPRINT 4 ([Link da Pasta]()): Em Construção 🚧
 
 <br>
 
@@ -105,7 +105,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <br>
 
-## :bar_chart: Backlog das Sprints
+## :dart: Backlog das Sprints
 
 <h1 align="center"> <img src = "/Imagens Geral/backlog_sprints.png" /></h1>
 
