@@ -98,6 +98,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :computer: Tecnologias Utilizadas
 
+<img src = "/Imagens Geral/linguagens.png" width="280" height="150">
+
 * **Banco de Dados:** PostgreSQL
 * **Back-end:** JavaScript e Python
 * **Front-end:** CSS e Bootstrap
@@ -113,7 +115,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 
 ## :dart: Backlog das Sprints
 
-<h1 align="center"> <img src = "/Imagens Geral/backlog_sprints.png" /></h1>
+<h1 align="center"> <img src = "/Imagens Geral/sprint_backlog1.png" /></h1>
 
 <br>
 
