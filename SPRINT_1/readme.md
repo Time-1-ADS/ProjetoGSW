@@ -11,4 +11,5 @@ $ ./venvname/Scripts/activate
 $ git clone https://github.com/Time-1-ADS/ProjetoGSW
 
 #go to folder where have the file manage.py
+
 ```
