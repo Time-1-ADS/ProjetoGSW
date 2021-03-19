@@ -15,7 +15,7 @@ Nessa sprint focamos em entregar o código e algumas funcionalidades importantes
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-(adicionar burndown)
+<img src = "/Imagens Geral/burndowngrafic.png" width="600" height="450"/></h1>
 
 <br>
 
