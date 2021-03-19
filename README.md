@@ -90,6 +90,11 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <br>
 
+## :card_index_dividers: Cards das Sprints
+<img src="/Imagens Geral/cardsprincipal.png" width="1000" height="500">
+
+<br>
+
 ## :bulb: Metodologia Utilizada
 
 * **Metodologia Ágil:** Framework [Scrum](https://www.desenvolvimentoagil.com.br/scrum/)
