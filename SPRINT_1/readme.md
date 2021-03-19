@@ -4,7 +4,19 @@
 
 Nessa sprint focamos em entregar o código e algumas funcionalidades importantes de acordo com o seguinte card:
 
-(card)
+(adicionar card)
+
+<br>
+
+## :mag_right: Visão do Projeto
+
+(adicionar imagens do doc. Danilo)
+
+<br>
+
+## :chart_with_downwards_trend: Burndown da Equipe
+
+(adicionar burndown)
 
 <br>
 
