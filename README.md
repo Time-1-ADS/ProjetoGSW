@@ -62,15 +62,15 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
-- [x] **[Kickoff]**(https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 28/02/2021 a 06/03/2021
+- [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 28/02/2021 a 06/03/2021
 
-- [x] **[SPRINT 1]**(https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 08/03/2021 a 28/03/2021
+- [x] [SPRINT 1](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 08/03/2021 a 28/03/2021
 
-- [ ] **[SPRINT 2]** - 29/03/2021 a 18/04/2021
+- [ ] SPRINT 2 - 29/03/2021 a 18/04/2021
 
-- [ ] **[SPRINT 3]** - 26/04/2021 a 16/05/2021
+- [ ] SPRINT 3 - 26/04/2021 a 16/05/2021
 
-- [ ] **[SPRINT 4]** - 17/05/2021 a 05/06/2021
+- [ ] SPRINT 4 - 17/05/2021 a 05/06/2021
 
 - [ ] Apresentação Final - 07/06/2021 a 11/06/2021
 
