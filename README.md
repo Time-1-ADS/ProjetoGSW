@@ -1,4 +1,4 @@
- <h5 align="center"> <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/Fatec_logo.png" width="20" height="20" /> Projeto Integrador - Fatec São José dos Campos </h5>
+ <h5 align="center"> <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/Fatec_logo.png" width="20" height="20" /> Projeto Integrador - Equipe 1 | Turma A </h5>
 
 <br>
 
@@ -62,7 +62,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
-- [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 28/02/2021 a 06/03/2021
+- [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Apresenta%C3%A7%C3%A3o%20Kickoff.pdf) - 28/02/2021 a 06/03/2021
 
 - [x] [SPRINT 1](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 08/03/2021 a 28/03/2021
 
