@@ -91,7 +91,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <br>
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens Geral/cardsprincipal.png" width="1000" height="500">
+<img src="/Imagens Geral/cardsprincipal.png" width="1500" height="450">
 
 <br>
 
