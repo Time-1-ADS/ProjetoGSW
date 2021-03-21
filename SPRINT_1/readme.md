@@ -28,6 +28,19 @@ específicos;
 
 <br>
 
+## :black_nib: Escopo da Solução
+Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, classificando-as: 
+
+| Necessidades | Categorias |
+| :--- | :---: |
+| 1. Estruturação de Base de Dados local, baseada em SQL, com a finalidade de unificar e normalizar os dados oriundos dos sistemas de gerenciamento de projetos | Essencial |
+| 2. Desenvolvimento de aplicação WEB que permita integraro BD com o Dashboard. | Essencial |
+| 3. Geração de relatórios analíticos. | Importante |
+| 4. Aperfeiçoar a interface, de modo a proporcionar uma boa representação visual dos dados. | Importante |
+| 5. Saída com análises adicionais, proporcionando múltiplos relatórios e gráficos. | Desejável |
+
+<br>
+
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "/Imagens Geral/burndowngrafic.png" width="600" height="450"/></h1>
