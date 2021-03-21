@@ -39,12 +39,13 @@ Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, cla
 | 4. Aperfeiçoar a interface, de modo a proporcionar uma boa representação visual dos dados. | Importante |
 | 5. Saída com análises adicionais, proporcionando múltiplos relatórios e gráficos. | Desejável |
 
-**Principais deliverables**
+:pushpin: **Principais deliverables**
 
 Após a conclusão do projeto os seguintes “deliverables” deverão ser produzidos e entregues:
-> 1. Plano de Teste
 
-> 2. Manual de Operação
+> Plano de Teste
+
+> Manual de Operação
 
 <br>
 
