@@ -34,10 +34,17 @@ Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, cla
 | Necessidades | Categorias |
 | :--- | :---: |
 | 1. Estruturação de Base de Dados local, baseada em SQL, com a finalidade de unificar e normalizar os dados oriundos dos sistemas de gerenciamento de projetos | Essencial |
-| 2. Desenvolvimento de aplicação WEB que permita integraro BD com o Dashboard. | Essencial |
+| 2. Desenvolvimento de aplicação WEB que permita integrar o BD com o Dashboard. | Essencial |
 | 3. Geração de relatórios analíticos. | Importante |
 | 4. Aperfeiçoar a interface, de modo a proporcionar uma boa representação visual dos dados. | Importante |
 | 5. Saída com análises adicionais, proporcionando múltiplos relatórios e gráficos. | Desejável |
+
+**Principais deliverables**
+
+Após a conclusão do projeto os seguintes “deliverables” deverão ser produzidos e entregues:
+> 1. Plano de Teste
+
+> 2. Manual de Operação
 
 <br>
 
