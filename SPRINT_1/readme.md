@@ -9,7 +9,22 @@ Nessa sprint focamos em entregar o código e algumas funcionalidades importantes
 
 ## :mag_right: Visão do Projeto
 
-(adicionar imagens do doc. Danilo)
+A empresa parceira desenvolve projetos de sistemas para Comércio Exterior, Compliance
+fiscal, soluções SAP, Microsoft Dynamics AX/365, software Contábil/Fiscal e, também atua com Fábrica de Software.
+Com mais de 500 colaboradores e mais de 900 projetos por ano, evidencia-se a necessidade de condensar as informações de status desses projetos, para auxiliar na tomada de decisões.
+Dessa maneira a GSW, em parceria com a FATECSJC, propõem através da Aprendizagem por Projetos Integrados o desenvolvimento da aplicação.
+
+**O problema é:** Apresentar, de forma resumida, o status do andamento dos
+projetos, em um único Dashboard;
+
+**Que afeta** as análises para tomada de decisão em curto e médio prazo;
+
+**O impacto disto é** permitir à Direção, ter uma noção global dos processos
+referentes aos negócios em TI, podendo visualizar também, de
+forma dinâmica e objetiva, dados referentes a projetos
+específicos;
+
+**A solução seria** O desenvolvimento de aplicação que permita a unificação e tratamento dos dados para análise.
 
 <br>
 
