@@ -56,7 +56,7 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 | `SPRINT 1` | Layout Figma e Dashboard Inicial | 08/03/2021 | 28/03/2021 |
 | `SPRINT 2` | Status dos Projetos e Incrementos no Dashboard | 29/03/2021 | 18/04/2021 |
 | `SPRINT 3` | Aprimoramento e mais requisitos do cliente | 26/04/2021 | 16/05/2021 |
-| `SPRINT 4` | Sprint Bônus com entregas de valor ecorreção de erros | 17/05/2021 | 05/06/2021 |
+| `SPRINT 4` | Sprint Bônus com entregas de valor e correção de erros | 17/05/2021 | 05/06/2021 |
 
 <br>
 
