@@ -80,7 +80,7 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 - Create your venv
 
 ```
-$ python -m venv venvname
+$ python -m venv <venvname>
 ```
 
 - Activate your venv
@@ -93,4 +93,29 @@ $ ./venvname/Scripts/activate
 $ git clone https://github.com/Time-1-ADS/ProjetoGSW
 ```
 
-#### Go to folder where have the file manage.py
+- Install requirements
+```
+$ pip install requirements.txt
+```
+
+- Create the role on PostgreSQL
+```
+CREATE ROLE admin3 WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'admin321';
+```
+
+- Restore database
+```
+// Restore the database using the pgadmin
+```
+
+## Go to folder where have the file manage.py
+
+- Create migrate on database
+```
+$ python manage.py migrate
+```
+
+- Run server
+```
+$ python manage.py runserver
+```
