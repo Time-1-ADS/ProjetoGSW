@@ -108,7 +108,7 @@ CREATE ROLE admin3 WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '
 // Restore the database using the pgadmin
 ```
 
-## Go to folder where have the file manage.py
+**Go to folder where have the file manage.py**
 
 - Create migrate on database
 ```
