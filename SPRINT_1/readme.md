@@ -10,21 +10,21 @@ Nessa sprint focamos em entregar o código e algumas funcionalidades importantes
 ## :mag_right: Visão do Projeto
 
 A empresa parceira desenvolve projetos de sistemas para Comércio Exterior, Compliance
-fiscal, soluções SAP, Microsoft Dynamics AX/365, software Contábil/Fiscal e, também atua com Fábrica de Software.
+fiscal, soluções SAP, Microsoft Dynamics AX/365, software Contábil/Fiscal, e também atua na área de Software.
 Com mais de 500 colaboradores e mais de 900 projetos por ano, evidencia-se a necessidade de condensar as informações de status desses projetos, para auxiliar na tomada de decisões.
-Dessa maneira a GSW, em parceria com a FATECSJC, propõem através da Aprendizagem por Projetos Integrados o desenvolvimento da aplicação.
+Dessa maneira a GSW, em parceria com a FATECSJC, propõem através da Aprendizagem por Projetos Integrados o desenvolvimento da aplicação de um Dashboard.
 
-**O problema é:** Apresentar, de forma resumida, o status do andamento dos
+**O problema é:** Apresentar, de forma resumida, os status de andamento dos
 projetos, em um único Dashboard;
 
 **Que afeta** as análises para tomada de decisão em curto e médio prazo;
 
-**O impacto disto é** permitir à Direção, ter uma noção global dos processos
+**O impacto disto é** permitir a Direção, ter uma noção global dos processos
 referentes aos negócios em TI, podendo visualizar também, de
 forma dinâmica e objetiva, dados referentes a projetos
 específicos;
 
-**A solução seria** O desenvolvimento de aplicação que permita a unificação e tratamento dos dados para análise.
+**A solução seria** O desenvolvimento da aplicação que permita a unificação e tratamento dos dados para análise.
 
 <br>
 
@@ -33,8 +33,8 @@ Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, cla
 
 | Necessidades | Categorias |
 | :--- | :---: |
-| 1. Estruturação de Base de Dados local, baseada em SQL, com a finalidade de unificar e normalizar os dados oriundos dos sistemas de gerenciamento de projetos | Essencial |
-| 2. Desenvolvimento de aplicação WEB que permita integrar o BD com o Dashboard. | Essencial |
+| 1. Estruturação de Base de Dados local, baseada em SQL, com a finalidade de unificar e normalizar os dados oriundos dos sistemas no gerenciamento de projetos | Essencial |
+| 2. Desenvolvimento de aplicação WEB que permita integrar o Banco de Dados com o Dashboard. | Essencial |
 | 3. Geração de relatórios analíticos. | Importante |
 | 4. Aperfeiçoar a interface, de modo a proporcionar uma boa representação visual dos dados. | Importante |
 | 5. Saída com análises adicionais, proporcionando múltiplos relatórios e gráficos. | Desejável |
