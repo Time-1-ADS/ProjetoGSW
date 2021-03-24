@@ -35,14 +35,14 @@
 <br>
 
 ## :pencil2: O Projeto
-O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhamentos dos Projetos, através de diferentes fontes de dados. E fornecê-los para o cliente.
+O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhamentos dos Projetos, através de diferentes fontes de dados. A seguir, fornecê-los para o cliente.
 
 > Status do Projeto: <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/andamento_inicial.png" width="90" height="20" />
 
 <br>
 
 ## :clipboard: Proposta
-Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, e crie um Dashboard para acompanhamento do andamento dos projetos.
+Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles end-points fornecidos pela GSW, criação de um Dashboard para acompanhamento e andamento dos projetos.
 
 **Pré-requisitos:**
 
