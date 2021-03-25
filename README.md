@@ -107,8 +107,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <img src = "/Imagens Geral/linguagens.png" width="280" height="150">
 
 * **Banco de Dados:** PostgreSQL
-* **Back-end:** JavaScript e Python
-* **Front-end:** CSS e Bootstrap
+* **Back-end:** JavaScript, Python e HTML
+* **Front-end:** CSS, HTML, Bootstrap e Chart.js
 * **Ferramentas:** Visual Studio Code e Figma
 
 <br>
