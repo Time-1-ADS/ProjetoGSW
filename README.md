@@ -36,7 +36,7 @@
 ## :pencil2: O Projeto
 > Status do Projeto: <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/andamento_inicial.png" width="90" height="20" />
 
-O objetivo desse projeto é criar um Dashboard que exibirá os status e acompanhamentos dos Projetos, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. Nosso cliente é a empresa GSW Soluções Integradas. Foi solicitado o desenvolvimento de um Dashboard para a diretoria visualizar o andamento e analisar os projetos da mesma.
+O objetivo desse projeto é criar um Dashboard que exibirá os status e acompanhamentos dos Projetos, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente, a empresa GSW Soluções Integradas. Foi solicitado o desenvolvimento de um Dashboard para a diretoria visualizar o andamento e analisar os projetos da mesma.
 
 #### 🔗 Para mais informações, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)
 
