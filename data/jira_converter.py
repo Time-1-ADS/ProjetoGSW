@@ -34,7 +34,7 @@ for item in jira_data:
     jira_details["project"] = item["project"]
     jira_details["carddescription"] = item["cardDescription"]
     jira_details["gitmetadata_branch"] = item["gitMetadata"]["branch"]
-    jira_details["gitmetadata_hash"] = item["gitMetadata"]["hash"]
+    jira_details["gitmetadata_hash"] = item["gitMetadata"]["hash"]+
     jira_list.append(jira_details)
 
 # Criando arquivo do jira
