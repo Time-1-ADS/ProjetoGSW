@@ -34,9 +34,11 @@
 <br>
 
 ## :pencil2: O Projeto
-O objetivo desse projeto é criar um Dashboard que exibe os status e acompanhamentos dos Projetos, através de diferentes fontes de dados. A seguir, fornecê-los para o cliente.
-
 > Status do Projeto: <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/andamento_inicial.png" width="90" height="20" />
+
+O objetivo desse projeto é criar um Dashboard que exibirá os status e acompanhamentos dos Projetos, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente, a empresa GSW Soluções Integradas. Foi solicitado o desenvolvimento de um Dashboard para a diretoria visualizar o andamento e analisar os projetos da mesma.
+
+#### 🔗 Para mais informações, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)
 
 <br>
 
@@ -107,8 +109,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <img src = "/Imagens Geral/linguagens.png" width="280" height="150">
 
 * **Banco de Dados:** PostgreSQL
-* **Back-end:** JavaScript e Python
-* **Front-end:** CSS e Bootstrap
+* **Back-end:** JavaScript, Python e HTML
+* **Front-end:** CSS, HTML, Bootstrap e Chart.js
 * **Ferramentas:** Visual Studio Code e Figma
 
 <br>
