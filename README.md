@@ -47,6 +47,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 **Pré-requisitos:**
 
+<img align="right" width="400" height="250" src="/Imagens Geral/imgdash.png">
+
  > **Status dos Projetos**
 
  - [x]  Quantidade de tasks em aberto;
@@ -65,6 +67,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
+<img align="right" width="400" height="250" src="/Imagens Geral/work3.png">
+
 - [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Apresenta%C3%A7%C3%A3o%20Kickoff.pdf) - 28/02/2021 a 06/03/2021
 
 - [x] [SPRINT 1](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 08/03/2021 a 28/03/2021
@@ -82,6 +86,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <br>
 
 ## :date: As Sprints
+
+<img align="right" width="300" height="200" src="/Imagens Geral/work2.png">
 
 🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Em Andamento 🕗 
 
@@ -105,6 +111,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <br>
 
 ## :computer: Tecnologias Utilizadas
+
+<img align="right" width="350" height="250" src="/Imagens Geral/construction.png">
 
 <img src = "/Imagens Geral/linguagens.png" width="280" height="150">
 
