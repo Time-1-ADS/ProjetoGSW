@@ -63,6 +63,14 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
  - [x]  Quantidade de horas por projeto;
  - [x]  Ranking de quantidades de horas por pessoa.<br><br>
 
+**:link: Clique no link abaixo para visualizar o *Wireframe no Figma*:** 
+> [Wireframe Figma](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/gif_figma.gif)
+
+<br>
+
+**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da primeira sprint.** 
+> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto1.png)
+
 <br>
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
@@ -137,7 +145,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 
 ## :mortar_board: Equipe 
 
-|Nome|Função|Linkedin|GitHub|Avatar|
+|Nome|Função|LinkedIn|GitHub|Avatar|
 | -------- |-------- |-------- |-------- |-------- |
 |**Bryan Ribeiro**|Scrum Master|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://linkedin.com/in/bryanrribeiro/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/BryanRibeiro)|<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQEqjHK3s2KQ9g/profile-displayphoto-shrink_200_200/0/1614391630089?e=1620864000&v=beta&t=dM50-KDaKcs51Ldgo0A1kRrRwxM378nGqnGsgJA82qU" height="50"/>|
 |**Danilo Pires**|Product Owner|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />]()|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/Danilo2010)|<img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/fotodanilo.jpeg" height="50"/>|
