@@ -82,7 +82,7 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 
 <h1 align="center"> <img src = "/Imagens Geral/gif_figma.gif"/></h1>
 
- _Nota: Nessa sprint, não focamos em criar um wireframe com cores e layout personalizado. Este detalhe será adicionado nas próximas entregas, pois não é de valor para o cliente inicialmente._
+ _Nota: Nessa sprint, não focamos em criar um wireframe com estética e visual aprimorados. Este detalhe será adicionado nas próximas entregas, pois não é de valor para o cliente inicialmente._
 
 <br>
 
