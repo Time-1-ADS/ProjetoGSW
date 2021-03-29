@@ -122,8 +122,6 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <img align="right" width="350" height="250" src="/Imagens Geral/construction.png">
 
-<img src = "/Imagens Geral/linguagens.png" width="280" height="150">
-
 * **Banco de Dados:** PostgreSQL
 * **Back-end:** JavaScript, Python e HTML
 * **Front-end:** CSS, HTML, Bootstrap e Chart.js
