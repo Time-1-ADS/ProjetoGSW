@@ -120,7 +120,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :computer: Tecnologias Utilizadas
 
-<img align="right" width="350" height="250" src="/Imagens Geral/construction.png">
+<img align="right" width="250" height="190" src="/Imagens Geral/construction.png">
 
 * **Banco de Dados:** PostgreSQL
 * **Back-end:** JavaScript, Python e HTML
