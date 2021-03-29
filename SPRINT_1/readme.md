@@ -68,6 +68,36 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 
 <br>
 
+## :newspaper: Backlog do Produto
+
+<img src = "/Imagens Geral/backlogproduto1.png" width="1300" height="700"/></h1>
+
+#### 🔗 [Visualizar *product backlog* da primeira sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto1.png)
+
+<br>
+
+## :sparkles: Wireframe Figma
+
+<h3 align="center">Layout Inicial</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/gif_figma.gif"/></h1>
+
+ _Nota: Nessa sprint, não focamos em criar um wireframe com estética e visual aprimorados. Este detalhe será adicionado nas próximas entregas, pois não é de valor para o cliente inicialmente._
+
+<br>
+
+## :clubs: Modelo Conceitual
+
+<img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Modelagem%20de%20dados/modelo_conceitual.png" width="900" height="450"/></h1>
+
+<br>
+
+## :spades: Modelo Lógico Relacional
+
+<img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Modelagem%20de%20dados/modelo_logico.png" width="700" height="500"/></h1>
+
+<br>
+
 ## :elephant: Dados PostgreSQL
 **O cliente forneceu os dados dos projetos (.json), sendo eles:**
 > :space_invader: [Jira e Trello](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/data)
