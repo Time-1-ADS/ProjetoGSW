@@ -16,26 +16,6 @@ jira_json_file.close()
 
 jira_list = []
 
-'''
-CREATE TABLE projetos (
-    id varchar,
-    status varchar,
-    usuario_id varchar,
-    usuario_avatar varchar,
-    usuario_first_name varchar,
-    usuario_last_name varchar,
-    usuario_email varchar,
-    amounthours numeric,
-    startedat varchar,
-    finished boolean,
-    project varchar,
-    carddescription varchar,
-    gitmetadata_branch varchar,
-    gitmetadata_hash varchar
-
-);
-
-'''
 for item in jira_data:
     jira_details = {"id": None, "status": None, "usuario_id": None, "usuario_avatar": None, "usuario_first_name": None, "usuario_last_name": None, "usuario_email": None,
                     "amounthours": None, "startedat": None, "finished": None, "project": None, "carddescription": None, "gitmetadata_branch": None, "gitmetadata_hash": None, }
