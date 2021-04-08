@@ -5,15 +5,18 @@ from psycopg2.extras import Json
 
 
 # Abrindo o arquivo.
+
 trello_json_file = open(file='trello.json')
 jira_json_file = open(file='jira.json')
 
 # Lendo o arquivo como Json.
+
 trello_data = json.load(trello_json_file)
 jira_data = json.load(jira_json_file)
 
 
 # Fechando o arquivo, visto que ele não é mais necessário.
+
 trello_json_file.close()
 jira_json_file.close()
 
@@ -67,6 +70,7 @@ for item in jira_data:
 
 
 # Criando arquivo do trello
+
 with open('dadosFormatados.json', 'w') as f:
     json.dump(data_list, f, ensure_ascii=False)
 
@@ -112,6 +116,7 @@ while ks < ttl:
 
 
 # Criando arquivo com quantidades
+
 with open('status_count.json', 'w') as f:
     json.dump(data_status_quant, f, ensure_ascii=False)
 
