@@ -81,7 +81,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 - [x] [SPRINT 1](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 08/03/2021 a 28/03/2021
 
-- [ ] SPRINT 2 - 29/03/2021 a 18/04/2021
+- [x] [SPRINT 2](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2) - 29/03/2021 a 18/04/2021
 
 - [ ] SPRINT 3 - 26/04/2021 a 16/05/2021
 
@@ -97,9 +97,9 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <img align="right" width="200" height="180" src="/Imagens Geral/sprintsimg.png">
 
-🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Em Andamento 🕗 
+🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Concluído ☑️ 
 
-🔖 SPRINT 2: Em Construção 🚧
+🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2)):  Em Andamento 🕗 
 
 🔖 SPRINT 3: Em Construção 🚧
 
