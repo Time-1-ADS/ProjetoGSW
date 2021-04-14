@@ -3,7 +3,7 @@
 <br>
 
 Nessa sprint focamos em entregar a modelagem do banco de dados e algumas funcionalidades importantes de acordo com o seguinte card:
-<h1 align="center"> <img src = "/Imagens Geral/card_1.png" width="710" height="420" /></h1>
+<h1 align="center"> <img src = "/Imagens Geral/card01.png" width="710" height="420" /></h1>
 
 <br>
 
