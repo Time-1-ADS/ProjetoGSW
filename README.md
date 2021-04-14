@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/dashboard_logo.png" width="200" height="150">
+      <img src="/Imagens Geral/imginicial.png" width="200" height="150">
       <h3 align="center"> GSW Dashboard </h3>
 <p align="center">
 
@@ -34,7 +34,7 @@
 <br>
 
 ## :pencil2: O Projeto
-> Status do Projeto: <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/andamento_inicial.png" width="90" height="20" />
+> Status do Projeto: <img src = "/Imagens Geral/barra1.png" width="90" height="20" />
 
 O objetivo desse projeto é criar um Dashboard que exibirá os status e acompanhamentos dos Projetos, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente, a empresa GSW Soluções Integradas. Foi solicitado o desenvolvimento de um Dashboard para a diretoria visualizar o andamento e analisar os projetos da mesma.
 
@@ -47,7 +47,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 **Pré-requisitos:**
 
-<img align="right" width="400" height="250" src="/Imagens Geral/imgdash.png">
+<img align="right" width="190" height="300" src="/Imagens Geral/propostaimg.png">
 
  > **Status dos Projetos**
 
@@ -75,7 +75,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
-<img align="right" width="400" height="250" src="/Imagens Geral/work3.png">
+<img align="right" width="400" height="250" src="/Imagens Geral/planejamemtpimg.png">
 
 - [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Apresenta%C3%A7%C3%A3o%20Kickoff.pdf) - 28/02/2021 a 06/03/2021
 
@@ -108,7 +108,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <br>
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens Geral/cardsprincipal.png" width="1500" height="450">
+<img src="/Imagens Geral/cardsgit.png" width="1500" height="450">
 
 <br>
 
