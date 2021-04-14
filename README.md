@@ -95,7 +95,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :date: As Sprints
 
-<img align="right" width="300" height="200" src="/Imagens Geral/work2.png">
+<img align="right" width="200" height="180" src="/Imagens Geral/sprintsimg.png">
 
 🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Em Andamento 🕗 
 
@@ -120,7 +120,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :computer: Tecnologias Utilizadas
 
-<img align="right" width="250" height="190" src="/Imagens Geral/construction.png">
+<img align="right" width="250" height="190" src="/Imagens Geral/tecnologiasimg.png">
 
 * **Banco de Dados:** PostgreSQL
 * **Back-end:** JavaScript, Python e HTML
