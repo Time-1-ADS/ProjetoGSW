@@ -137,7 +137,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 
 ## :dart: Backlog das Sprints
 
-<h1 align="center"> <img src = "/Imagens Geral/backlog_sprint1.png" /></h1>
+<h1 align="center"> <img src = "/Imagens Geral/backlog_sprint2.png" /></h1>
 
 <br>
 
