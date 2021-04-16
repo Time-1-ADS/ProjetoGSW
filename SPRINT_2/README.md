@@ -11,3 +11,11 @@ Para essa sprint, continuamos no desenvolvimento do Dashboard, como apresentado 
 
 <img src = "/Imagens Geral/burn2.png" width="600" height="450"/></h1>
 
+<br>
+
+## :newspaper: Backlog do Produto
+
+<img src = "/Imagens Geral/backlogproduto2.png" width="800" height="1300"/></h1>
+
+#### 🔗 [Visualizar *product backlog* da segunda sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto2.png)
+
