@@ -65,13 +65,18 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
  - [x]  Quantidade de horas por projeto;
  - [x]  Ranking de quantidades de horas por pessoa.<br><br>
 
+**:link: Clique no link abaixo para visualizar as *Tabelas no Banco de Dados*:** 
+> [Acessando Dados PostgreSQL](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/gifcodigos.gif)
+
+<br>
+
 **:link: Clique no link abaixo para visualizar o *Wireframe no Figma*:** 
 > [Wireframe Figma](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/gif_figma.gif)
 
 <br>
 
-**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da primeira sprint.** 
-> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto1.png)
+**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da segunda sprint.** 
+> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto2.png)
 
 <br>
 
