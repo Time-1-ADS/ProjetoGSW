@@ -86,6 +86,14 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 
 <br>
 
+## :desktop_computer:	 Acessando dados no PostgreSQL
+
+<h3 align="center">Tabelas no Banco de Dados</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/gifcodigos.gif"/></h1>
+
+<br>
+
 ## :clubs: Modelo Conceitual
 
 <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Modelagem%20de%20dados/modelo_conceitual.png" width="900" height="450"/></h1>
