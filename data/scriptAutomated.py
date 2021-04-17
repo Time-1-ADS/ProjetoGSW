@@ -69,7 +69,7 @@ for item in jira_data:
     data_list.append(jira_details)
 
 
-# Criando arquivo do trello
+# Criando arquivo
 
 with open('dadosFormatados.json', 'w') as f:
     json.dump(data_list, f, ensure_ascii=False)
@@ -113,6 +113,9 @@ while ks < ttl:
     data_c = {chave: None}
     data_c[chave] = q
     data_status_quant.append(data_c)
+
+
+# tasks abertas e fechadas
 
 
 # Criando arquivo com quantidades
