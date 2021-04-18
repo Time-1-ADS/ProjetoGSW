@@ -58,13 +58,13 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 | `SPRINT 3` | Aprimoramento e mais requisitos do cliente | 26/04/2021 | 16/05/2021 |
 | `SPRINT 4` | Sprint Bônus com entregas de valor e correção de erros | 17/05/2021 | 05/06/2021 |
 
-#### 🔗 [Visualizar *burndown* da primeira sprint](https://docs.google.com/spreadsheets/d/1l0ugDO7hy4k4Z29stMtuBaONDIMZyZrSkfqjLgsIfB4/edit?usp=sharing)
-
 <br>
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "/Imagens Geral/burndowngrafic.png" width="600" height="450"/></h1>
+
+#### 🔗 [Visualizar *burndown* da primeira sprint](https://docs.google.com/spreadsheets/d/1l0ugDO7hy4k4Z29stMtuBaONDIMZyZrSkfqjLgsIfB4/edit?usp=sharing)
 
 <br>
 
