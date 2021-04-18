@@ -271,11 +271,20 @@ h1{
 
 .tabt{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    color: #9D9EAB;
 }
 
 .tabc{
     font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    color: black;
     display: flex;
     align-content: space-between;
 }
