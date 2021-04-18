@@ -7,6 +7,16 @@ Para essa sprint, continuamos no desenvolvimento do Dashboard, como apresentado 
 
 <br>
 
+## :sparkles: Wireframe Figma
+
+<h3 align="center">Layout Atualizado</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/figma2gif.gif"/></h1>
+
+ _Nota: Após o feedback do cliente, focamos em melhorar a estética do Wireframe e personalizar as cores._
+
+<br>
+
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "/Imagens Geral/burn2.png" width="600" height="450"/></h1>
