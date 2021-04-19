@@ -14,12 +14,17 @@ def home():
 
 @app.route('/project')
 def projeto():
-    return 'projeto Y'
+    return render_template('projetoY.html')
 
 
 @app.route('/collaborators')
 def collaborators():
-    return 'collaborators'
+    return render_template('colaboradores.html')
+
+
+@app.route('/task')
+def tasks():
+    return render_template('Tasks.html')
 
 
 if __name__ == '__main__':
