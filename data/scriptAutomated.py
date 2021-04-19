@@ -83,6 +83,7 @@ ks = 0
 ttl = len(status_tags)
 i = 0
 data_status_quant = []
+data_status_list = []
 tot = len(data_list)
 while ks < ttl:
     k = 0
@@ -114,14 +115,15 @@ while ks < ttl:
     data_c[chave] = q
     data_status_quant.append(data_c)
 
-
-# tasks abertas e fechadas
-
+    for item in data_c:
+        aa = []
+        aa.append(item)
+        aa.append(q)
+        data_status_list.append(aa)
 
 # Criando arquivo com quantidades
-
 with open('status_count.json', 'w') as f:
-    json.dump(data_status_quant, f, ensure_ascii=False)
+    json.dump(data_status_list, f, ensure_ascii=False)
 
 
 # Inserindo no database
