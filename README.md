@@ -106,9 +106,9 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Concluído ☑️ 
 
-🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2)):  Em Andamento 🕗 
+🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2)):  Concluído ☑️ 
 
-🔖 SPRINT 3: Em Construção 🚧
+🔖 SPRINT 3: Em Andamento 🕗 
 
 🔖 SPRINT 4: Em Construção 🚧
 
