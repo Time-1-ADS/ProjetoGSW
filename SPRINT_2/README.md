@@ -17,9 +17,17 @@ Para essa sprint, focamos em desenvolver o front-end do projeto para análise do
 
 <br>
 
+## :bar_chart: Tela Inicial
+
+<h3 align="center">Gráficos e Status</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/telainicialgif.gif"/></h1>
+
+<br>
+
 ## :bar_chart: Tela de Projetos
 
-<h3 align="center">Status dos Projetos Específicos.</h3>
+<h3 align="center">Status dos Projetos Específicos</h3>
 
 <h1 align="center"> <img src = "/Imagens Geral/projetogif.gif"/></h1>
 
@@ -27,7 +35,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto para análise do
 
 ## :bar_chart: Tela de Colaboradores
 
-<h3 align="center">Lista de Colaboradores; Email; Horas p/mês e ano.</h3>
+<h3 align="center">Lista de Colaboradores: Email, Horas p/mês e ano</h3>
 
 <h1 align="center"> <img src = "/Imagens Geral/colaboradorgif.gif"/></h1>
 
@@ -35,7 +43,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto para análise do
 
 ## :bar_chart: Tela de Tarefas
 
-<h3 align="center">Tasks Abertas e Fechadas.</h3>
+<h3 align="center">Tasks Abertas e Fechadas</h3>
 
 <h1 align="center"> <img src = "/Imagens Geral/tasksgif.gif"/></h1>
 
