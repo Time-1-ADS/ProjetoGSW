@@ -49,6 +49,16 @@ Para essa sprint, focamos em desenvolver o front-end do projeto para análise do
 
 <br>
 
+## :computer: API Online
+
+<h3 align="center">Acessando rotas</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/apisprint2.gif"/></h1>
+
+#### 🔗 Para visualizar os códigos da segunda sprint, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2/codes).
+
+<br>
+
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "/Imagens Geral/burn2.png" width="600" height="450"/></h1>
