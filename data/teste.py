@@ -75,12 +75,11 @@ for item in jira_data:
 #     json.dump(data_list, f, ensure_ascii=False)
 
 
-# contando tasks
+# allTask_finished
 
-status_tags = ['DONE', 'FOR_TEST', 'IN_PROGRESS',
-               'RELEASE_TO_PROD', 'PROD_DEPLOYING', 'QA_DEPLOYING', 'QA_TESTING']
+terminado = [True, False]
 ks = 0
-ttl = len(status_tags)
+ttl = len(terminado)
 i = 0
 data_status_quant = []
 data_status_list = []
@@ -90,8 +89,8 @@ while ks < ttl:
     q = 0
     while k < tot:
 
-        palavras_procuradas = {status_tags[ks]}
-        texto = [data_list[k]["status"]]
+        palavras_procuradas = {terminado[ks]}
+        texto = [data_list[k]["finished"]]
 
         dicionario = {}
         for palavra in texto:
@@ -99,14 +98,14 @@ while ks < ttl:
                 count = 1
                 if palavra in dicionario:
                     count = int(dicionario[palavra].split(' ')[-1]) + 1
-                dicionario[palavra] = palavra + " " + str(count)
+                dicionario[palavra] = str(palavra) + " " + str(count)
 
         for palavra in palavras_procuradas:
             if palavra not in texto:
-                dicionario[palavra] = palavra + " " + str(0)
+                dicionario[palavra] = str(palavra) + " " + str(0)
 
         for chave in dicionario:
-            if(dicionario[palavra] == palavra + " " + str(1)):
+            if(dicionario[palavra] == str(palavra) + " " + str(1)):
                 q = q + 1
         k = k + 1
     ks = ks + 1
@@ -122,8 +121,8 @@ while ks < ttl:
         data_status_list.append(aa)
 
 # Criando arquivo com quantidades
-# with open('status_count.json', 'w') as f:
-#     json.dump(data_status_list, f, ensure_ascii=False)
+with open('tasksfinishedAll.json', 'w') as f:
+    json.dump(data_status_list, f, ensure_ascii=False)
 
 # ? pegando os projetos
 
@@ -152,7 +151,7 @@ while j < tt:
 ppj = remove_repetidos(ppj)
 
 
-#! status por projeto
+# task_finished by project
 
 fcontm = len(ppj)
 scontm = len(data_list)
@@ -183,22 +182,23 @@ while fcont <= fcontm:
                     confir = [data_list[scont]["project"]]
                     verificardois = confir
                     if verificar == verificardois:
-                        palavras_procuradas = {status_tags[stt]}
-                        texto = [data_list[scont]["status"]]
+                        palavras_procuradas = {terminado[stt]}
+                        texto = [data_list[scont]["finished"]]
                         for palavra in texto:
                             if palavra in palavras_procuradas:
                                 count = 1
                                 if palavra in dicippj:
                                     count = int(
                                         dicippj[palavra].split(' ')[-1]) + 1
-                                dicippj[palavra] = palavra + " " + str(count)
+                                dicippj[palavra] = str(
+                                    palavra) + " " + str(count)
 
                         for palavra in palavras_procuradas:
                             if palavra not in texto:
-                                dicippj[palavra] = palavra + " " + str(0)
+                                dicippj[palavra] = str(palavra) + " " + str(0)
 
                         for chav in dicippj:
-                            if(dicippj[palavra] == palavra + " " + str(1)):
+                            if(dicippj[palavra] == str(palavra) + " " + str(1)):
 
                                 if chav == palavra:
                                     q = q + 1
@@ -218,9 +218,9 @@ while fcont <= fcontm:
             stt += 1
             q = 0
             gravar += 1
-            if stt == 7:
+            if stt == ttl:
                 gravar = 0
-                with open(f'status_count_{ppjx}.json', 'w') as f:
+                with open(f'taskfinished{ppjx}.json', 'w') as f:
                     json.dump(data_status_list, f, ensure_ascii=False)
                 data_status_quant = []
                 data_status_list = [["Status", "Quantidade"]]

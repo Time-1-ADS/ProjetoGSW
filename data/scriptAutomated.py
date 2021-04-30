@@ -232,6 +232,134 @@ while fcont <= fcontm:
     fcont += 1
 
 print("Status por projeto criado!")
+
+
+# allTask_finished
+
+terminado = [True, False]
+ks = 0
+ttl = len(terminado)
+i = 0
+data_status_quant = []
+data_status_list = [["Status", "Quantidade"]]
+tot = len(data_list)
+while ks < ttl:
+    k = 0
+    q = 0
+    while k < tot:
+
+        palavras_procuradas = {terminado[ks]}
+        texto = [data_list[k]["finished"]]
+
+        dicionario = {}
+        for palavra in texto:
+            if palavra in palavras_procuradas:
+                count = 1
+                if palavra in dicionario:
+                    count = int(dicionario[palavra].split(' ')[-1]) + 1
+                dicionario[palavra] = str(palavra) + " " + str(count)
+
+        for palavra in palavras_procuradas:
+            if palavra not in texto:
+                dicionario[palavra] = str(palavra) + " " + str(0)
+
+        for chave in dicionario:
+            if(dicionario[palavra] == str(palavra) + " " + str(1)):
+                q = q + 1
+        k = k + 1
+    ks = ks + 1
+
+    data_c = {chave: None}
+    data_c[chave] = q
+    data_status_quant.append(data_c)
+
+    for item in data_c:
+        aa = []
+        aa.append(item)
+        aa.append(q)
+        data_status_list.append(aa)
+
+# Criando arquivo com quantidades
+with open('tasksfinishedAll.json', 'w') as f:
+    json.dump(data_status_list, f, ensure_ascii=False)
+
+# task_finished by project
+
+fcontm = len(ppj)
+scontm = len(data_list)
+data_status_quant = []
+data_status_list = [["Status", "Quantidade"]]
+fcont = 0
+scont = 0
+stt = 0
+dicippj = {}
+q = 0
+gravar = 0
+item = ''
+value = ''
+
+
+while fcont <= fcontm:
+    #print(f"projeto {fcont}")
+    for projet in ppj:
+        stt = 0
+        ppjx = projet
+        while stt < ttl:
+            scont = 0
+
+            if projet in ppjx:
+                dicippj[projet] = projet + " "
+                verificar = [projet]
+                while scont < scontm:
+                    confir = [data_list[scont]["project"]]
+                    verificardois = confir
+                    if verificar == verificardois:
+                        palavras_procuradas = {terminado[stt]}
+                        texto = [data_list[scont]["finished"]]
+                        for palavra in texto:
+                            if palavra in palavras_procuradas:
+                                count = 1
+                                if palavra in dicippj:
+                                    count = int(
+                                        dicippj[palavra].split(' ')[-1]) + 1
+                                dicippj[palavra] = str(
+                                    palavra) + " " + str(count)
+
+                        for palavra in palavras_procuradas:
+                            if palavra not in texto:
+                                dicippj[palavra] = str(palavra) + " " + str(0)
+
+                        for chav in dicippj:
+                            if(dicippj[palavra] == str(palavra) + " " + str(1)):
+
+                                if chav == palavra:
+                                    q = q + 1
+                                    data_c = {chav: q}
+
+                        #print(f"task {scont}")
+                        scont += 1
+                    else:
+                        scont += 1
+            for item in data_c:
+                aa = []
+                aa.append(item)
+                aa.append(q)
+
+            data_status_quant.append(data_c)
+            data_status_list.append(aa)
+            stt += 1
+            q = 0
+            gravar += 1
+            if stt == ttl:
+                gravar = 0
+                with open(f'taskfinished{ppjx}.json', 'w') as f:
+                    json.dump(data_status_list, f, ensure_ascii=False)
+                data_status_quant = []
+                data_status_list = [["Status", "Quantidade"]]
+                dicippj = {}
+
+    fcont += 1
+
 # Inserindo no database
 
 with open('dadosFormatados.json') as json_data:
