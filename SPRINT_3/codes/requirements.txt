@@ -1,0 +1,15 @@
+appdirs==1.4.4
+certifi==2020.12.5
+click==7.1.2
+distlib==0.3.1
+filelock==3.0.12
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+pipenv==2020.11.15
+psycopg2==2.8.6
+six==1.15.0
+virtualenv==20.4.3
+virtualenv-clone==0.5.4
+Werkzeug==0.16.1
