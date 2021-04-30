@@ -71,12 +71,11 @@ for item in jira_data:
 
 # Criando arquivo
 
-with open('dadosFormatados.json', 'w') as f:
-    json.dump(data_list, f, ensure_ascii=False)
-    print("Arquivo formatado!\n")
+# with open('dadosFormatados.json', 'w') as f:
+#     json.dump(data_list, f, ensure_ascii=False)
 
 
-# contando status
+# contando tasks
 
 status_tags = ['DONE', 'FOR_TEST', 'IN_PROGRESS',
                'RELEASE_TO_PROD', 'PROD_DEPLOYING', 'QA_DEPLOYING', 'QA_TESTING']
@@ -84,7 +83,7 @@ ks = 0
 ttl = len(status_tags)
 i = 0
 data_status_quant = []
-data_status_list = [["Status", "Quantidade"]]
+data_status_list = []
 tot = len(data_list)
 while ks < ttl:
     k = 0
@@ -122,13 +121,11 @@ while ks < ttl:
         aa.append(q)
         data_status_list.append(aa)
 
-
 # Criando arquivo com quantidades
-with open('status_count.json', 'w') as f:
-    json.dump(data_status_list, f, ensure_ascii=False)
-    print("Total de status criado!")
+# with open('status_count.json', 'w') as f:
+#     json.dump(data_status_list, f, ensure_ascii=False)
 
-# pegando os projetos
+# ? pegando os projetos
 
 
 def remove_repetidos(lista):
@@ -155,7 +152,7 @@ while j < tt:
 ppj = remove_repetidos(ppj)
 
 
-# status por projeto
+#! status por projeto
 
 fcontm = len(ppj)
 scontm = len(data_list)
@@ -172,7 +169,7 @@ value = ''
 
 
 while fcont <= fcontm:
-    #print(f"projeto {fcont}")
+    print(f"projeto {fcont}")
     for projet in ppj:
         stt = 0
         ppjx = projet
@@ -207,7 +204,7 @@ while fcont <= fcontm:
                                     q = q + 1
                                     data_c = {chav: q}
 
-                        #print(f"task {scont}")
+                        print(f"task {scont}")
                         scont += 1
                     else:
                         scont += 1
@@ -230,73 +227,3 @@ while fcont <= fcontm:
                 dicippj = {}
 
     fcont += 1
-
-print("Status por projeto criado!")
-# Inserindo no database
-
-with open('dadosFormatados.json') as json_data:
-    record_list = json.load(json_data)
-
-if type(record_list) == list:
-    first_record = record_list[0]
-
-    columns = list(first_record.keys())
-    # print("\ncolumn names:", columns)
-
-columns = [list(x.keys()) for x in record_list][0]
-
-table_name = "projetos"
-sql_string = 'INSERT INTO {}'.format(table_name)
-sql_string += "("+', '.join(columns)+")\nVALUES "
-
-
-for i, record_dict in enumerate(record_list):
-
-    values = []
-    for col_name, val in record_dict.items():
-
-        if type(val) == str:
-            val = val.replace("'", "''")
-            val = "'" + val + "'"
-
-        values += [str(val)]
-    sql_string += "(" + ','.join(values) + "),\n"
-
-sql_string = sql_string[:-2] + ";"
-
-
-try:
-
-    conn = connect(
-        dbname="dashboard",
-        user="admin3",
-        host="127.0.0.1",
-        password="admin321",
-
-        connect_timeout=3
-    )
-
-    cur = conn.cursor()
-    # print("\ncreated cursor object: ", cur)
-
-
-except(Exception, Error) as err:
-    print("\npsycopg2 connect error:", err)
-    conn = None
-    cur = None
-
-
-if cur != None:
-
-    try:
-        cur.execute(sql_string)
-        conn.commit()
-
-        print('\nfinished INSERT INTO projetos')
-
-    except (Exception, Error) as error:
-        print("\nexecute_sql() error:", error)
-        conn.rollback()
-
-    cur.close()
-    conn.close()
