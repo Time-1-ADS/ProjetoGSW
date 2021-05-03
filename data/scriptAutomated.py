@@ -124,9 +124,9 @@ while ks < ttl:
 
 
 # Criando arquivo com quantidades
-with open('status_count.json', 'w') as f:
+with open('./statusCount/status_count.json', 'w') as f:
     json.dump(data_status_list, f, ensure_ascii=False)
-    print("Total de status criado!")
+    print("Total de status criado!\n")
 
 # pegando os projetos
 
@@ -223,7 +223,7 @@ while fcont <= fcontm:
             gravar += 1
             if stt == 7:
                 gravar = 0
-                with open(f'status_count_{ppjx}.json', 'w') as f:
+                with open(f'./statusCountProject/status_count_{ppjx}.json', 'w') as f:
                     json.dump(data_status_list, f, ensure_ascii=False)
                 data_status_quant = []
                 data_status_list = [["Status", "Quantidade"]]
@@ -231,7 +231,7 @@ while fcont <= fcontm:
 
     fcont += 1
 
-print("Status por projeto criado!")
+print("Status por projeto criado!\n")
 
 
 # allTask_finished
@@ -280,8 +280,11 @@ while ks < ttl:
         data_status_list.append(aa)
 
 # Criando arquivo com quantidades
-with open('tasksfinishedAll.json', 'w') as f:
+with open('./taskFinished/tasksfinishedAll.json', 'w') as f:
     json.dump(data_status_list, f, ensure_ascii=False)
+
+print("Quantidade de tasks criado!\n")
+
 
 # task_finished by project
 
@@ -352,13 +355,72 @@ while fcont <= fcontm:
             gravar += 1
             if stt == ttl:
                 gravar = 0
-                with open(f'taskfinished{ppjx}.json', 'w') as f:
+                with open(f'./taskFinishedProject/taskfinished{ppjx}.json', 'w') as f:
                     json.dump(data_status_list, f, ensure_ascii=False)
                 data_status_quant = []
                 data_status_list = [["Status", "Quantidade"]]
                 dicippj = {}
 
     fcont += 1
+
+print("Quantidade de tasks por projeto criado!\n")
+
+# nome e sobrenome
+nome1 = []
+nome2 = []
+nome = []
+j = 0
+tt = len(data_list)
+ii = 0
+
+while j < tt:
+    first = [data_list[j]["usuario_first_name"]]
+    last = [data_list[j]["usuario_last_name"]]
+    for primeiro in first:
+        if primeiro not in nome1:
+            nome1.append(primeiro)
+            for ultimo in last:
+                nome2.append(ultimo)
+    j = j + 1
+
+nome.append(nome1)
+nome.append(nome2)
+with open(f'./nome-sobrenome/nomeAll.json', 'w') as f:
+    json.dump(nome, f, ensure_ascii=False)
+
+print("Nome e sobrenome criado\n")
+
+# nome e sobrenome projeto
+for projet in ppj:
+    titulo = projet
+    projet = [projet]
+    k = 0
+    nome1 = []
+    nome2 = []
+    nomepp = []
+    for item in data_list:
+        first = [data_list[k]["usuario_first_name"]]
+        last = [data_list[k]["usuario_last_name"]]
+        projeto = [data_list[k]["project"]]
+
+        if projet == projeto:
+            for name in first:
+                if name not in nome1:
+                    nome1.append(name)
+                    for ultimo in last:
+                        nome2.append(ultimo)
+            k += 1
+        else:
+            k += 1
+
+    nomepp.append(nome1)
+    nomepp.append(nome2)
+    with open(f'./nome-sobrenome-projeto/nome{titulo}.json', 'w') as f:
+        json.dump(nomepp, f, ensure_ascii=False)
+    projet = []
+    k += 1
+
+print("Nome e sobrenome por projeto criado")
 
 # Inserindo no database
 
@@ -420,7 +482,7 @@ if cur != None:
         cur.execute(sql_string)
         conn.commit()
 
-        print('\nfinished INSERT INTO projetos')
+        print('\nINSERT finalizado dentro de projetos')
 
     except (Exception, Error) as error:
         print("\nexecute_sql() error:", error)

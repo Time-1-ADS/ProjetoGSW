@@ -75,7 +75,7 @@ for item in jira_data:
 #     json.dump(data_list, f, ensure_ascii=False)
 
 
-# allTask_finished
+# nome e sobrenome
 
 terminado = [True, False]
 ks = 0
@@ -121,10 +121,10 @@ while ks < ttl:
         data_status_list.append(aa)
 
 # Criando arquivo com quantidades
-with open('tasksfinishedAll.json', 'w') as f:
-    json.dump(data_status_list, f, ensure_ascii=False)
+# with open('tasksfinishedAll.json', 'w') as f:
+#     json.dump(data_status_list, f, ensure_ascii=False)
 
-# ? pegando os projetos
+# ! pegando os projetos
 
 
 def remove_repetidos(lista):
@@ -151,7 +151,7 @@ while j < tt:
 ppj = remove_repetidos(ppj)
 
 
-# task_finished by project
+# nome e sobrenome por projeto
 
 fcontm = len(ppj)
 scontm = len(data_list)
@@ -168,7 +168,7 @@ value = ''
 
 
 while fcont <= fcontm:
-    print(f"projeto {fcont}")
+    #print(f"projeto {fcont}")
     for projet in ppj:
         stt = 0
         ppjx = projet
@@ -204,7 +204,7 @@ while fcont <= fcontm:
                                     q = q + 1
                                     data_c = {chav: q}
 
-                        print(f"task {scont}")
+                        #print(f"task {scont}")
                         scont += 1
                     else:
                         scont += 1
@@ -220,8 +220,8 @@ while fcont <= fcontm:
             gravar += 1
             if stt == ttl:
                 gravar = 0
-                with open(f'taskfinished{ppjx}.json', 'w') as f:
-                    json.dump(data_status_list, f, ensure_ascii=False)
+                # with open(f'taskfinished{ppjx}.json', 'w') as f:
+                #     json.dump(data_status_list, f, ensure_ascii=False)
                 data_status_quant = []
                 data_status_list = [["Status", "Quantidade"]]
                 dicippj = {}
