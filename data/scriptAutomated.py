@@ -122,6 +122,7 @@ while ks < ttl:
         aa.append(q)
         data_status_list.append(aa)
 
+ppa = q
 
 # Criando arquivo com quantidades
 with open('./statusCount/status_count.json', 'w') as f:
