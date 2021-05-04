@@ -369,6 +369,7 @@ print("Quantidade de tasks por projeto criado!\n")
 nome1 = []
 nome2 = []
 nome = []
+foto = []
 j = 0
 tt = len(data_list)
 ii = 0
@@ -376,49 +377,50 @@ ii = 0
 while j < tt:
     first = [data_list[j]["usuario_first_name"]]
     last = [data_list[j]["usuario_last_name"]]
+    avatar = [data_list[j]["usuario_avatar"]]
     for primeiro in first:
         if primeiro not in nome1:
             nome1.append(primeiro)
             for ultimo in last:
                 nome2.append(ultimo)
+            for link in avatar:
+                foto.append(link)
     j = j + 1
 
 nome.append(nome1)
 nome.append(nome2)
+nome.append(foto)
 with open(f'./nome-sobrenome/nomeAll.json', 'w') as f:
     json.dump(nome, f, ensure_ascii=False)
 
 print("Nome e sobrenome criado\n")
 
 # nome e sobrenome projeto
-for projet in ppj:
-    titulo = projet
-    projet = [projet]
-    k = 0
-    nome1 = []
-    nome2 = []
-    nomepp = []
-    for item in data_list:
-        first = [data_list[k]["usuario_first_name"]]
-        last = [data_list[k]["usuario_last_name"]]
-        projeto = [data_list[k]["project"]]
+for projeto in ppj:
+    juncao = []
+    for name in nome1:
+        i = 0
+        soma = 0
+        while i < len(data_list):
+            first = data_list[i]["usuario_first_name"]
+            horas = data_list[i]["amounthours"]
+            projetox = data_list[i]["project"]
+            if first == name and projetox == projeto:
+                horasAt = horas
+                soma = round(soma + horasAt, 2)
 
-        if projet == projeto:
-            for name in first:
-                if name not in nome1:
-                    nome1.append(name)
-                    for ultimo in last:
-                        nome2.append(ultimo)
-            k += 1
-        else:
-            k += 1
+                i += 1
+            else:
+                i += 1
+        juncao.append(soma)
 
-    nomepp.append(nome1)
-    nomepp.append(nome2)
-    with open(f'./nome-sobrenome-projeto/nome{titulo}.json', 'w') as f:
-        json.dump(nomepp, f, ensure_ascii=False)
-    projet = []
-    k += 1
+    if len(nome) == 4:
+        nome[3] = juncao
+    else:
+        nome.append(juncao)
+    with open(f'./nome-sobrenome-projeto/{projeto}.json', 'w') as f:
+        json.dump(nome, f, ensure_ascii=False)
+
 
 print("Nome e sobrenome por projeto criado")
 
