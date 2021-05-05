@@ -561,6 +561,43 @@ while(z < pcl):
         hp = []
         clr = 0
 
+print("Media de horas por projeto criado\n")
+
+# Média de horas total
+z = 0
+m = 0
+v = 0
+n = 0
+hp = []
+while(z < pcl):
+    k = 0
+    if pj[z] in hp:
+        z = z + 1
+
+    while(n < l):
+        if pj[z] == list_data[n]['project']:
+            m = m + list_data[n]['amounthours']
+            n = n + 1
+        else:
+            n = n + 1
+
+    n = 1
+    z = z + 1
+
+# Armazenando a soma de horas do projeto
+x = f"{m}"
+# Dividindo o valor total pela quantidade de projetos (a quantidade de projetos está armazenado na variável l)
+y = int(x) / l
+x = f"{y:.2f}"
+y = x
+hp.append(y)
+
+
+with open(f'./media-sum-horas/media_horas_total.json', 'w') as f:
+    json.dump(hp, f, ensure_ascii=False)
+
+print("Media do total das horas criado\n")
+
 
 # Inserindo no database
 
