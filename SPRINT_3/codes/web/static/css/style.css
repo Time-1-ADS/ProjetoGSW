@@ -142,7 +142,7 @@ h1{
     border-radius: 15px;
     box-shadow: 2px 2px 2px #c7c8ce;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }

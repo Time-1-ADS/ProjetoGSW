@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Geral</title>
-    <!-- <link href="../static/css/style.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
-
+    <link href="../static/css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"> -->
 
 </head>
 
@@ -68,11 +67,11 @@
     <div class="container-2">
         <div class="block1">
             <!--            <div class="text2">STATUS</div>-->
-            <canvas id="myChart" height="220"></canvas>
+            <canvas id="myChartStatusGeral" height="200"></canvas>
         </div>
         <div class="block2">
             <div class="block2-1">
-                <canvas id="myChart2" height="115"></canvas>
+                <canvas id="myChartGeral" height="115"></canvas>
             </div>
             <div class="block2-2">
                 <div class="text4">ESTATÍSTICAS DO PROJETO</div>
@@ -127,8 +126,9 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 
-    <!-- <script src="../static/js/main.js"></script> -->
-    <script src="{{ url_for('static',filename='js/main.js') }}"> </script>
+    <script src="../static/js/tasksgeral.js"></script> 
+    <script src="../static/js/statusgeral.js"></script> 
+    <!-- <script src="{{ url_for('static',filename='js/main.js') }}"> </script> -->
 
 </body>
 
