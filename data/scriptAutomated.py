@@ -527,6 +527,40 @@ with open(f'./sum-horas/horastotal.json', 'w') as f:
 
 print("Soma total das horas criado\n")
 
+#Tirando a média de horas por projeto.
+z = 0
+m = 0
+v = 0
+n = 0
+clr = 0
+while(z < pcl):
+        k = 0
+        if pj[z] in hp:
+            z = z + 1
+
+        while(n < l):
+            if pj[z] == list_data[n]['project']:
+                k = k + list_data[n]['amounthours']
+                n = n + 1
+                #clr é a variável que vai armazenar a quantidade de um projeto especifico
+                clr = clr + 1
+            else:
+                n = n + 1
+
+        #Armazenando a soma de horas do projeto e dividindo para tirar a média
+        x = f"{k}"
+        y = float(x) / clr
+        x = f"{y:.2f}"
+        y = float(x)
+        hp.extend([pj[z], y])
+        #Criação do arquivo json de média de horas por projeto
+        with open(f'./media-horas-por-projeto/media_horas_projeto_{pj[z]}.json', 'w') as f:
+            json.dump(hp, f, ensure_ascii=False)
+        n = 1
+        z = z + 1
+        hp = []
+        clr = 0
+
 
 # Inserindo no database
 
