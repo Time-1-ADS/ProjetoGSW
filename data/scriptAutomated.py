@@ -2,7 +2,7 @@ import json
 
 from psycopg2 import connect
 from psycopg2.extras import Json
-
+from unidecode import unidecode
 
 # Abrindo o arquivo.
 
@@ -380,10 +380,12 @@ while j < tt:
     last = [data_list[j]["usuario_last_name"]]
     avatar = [data_list[j]["usuario_avatar"]]
     for primeiro in first:
-        if primeiro not in nome1:
-            nome1.append(primeiro)
+        rem = unidecode(primeiro)
+        if rem not in nome1:
+            nome1.append(rem)
             for ultimo in last:
-                nome2.append(ultimo)
+                rem = unidecode(ultimo)
+                nome2.append(rem)
             for link in avatar:
                 foto.append(link)
     j = j + 1
@@ -404,9 +406,10 @@ for projeto in ppj:
         soma = 0
         while i < len(data_list):
             first = data_list[i]["usuario_first_name"]
+            rem = unidecode(first)
             horas = data_list[i]["amounthours"]
             projetox = data_list[i]["project"]
-            if first == name and projetox == projeto:
+            if rem == name and projetox == projeto:
                 horasAt = horas
                 soma = round(soma + horasAt, 2)
 
