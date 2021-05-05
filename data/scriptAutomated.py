@@ -423,9 +423,9 @@ for projeto in ppj:
         json.dump(nome, f, ensure_ascii=False)
 
 
-print("Nome e sobrenome por projeto criado")
+print("Nome e sobrenome por projeto criado\n")
 
-#Criando lista com apenas projeto e horas.
+# Criando lista com apenas projeto e horas.
 list_data = []
 for item in data_list:
     dd_details = {"project": None, "amounthours": None, }
@@ -433,97 +433,96 @@ for item in data_list:
     dd_details["amounthours"] = item["amounthours"]
     list_data.append(dd_details)
 
-#Armazenando a quantidade de projetos do dadosFormatados na variavel l.
+# Armazenando a quantidade de projetos do dadosFormatados na variavel l.
 l = len(data_list)
 ll = l - 1
-#Armazenando 
+# Armazenando
 pcl = len(ppj)
 
-#Separando os projetos e tirando os iguais.
+# Separando os projetos e tirando os iguais.
 z = 0
 hp = []
 pj = []
 v = 1999
 n = 1
 while(z < pcl):
-        while(list_data[v]['project'] in pj):
-            v = v - 1
-
-        while(n < l):
-            if list_data[v]['project'] == list_data[n]['project']:
-                n = n + 1
-
-            else:
-                n = n + 1
-
-        pj.append(list_data[v]['project'])
+    while(list_data[v]['project'] in pj):
         v = v - 1
-        n = 1
-        z = z + 1
-       
-#Somando as horas por projeto.
+
+    while(n < l):
+        if list_data[v]['project'] == list_data[n]['project']:
+            n = n + 1
+
+        else:
+            n = n + 1
+
+    pj.append(list_data[v]['project'])
+    v = v - 1
+    n = 1
+    z = z + 1
+
+# Somando as horas por projeto.
 z = 0
 m = 0
 v = 0
 n = 0
 while(z < pcl):
-        k = 0
-        if pj[z] in hp:
-            z = z + 1
-
-        while(n < l):
-            if pj[z] == list_data[n]['project']:
-                k = k + list_data[n]['amounthours']
-                m = m + list_data[n]['amounthours']
-                n = n + 1
-            else:
-                n = n + 1
-
-        #Armazenando a soma de horas do projeto
-        x = f"{k}"
-        y = float(x)
-        hp.extend([pj[z], y])
-        #Criação do arquivo json por projeto
-        with open(f'./horas-por-projeto/horas_projeto_{pj[z]}.json', 'w') as f:
-            json.dump(hp, f, ensure_ascii=False)
-        n = 1
+    k = 0
+    if pj[z] in hp:
         z = z + 1
-        hp = []
 
-print("Horas total por projeto criado")
+    while(n < l):
+        if pj[z] == list_data[n]['project']:
+            k = k + list_data[n]['amounthours']
+            m = m + list_data[n]['amounthours']
+            n = n + 1
+        else:
+            n = n + 1
 
-#Horas total
+    # Armazenando a soma de horas do projeto
+    x = f"{k}"
+    y = float(x)
+    hp.extend([pj[z], y])
+    # Criação do arquivo json por projeto
+    with open(f'./horas-por-projeto/horas_projeto_{pj[z]}.json', 'w') as f:
+        json.dump(hp, f, ensure_ascii=False)
+    n = 1
+    z = z + 1
+    hp = []
+
+print("Horas total por projeto criado\n")
+
+# Horas total
 z = 0
 m = 0
 v = 0
 n = 0
 hp = []
 while(z < pcl):
-        k = 0
-        if pj[z] in hp:
-            z = z + 1
-
-        while(n < l):
-            if pj[z] == list_data[n]['project']:
-                m = m + list_data[n]['amounthours']
-                n = n + 1
-            else:
-                n = n + 1
-
-        n = 1
+    k = 0
+    if pj[z] in hp:
         z = z + 1
 
-      
-  #Armazenando a soma de horas do projeto
+    while(n < l):
+        if pj[z] == list_data[n]['project']:
+            m = m + list_data[n]['amounthours']
+            n = n + 1
+        else:
+            n = n + 1
+
+    n = 1
+    z = z + 1
+
+# Armazenando a soma de horas do projeto
 x = f"{m:.0f}"
 y = int(x)
 hp.append(y)
 
 
 with open(f'./sum-horas/horastotal.json', 'w') as f:
-            json.dump(hp, f, ensure_ascii=False)
+    json.dump(hp, f, ensure_ascii=False)
 
-print("Soma total das horas criado")
+print("Soma total das horas criado\n")
 
 
 # Inserindo no database
