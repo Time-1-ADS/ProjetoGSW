@@ -648,7 +648,7 @@ try:
 
 
 except(Exception, Error) as err:
-    print("\npsycopg2 connect error:", err)
+    print(f"psycopg2 connect error: {err}\n")
     conn = None
     cur = None
 
@@ -659,10 +659,10 @@ if cur != None:
         cur.execute(sql_string)
         conn.commit()
 
-        print('\nINSERT finalizado dentro de projetos')
+        print('INSERT finalizado dentro de projetos\n')
 
     except (Exception, Error) as error:
-        print("\nexecute_sql() error:", error)
+        print(f"execute_sql() error: {error}\n")
         conn.rollback()
 
     cur.close()
