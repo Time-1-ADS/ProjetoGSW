@@ -587,7 +587,7 @@ while(z < pcl):
 # Armazenando a soma de horas do projeto
 x = f"{m}"
 # Dividindo o valor total pela quantidade de projetos (a quantidade de projetos está armazenado na variável l)
-y = int(x) / l
+y = float(x) / l
 x = f"{y:.2f}"
 y = x
 hp.append(y)
