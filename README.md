@@ -71,7 +71,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <br>
 
 **:link: Clique no link abaixo para visualizar o *Wireframe no Figma*:** 
-> [Figma Atualizado](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/figma2gif.gif)
+> [Figma Atualizado](https://www.figma.com/proto/Lt2vtG0fxj7RqIF3SUGmc9/GSW-Dashboard?node-id=89%3A1&scaling=scale-down-width&page-id=0%3A1)
 
 <br>
 
