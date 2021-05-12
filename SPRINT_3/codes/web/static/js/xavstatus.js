@@ -1,6 +1,6 @@
-var ctx = document.getElementById('albstatus').getContext('2d');
+var ctx = document.getElementById('xavstatus').getContext('2d');
 
-fetch('https://apigsw.herokuapp.com/data/status/albuquerque/')
+fetch('https://apigsw.herokuapp.com/data/status/xavier/')
     .then(function (response) {
         return response.json();
     })

@@ -1,11 +1,11 @@
-var ctx = document.getElementById('carstatus').getContext('2d');
+var mel = document.getElementById('melstatus').getContext('2d');
 
-fetch('https://apigsw.herokuapp.com/data/status/carvalho/')
+fetch('https://apigsw.herokuapp.com/data/status/melo/')
     .then(function (response) {
         return response.json();
     })
     .then(function (dados) {
-    var chart = new Chart(ctx, {
+    var chart = new Chart(mel, {
         type: 'horizontalBar',
         data: {
 

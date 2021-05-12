@@ -7,32 +7,22 @@ fetch('https://apigsw.herokuapp.com/data/task/batista/')
     .then(function (dados) {
         console.log(dados)
         var chart = new Chart(albtask, {
-            type: 'horizontalBar',
+            type: 'doughnut',
             data: {
 
-                labels: ['Aberta', 'Fechada'],
+                labels: ['Fechada', 'Aberta'],
                 datasets: [{
                     label: 'Tasks',
                     backgroundColor: [
-                        'rgba(28, 200, 138)',
-                        'rgba(231, 74, 59)'
+                        'rgba(231, 74, 59)',
+                        'rgba(28, 200, 138)'
                     ],
                     borderColor: [
-                        'rgb(28, 200, 138)',
-                        'rgb(231, 74, 59)'
+                        'rgba(231, 74, 59)',
+                        'rgba(28, 200, 138)'
                     ],
-                    borderWidth: 3,
                     data: [(dados[1][1]), (dados[2][1])],
                 }]
             },
-            options: {
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
         });
     });

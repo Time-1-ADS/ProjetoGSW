@@ -154,22 +154,13 @@ h1{
 }
 .block2-1{
     width: 100%;
-    height: 177.5px;
+    height: 100%;
     background: #F8F9FC;
     border-radius: 15px;
     box-shadow: 2px 2px 2px #c7c8ce;
-}
-.block2-2{
-    width: 100%;
-    height: 177.5px;
-    background: #F8F9FC;
-    border-radius: 15px;
-    margin-top: 45px;
-    box-shadow: 2px 2px 2px #c7c8ce;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .block3{
     background: #F8F9FC;

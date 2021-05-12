@@ -1,11 +1,11 @@
-var ctx = document.getElementById('coscstatus').getContext('2d');
+var cosc = document.getElementById('coscstatus').getContext('2d');
 
 fetch('https://apigsw.herokuapp.com/data/status/costacomercio/')
     .then(function (response) {
         return response.json();
     })
     .then(function (dados) {
-    var chart = new Chart(ctx, {
+    var chart = new Chart(cosc, {
         type: 'horizontalBar',
         data: {
 

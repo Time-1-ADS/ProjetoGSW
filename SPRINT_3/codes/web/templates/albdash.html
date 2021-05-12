@@ -92,7 +92,26 @@
 							<div class="cardscontent">
 								<div class="card-align">
 									<p class="text-center"><b>HORAS DE PROJETO</b></p>
-									<div class="div-text"><b class="card-number-size">27h02</b></div>
+									<div class="div-text"><b class="card-number-size">
+
+
+											<div class="hora">
+												<script type="text/javascript">
+													fetch('https://apigsw.herokuapp.com/data/horas/albuquerque/')
+															.then(function (response) {
+																return response.json();
+															})
+															.then(function (dados) {
+																document.innerHTML(dados[1]);
+															});
+												</script>
+
+												<body onload="tempo()">
+													<div id="txt"></div>
+											</div>
+
+
+										</b></div>
 									<div class="div-text">Início 14h20 - 10/07/2021</div>
 								</div>
 							</div>
@@ -162,9 +181,8 @@
 			</div>
 		</div>
 	</div>
-
-<script src="../static/js/albtask.js"></script> 
-<script src="../static/js/albstatus.js"></script> 
+	<script src="../static/js/albtask.js"></script>
+	<script src="../static/js/albstatus.js"></script>
 </body>
 
 </html>
