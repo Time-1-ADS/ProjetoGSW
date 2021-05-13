@@ -21,6 +21,7 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    overflow: hidden;
 }
 h1{
     color: #F8F9FC;
@@ -28,48 +29,22 @@ h1{
     font-size: 35px;
 }
 .container-top {
-    height: 300px;
+    height: 770px;
     background: #25408F;
 }
 
-.nav{
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-    justify-content: center;
-}
-
 .bvoltar{
-    background: #F6C23E;
-    border-radius: 5px;
-    border: 0px;
-    width: 45px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    position: absolute;
-    box-shadow: 2px 2px 2px #022f58;
-}
-
-
-.cardscontent{
-    width: 250px;
-    height: 50px;
-    background: #0981EF;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px #022f58;
-}
-
-
-.container-2{
-    width: 100%;
-    height: 467px;
     background: #ECEDF3;
+    border-radius: 20px;
+    border: 0px;
+    width: 80px;
+    height: 25px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items:flex-end;
+    justify-content:space-between;
+    box-shadow: 2px 2px 2px #022f58;
 }
+
 .block1{
     background: #F8F9FC;
     border-radius: 15px;
@@ -77,14 +52,6 @@ h1{
     justify-content: center;
     min-height: 480px;
     max-height: 480px;
-}
-
-.quadrado{
-   /* background-color: #F6C23E;*/
-    width: 250px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .titulos{
@@ -97,15 +64,28 @@ h1{
     font-size: 28px;
 }
 
-
-.quad{
-    /*background-color: blue;*/
-    width: 90%;
-    height: 98%;
+.titulos2{
     display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background: #1CC88A;
+    border-radius: 25px;
+    color: white;
+    font-size: 28px;
 }
+
+.titulos3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E74A3B;
+    border-radius: 25px;
+    color: white;
+    font-size: 28px;
+}
+
+
+
 
 .estilo{
     font-family: Arial, Helvetica, sans-serif;
@@ -159,6 +139,34 @@ h1{
 									   color-stop(0.72, rgb(73,125,189)),
 									   color-stop(0.86, rgb(28,58,148)));
 }
+
+
+.search_icon{
+    color: #010308;
+    display: flex;
+}
+
+.search-input {
+    border-radius: 50px !important;
+}
+
+
+.form-outline{
+    display: flex;
+    border-radius: 12.5px;
+    background: #ECEDF3;
+    box-shadow: 2px 2px 2px #022f58;
+}
+
+.form-control{
+    border-radius: 12.5px;
+    border: 0px;
+    height: 25px;
+    width: 210px;
+    margin-left: 20px;
+    background: #ECEDF3;
+}
+
 
 
 
