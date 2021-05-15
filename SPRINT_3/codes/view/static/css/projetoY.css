@@ -18,7 +18,7 @@ Vermelho Suave = #E74A3B
 
 
 body{
-    background: #ECEDF3;
+    background: #25408F;
     margin: 0px;
     display: flex;
     align-items: flex-start;
@@ -206,7 +206,7 @@ h1{
 
 
 /* Gráficos */
-canvas { background-color : #eee; }
+canvas { background-color : ; }
 
 .graphic-pie{
 	padding-top:10%;
@@ -215,7 +215,7 @@ canvas { background-color : #eee; }
 }
 
 .graphic-bar{
-	padding-top:15%;
+	padding-top:1%;
 	padding-left:1%;
 	padding-right:1%;
 }
