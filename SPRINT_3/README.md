@@ -39,7 +39,7 @@ Tela de Colaboradores             |  Tela de Horas
 
 <h3 align="center">Front-end (código)</h3>
 
-<h1 align="center"> <img src = "/Imagens Geral/gifinicial.gif"/></h1>
+<h1 align="center"> <img src = "/Imagens Geral/gifgeral.gif"/></h1>
 
 <br>
 
@@ -47,7 +47,7 @@ Tela de Colaboradores             |  Tela de Horas
 
 <h3 align="center">Front-end (código)</h3>
 
-<h1 align="center"> <img src = "/Imagens Geral/gifgeral.gif"/></h1>
+<h1 align="center"> <img src = "/Imagens Geral/gifinicial.gif"/></h1>
 
 <br>
 
