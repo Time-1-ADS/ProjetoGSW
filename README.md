@@ -65,18 +65,18 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
  - [x]  Quantidade de horas por projeto;
  - [x]  Ranking de quantidades de horas por pessoa.<br><br>
 
-**:link: Clique no link abaixo para visualizar as *Tabelas no Banco de Dados*:** 
-> [Acessando Dados PostgreSQL](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/gifcodigos.gif)
+**:link: Clique no link abaixo para visualizar os links das *API'S no Heroku*:** 
+> [API Heroku](https://apigsw.herokuapp.com/)
 
 <br>
 
 **:link: Clique no link abaixo para visualizar o *Wireframe no Figma*:** 
-> [Figma Atualizado](https://www.figma.com/proto/Lt2vtG0fxj7RqIF3SUGmc9/GSW-Dashboard?node-id=89%3A1&scaling=scale-down-width&page-id=0%3A1)
+> [Figma Atualizado](https://www.figma.com/proto/Lt2vtG0fxj7RqIF3SUGmc9/GSW-Dashboard?node-id=368%3A620&scaling=scale-down-width&page-id=0%3A1)
 
 <br>
 
-**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da segunda sprint.** 
-> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto2.png)
+**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da terceira sprint.** 
+> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/product_backlog3.png)
 
 <br>
 
@@ -108,9 +108,9 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2)):  Concluído ☑️ 
 
-🔖 SPRINT 3 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_3)):  Em Andamento 🕗 
+🔖 SPRINT 3 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_3)):  Concluído ☑️  
 
-🔖 SPRINT 4: Em Construção 🚧
+🔖 SPRINT 4: Em Andamento 🕗
 
 <br>
 
@@ -144,7 +144,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 
 ## :dart: Backlog das Sprints
 
-<h1 align="center"> <img src = "/Imagens Geral/backlog_sprint2.png" /></h1>
+<h1 align="center"> <img src = "/Imagens Geral/backlog_sprint3.png" /></h1>
 
 <br>
 
