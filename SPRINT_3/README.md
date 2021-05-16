@@ -23,7 +23,7 @@ Tela de Colaboradores             |  Tela de Horas
 :-------------------------:|:-------------------------:
 ![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/tela4.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/tela5.png)
 
-#### 🔗 [Visualizar *Link do Figma* atualizado](https://www.figma.com/proto/Lt2vtG0fxj7RqIF3SUGmc9/GSW-Dashboard?node-id=89%3A1&scaling=scale-down-width&page-id=0%3A1)
+#### 🔗 [Visualizar *Link do Figma* atualizado](https://www.figma.com/proto/Lt2vtG0fxj7RqIF3SUGmc9/GSW-Dashboard?node-id=368%3A620&scaling=scale-down-width&page-id=0%3A1)
 
 <br>
 
@@ -69,7 +69,7 @@ Tela de Colaboradores             |  Tela de Horas
 
 ## :computer: API Heroku
 **Após o feedback do cliente, inserimos os links das API's no Heroku:**
-### :space_invader: [Clique aqui para acessar](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/data)
+### :space_invader: [Clique aqui para acessar](https://apigsw.herokuapp.com/)
 
 <br>
 
