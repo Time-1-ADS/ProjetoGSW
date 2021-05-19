@@ -1,0 +1,25 @@
+/codes:
+|-- __init__.py 
+|-- /geral
+|       |-- __init__.py
+|       |-- view.py
+|       |-- /templates
+|       |   |-- file.html
+|       |-- /static
+|       |   |-- /css
+|       |   |   |-- file.css
+|       |   |-- /js
+|       |   |   |-- file.js
+|-- /projetos
+|       |-- __init__.py
+|       |-- view.py
+|       |-- model.py
+|       |-- /templates
+|       |   |-- file.html
+|       |-- /static
+|       |   |-- /css
+|       |   |   |-- file.css
+|       |   |-- /js
+|       |   |   |-- file.js    
+|-- run.py
+
