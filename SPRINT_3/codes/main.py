@@ -3,18 +3,8 @@ import os
 
 app = Flask(__name__)
 
-
-
-
-
-
-
-
-
-
-
-
 #TODO modularizar
+
 # @app.route('/')
 # def home():
 #     return render_template('index.html')
