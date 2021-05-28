@@ -1,0 +1,51 @@
+body{
+    background: #25408F;
+}
+.projeto{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: var(--bs-font-sans-serif);
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+}
+.top-card-text{
+    font-size: 44px;
+    font-weight: bolder;
+    font-family: var(--bs-font-sans-serif);
+}
+.card-body{
+    padding: 16px 0px 0px 0px;
+}
+.space{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.pd{
+    padding-bottom: 30px;
+}
+.btn-outline-success {
+    background: #ffc107;
+    color: black;
+    border-color: #ffc107;
+}
+.btn-outline-success:hover{
+    background: #ffbf00;
+}
+.around{
+    display: flex;
+    justify-content: space-around;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    border-radius: 20px;
+  }
