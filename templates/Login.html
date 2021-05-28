@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Geral</title>
-    <link href="../static/css/login.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard Geral</title>
+        <link href="../static/css/login.css" rel="stylesheet">
+    </head>
 
-<body>
-    <div class="container">
-        <div class="nav">
-            <div class="dash_title">
-                <h1>GSW</h1>
-                <p>Dashboard</p>
-            </div>
-            <div class="Imagem">
-                <img src="/Imagens Geral/login.png">
-            </div>
-            <form class="login100-form validate-form">
-                <span class="login100-form-title">
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="dash_title">
+                    <h1>GSW</h1>
+                    <p>Dashboard</p>
+                </div>
+                <div class="Imagem">
+                    <img src="/Imagens Geral/login.png">
+                </div>
+                <form class="login100-form validate-form" method="POST" action="/login">
+                    <span class="login100-form-title">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">
                             Faça Login aqui!
                         </font>
                     </font>
-                </span>
+                </span> {% with messages = get_flashed_messages() %} {% if messages %}
+                    <div class="notification is-danger">
+                        {{ messages[0] }}
+                    </div>
+                    {% endif %} {% endwith %}
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email" placeholder="Digite seu E-mail">
+                        <span class="focus-input100"></span>
+                    </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="Digite seu E-mail">
-                    <span class="focus-input100"></span>
-                </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="pass" placeholder="Digite sua Senha">
+                        <span class="focus-input100"></span>
+                    </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Digite sua Senha">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">
                                 Acessar
                             </font>
                         </font>
                     </button>
-                </div>
-            </form>
+                    </div>
+                </form>
 
+            </div>
         </div>
-    </div>
-    </div>
-</body>
+        </div>
+    </body>
 
 </html>
