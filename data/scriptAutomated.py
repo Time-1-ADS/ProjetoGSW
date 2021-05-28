@@ -6,8 +6,8 @@ from unidecode import unidecode
 
 # Abrindo o arquivo.
 
-trello_json_file = open(file='trello.json')
-jira_json_file = open(file='jira.json')
+trello_json_file = open(file='trello.json', encoding='utf-8')
+jira_json_file = open(file='jira.json', encoding='utf-8')
 
 # Lendo o arquivo como Json.
 
@@ -20,7 +20,6 @@ jira_data = json.load(jira_json_file)
 trello_json_file.close()
 jira_json_file.close()
 
-
 # CONVERTENDO
 
 data_list = []
@@ -32,16 +31,16 @@ for item in trello_data:
     trello_details["status"] = item["status"]
     trello_details["usuario_id"] = item["user"]["_id"]
     trello_details["usuario_avatar"] = item["user"]["avatar"]
-    trello_details["usuario_first_name"] = item["user"]["userName"]
-    trello_details["usuario_last_name"] = item["user"]["userLastName"]
+    trello_details["usuario_first_name"] = unidecode(item["user"]["userName"])
+    trello_details["usuario_last_name"] = unidecode(item["user"]["userLastName"])
     trello_details["usuario_email"] = item["user"]["userEmail"]
     trello_details["amounthours"] = item["hours"]
     if item["hours"] == None:
         trello_details["amounthours"] = 0
     trello_details["startedat"] = item["startedAt"]
     trello_details["finished"] = item["isFinished"]
-    trello_details["project"] = item["project"]
-    trello_details["carddescription"] = item["cardDescription"]
+    trello_details["project"] = unidecode(item["project"])
+    trello_details["carddescription"] = unidecode(item["cardDescription"])
     trello_details["gitmetadata_branch"] = item["gitMetadata"]["branch"]
     trello_details["gitmetadata_hash"] = item["gitMetadata"]["hash"]
     data_list.append(trello_details)
@@ -67,6 +66,7 @@ for item in jira_data:
     jira_details["gitmetadata_branch"] = item["gitMetadata"]["branch"]
     jira_details["gitmetadata_hash"] = item["gitMetadata"]["hash"]
     data_list.append(jira_details)
+
 
 
 # Criando arquivo
