@@ -1,1 +1,1 @@
-[["Status", "Quantidade"], ["DONE", 4], ["FOR_TEST", 5], ["IN_PROGRESS", 17], ["RELEASE_TO_PROD", 7], ["PROD_DEPLOYING", 7], ["QA_DEPLOYING", 5], ["QA_TESTING", 11]]
+[["Status", "Quantidade"], ["DONE", 10], ["FOR_TEST", 13], ["IN_PROGRESS", 40], ["RELEASE_TO_PROD", 11], ["PROD_DEPLOYING", 19], ["QA_DEPLOYING", 9], ["QA_TESTING", 18]]

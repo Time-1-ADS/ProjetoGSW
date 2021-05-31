@@ -4,6 +4,15 @@ from psycopg2 import connect
 from psycopg2.extras import Json
 from unidecode import unidecode
 
+
+def truncate(f, n):
+    '''Truncates/pads a float f to n decimal places without rounding'''
+    s = '{}'.format(f)
+    if 'e' in s or 'E' in s:
+        return '{0:.{1}f}'.format(f, n)
+    i, p, d = s.partition('.')
+    return '.'.join([i, (d+'0'*n)[:n]])
+
 # Abrindo o arquivo.
 
 trello_json_file = open(file='trello.json', encoding='utf-8')
@@ -53,16 +62,16 @@ for item in jira_data:
     jira_details["status"] = item["status"]
     jira_details["usuario_id"] = item["user"]["id"]
     jira_details["usuario_avatar"] = item["user"]["avatar"]
-    jira_details["usuario_first_name"] = item["user"]["first_name"]
-    jira_details["usuario_last_name"] = item["user"]["last_name"]
+    jira_details["usuario_first_name"] = unidecode(item["user"]["first_name"])
+    jira_details["usuario_last_name"] = unidecode(item["user"]["last_name"])
     jira_details["usuario_email"] = item["user"]["email"]
     jira_details["amounthours"] = item["amountHours"]
     if item["amountHours"] == None:
         jira_details["amounthours"] = 0
     jira_details["startedat"] = item["startedAt"]
     jira_details["finished"] = item["finished"]
-    jira_details["project"] = item["project"]
-    jira_details["carddescription"] = item["cardDescription"]
+    jira_details["project"] = unidecode(item["project"])
+    jira_details["carddescription"] = unidecode(item["cardDescription"])
     jira_details["gitmetadata_branch"] = item["gitMetadata"]["branch"]
     jira_details["gitmetadata_hash"] = item["gitMetadata"]["hash"]
     data_list.append(jira_details)
@@ -483,6 +492,10 @@ while(z < pcl):
             n = n + 1
 
     # Armazenando a soma de horas do projeto
+
+
+    k = truncate(k, 2)
+    # k = "%.2f" % k
     x = f"{k}"
     y = float(x)
     hp.extend([pj[z], y])
