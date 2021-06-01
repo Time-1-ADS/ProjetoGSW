@@ -541,6 +541,7 @@ with open(f'./sum-horas/horastotal.json', 'w') as f:
 print("Soma total das horas criado\n")
 
 #Tirando a média de horas por projeto.
+hp = []
 z = 0
 m = 0
 v = 0
@@ -611,72 +612,227 @@ with open(f'./media-sum-horas/media_horas_total.json', 'w') as f:
 
 print("Media do total das horas criado\n")
 
+# criando uma lista com apenas os dados que vão ser utilizados para os códigos relacionados a colaboradores.
+colab_list = []
+for item in data_list:
+    cb_details = {"usuario_first_name": None, "usuario_last_name": None, "usuario_email": None,
+                  "usuario_avatar": None, "usuario_id": None, "amounthours": None, "finished": None, }
+    cb_details["usuario_first_name"] = item["usuario_first_name"]
+    cb_details["usuario_last_name"] = item["usuario_last_name"]
+    cb_details["usuario_email"] = item["usuario_email"]
+    cb_details["usuario_avatar"] = item["usuario_avatar"]
+    cb_details["usuario_id"] = item["usuario_id"]
+    cb_details["amounthours"] = item["amounthours"]
+    cb_details["finished"] = item["finished"]
+    if item["finished"] == True:
+        cb_details["finished"] = 1
+    else:
+        cb_details["finished"] = 0
+
+    colab_list.append(cb_details)
+
+
+# criando uma lista para colocar os id's dos usuários
+colab = []
+
+j = 0
+
+# tirando id's repitidos utilizando a função remove_repetidos
+tt = len(data_list)
+ii = 0
+while j < tt:
+    txto = [data_list[j]["usuario_id"]]
+    for projeto in txto:
+        colab.append(projeto)
+        j = j + 1
+
+colab = remove_repetidos(colab)
+# pcll é a variável onde contém a quantidade de colaboradores
+pcll = len(colab)
+
+
+# Dados dos colaboradores + tasks abertas e fechadas
+z = 0
+m = 0
+v = 0
+n = 0
+h = 0
+t = 0
+lt = []
+while(z < pcll):
+    k = 0
+    if colab[z] in hp:
+        z = z + 1
+
+    while(n < l):
+        if colab[z] == colab_list[n]['usuario_id']:
+            # armazenando dados em variáveis
+            cuf = colab_list[n]['usuario_first_name']
+            cul = colab_list[n]['usuario_last_name']
+            cue = colab_list[n]['usuario_email']
+            cua = colab_list[n]['usuario_avatar']
+            # calculando a quantidade de tasks abertas e fechadas
+            if(colab_list[n]['finished'] == 1):
+                # h = task aberta
+                h = h + 1
+            else:
+                # t = task fechada
+                t = t + 1
+            n = n + 1
+
+        else:
+            n = n + 1
+
+    # Colocando os dados na lista lt.
+    fn = str(cul)
+    inf = str(cuf)
+    lt.extend([
+        # colab[z] é a lista onde contém os id's dos usuários
+        colab[z],
+        cuf,
+        cul,
+        cue,
+        cua,
+        h,
+        t,
+    ])
+    # Criação do arquivo json de cada colaborador
+    with open(f'./tasks-por-colaborador/{inf}_{fn}.json', 'w') as f:
+        json.dump(lt, f, ensure_ascii=False)
+    n = 1
+    z = z + 1
+    h = 0
+    t = 0
+    # limpando a lista
+    lt = []
+
+print("Tasks abertas e fechadas por colaborador criado\n")
+
+
+# Horas mensal e anual por colaborador
+z = 0
+v = 0
+n = 0
+h = 0
+t = 0
+lt = []
+while(z < pcll):
+    k = 0
+    if colab[z] in hp:
+        z = z + 1
+
+    while(n < l):
+        if colab[z] == colab_list[n]['usuario_id']:
+            # armazenando dados em variáveis
+            cuf = colab_list[n]['usuario_first_name']
+            cul = colab_list[n]['usuario_last_name']
+            cua = colab_list[n]['usuario_avatar']
+            # calculando a quantidade de tasks abertas e fechadas
+            k = k + colab_list[n]['amounthours']
+            n = n + 1
+
+        else:
+            n = n + 1
+
+    # Convertendo o valor de k para float
+    x = f"{k:.0f}"
+    # Y será horás anual.
+    y = int(x)
+    # Calculando horas mensal.
+    m = y / 12
+    mm = f"{m:.0f}"
+    mmm = int(mm)
+
+    # Colocando os dados na lista lt.
+    fn = str(cul)
+    inf = str(cuf)
+    lt.extend([
+        # colab[z] é a lista onde contém os id's dos usuários
+        colab[z],
+        cuf,
+        cul,
+        cua,
+        mmm,
+        y,
+    ])
+    # Criação do arquivo json de cada colaborador
+    with open(f'./horas-por-colaborador/{inf}_{fn}.json', 'w') as f:
+        json.dump(lt, f, ensure_ascii=False)
+    n = 1
+    z = z + 1
+    h = 0
+    t = 0
+    # limpando a lista
+    lt = []
+
+print("Horas por ano e horas por mês por colaborador criado\n")
+
 
 # Inserindo no database
 
-with open('dadosFormatados.json') as json_data:
-    record_list = json.load(json_data)
+# with open('dadosFormatados.json') as json_data:
+#     record_list = json.load(json_data)
 
-if type(record_list) == list:
-    first_record = record_list[0]
+# if type(record_list) == list:
+#     first_record = record_list[0]
 
-    columns = list(first_record.keys())
-    # print("\ncolumn names:", columns)
+#     columns = list(first_record.keys())
+#     # print("\ncolumn names:", columns)
 
-columns = [list(x.keys()) for x in record_list][0]
+# columns = [list(x.keys()) for x in record_list][0]
 
-table_name = "projetos"
-sql_string = 'INSERT INTO {}'.format(table_name)
-sql_string += "("+', '.join(columns)+")\nVALUES "
-
-
-for i, record_dict in enumerate(record_list):
-
-    values = []
-    for col_name, val in record_dict.items():
-
-        if type(val) == str:
-            val = val.replace("'", "''")
-            val = "'" + val + "'"
-
-        values += [str(val)]
-    sql_string += "(" + ','.join(values) + "),\n"
-
-sql_string = sql_string[:-2] + ";"
+# table_name = "projetos"
+# sql_string = 'INSERT INTO {}'.format(table_name)
+# sql_string += "("+', '.join(columns)+")\nVALUES "
 
 
-try:
+# for i, record_dict in enumerate(record_list):
 
-    conn = connect(
-        dbname="dashboard",
-        user="admin3",
-        host="127.0.0.1",
-        password="admin321",
+#     values = []
+#     for col_name, val in record_dict.items():
 
-        connect_timeout=3
-    )
+#         if type(val) == str:
+#             val = val.replace("'", "''")
+#             val = "'" + val + "'"
 
-    cur = conn.cursor()
-    # print("\ncreated cursor object: ", cur)
+#         values += [str(val)]
+#     sql_string += "(" + ','.join(values) + "),\n"
 
-
-except(Exception, Error) as err:
-    print(f"psycopg2 connect error: {err}\n")
-    conn = None
-    cur = None
+# sql_string = sql_string[:-2] + ";"
 
 
-if cur != None:
+# try:
 
-    try:
-        cur.execute(sql_string)
-        conn.commit()
+#     conn = connect(
+#         dbname="dashboard",
+#         user="admin3",
+#         host="127.0.0.1",
+#         password="admin321",
 
-        print('INSERT finalizado dentro de projetos\n')
+#         connect_timeout=3
+#     )
 
-    except (Exception, Error) as error:
-        print(f"execute_sql() error: {error}\n")
-        conn.rollback()
+#     cur = conn.cursor()
+#     # print("\ncreated cursor object: ", cur)
 
-    cur.close()
-    conn.close()
+
+# except(Exception, Error) as err:
+#     print(f"psycopg2 connect error: {err}\n")
+#     conn = None
+#     cur = None
+
+
+# if cur != None:
+
+#     try:
+#         cur.execute(sql_string)
+#         conn.commit()
+
+#         print('INSERT finalizado dentro de projetos\n')
+
+#     except (Exception, Error) as error:
+#         print(f"execute_sql() error: {error}\n")
+#         conn.rollback()
+
+#     cur.close()
+#     conn.close()
