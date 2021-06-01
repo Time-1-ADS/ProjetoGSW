@@ -55,7 +55,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto para análise do
 
 <h1 align="center"> <img src = "/Imagens Geral/apisprint2.gif"/></h1>
 
-#### 🔗 Para visualizar os códigos da segunda sprint, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2/codes).
+#### 🔗 Para visualizar os códigos da segunda sprint, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_2/codes).
 
 <br>
 
@@ -69,5 +69,5 @@ Para essa sprint, focamos em desenvolver o front-end do projeto para análise do
 
 <img src = "/Imagens Geral/backlogproduto2.png" width="800" height="1300"/></h1>
 
-#### 🔗 [Visualizar *product backlog* da segunda sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto2.png)
+#### 🔗 [Visualizar *product backlog* da segunda sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/backlogproduto2.png)
 

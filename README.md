@@ -1,4 +1,4 @@
- <h5 align="center"> <img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/Fatec_logo.png" width="20" height="20" /> Projeto Integrador - Equipe 1 | Turma A </h5>
+ <h5 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/Fatec_logo.png" width="20" height="20" /> Projeto Integrador - Equipe 1 | Turma A </h5>
 
 <br>
 
@@ -36,11 +36,11 @@
 <br>
 
 ## :pencil2: O Projeto
-> Status do Projeto: <img src = "/Imagens Geral/barra1.png" width="90" height="20" />
+> Status do Projeto: <img src = "/Imagens Geral/barra2.png" width="90" height="20" />
 
 O objetivo desse projeto é criar um Dashboard que exibirá os status e acompanhamentos dos Projetos, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente, a empresa GSW Soluções Integradas. Foi solicitado o desenvolvimento de um Dashboard para a diretoria visualizar o andamento e analisar os projetos da mesma.
 
-#### 🔗 Para mais informações, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)
+#### 🔗 Para mais informações, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_1)
 
 <br>
 
@@ -76,7 +76,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <br>
 
 **:link: Clique no link abaixo para visualizar o *Backlog do Produto* da terceira sprint.** 
-> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/product_backlog3.png)
+> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/product_backlog3.png)
 
 <br>
 
@@ -84,15 +84,15 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <img align="right" width="400" height="250" src="/Imagens Geral/planejamemtpimg.png">
 
-- [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Apresenta%C3%A7%C3%A3o%20Kickoff.pdf) - 28/02/2021 a 06/03/2021
+- [x] [Kickoff](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/SPRINT_1/Apresenta%C3%A7%C3%A3o%20Kickoff.pdf) - 28/02/2021 a 06/03/2021
 
-- [x] [SPRINT 1](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1) - 08/03/2021 a 28/03/2021
+- [x] [SPRINT 1](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_1) - 08/03/2021 a 28/03/2021
 
-- [x] [SPRINT 2](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2) - 29/03/2021 a 18/04/2021
+- [x] [SPRINT 2](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_2) - 29/03/2021 a 18/04/2021
 
-- [x] [SPRINT 3](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_3) - 26/04/2021 a 16/05/2021
+- [x] [SPRINT 3](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_3) - 26/04/2021 a 16/05/2021
 
-- [x] [SPRINT 4](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_4) - 17/05/2021 a 05/06/2021
+- [x] [SPRINT 4](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_4) - 17/05/2021 a 05/06/2021
 
 - [ ] Apresentação Final - 07/06/2021 a 11/06/2021
 
@@ -104,13 +104,13 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <img align="right" width="200" height="180" src="/Imagens Geral/sprintsimg.png">
 
-🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_1)):  Concluído ☑️ 
+🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_1)):  Concluído ☑️ 
 
-🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_2)):  Concluído ☑️ 
+🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_2)):  Concluído ☑️ 
 
-🔖 SPRINT 3 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_3)):  Concluído ☑️  
+🔖 SPRINT 3 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_3)):  Concluído ☑️  
 
-🔖 SPRINT 4 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/SPRINT_4)):  Em Andamento 🕗
+🔖 SPRINT 4 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_4)):  Em Andamento 🕗
 
 <br>
 
@@ -138,7 +138,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :page_facing_up: Licença MIT
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/LICENSE.md) para mais detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/LICENSE.md) para mais detalhes.
 
 <br>
 
@@ -153,7 +153,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 |Nome|Função|LinkedIn|GitHub|Avatar|
 | -------- |-------- |-------- |-------- |-------- |
 |**Bryan Ribeiro**|Scrum Master|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://linkedin.com/in/bryanrribeiro/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/BryanRibeiro)|<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQEqjHK3s2KQ9g/profile-displayphoto-shrink_800_800/0/1614391630089?e=1626912000&v=beta&t=7Wk-nGEpy8Ug3IaCBaw4LwKh4nCq6Z3LD7BtgxuiOcM" height="50"/>|
-|**Danilo Pires**|Product Owner|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />]()|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/Danilo2010)|<img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/main/Imagens%20Geral/fotodanilo.jpeg" height="50"/>|
+|**Danilo Pires**|Product Owner|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />]()|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/Danilo2010)|<img src = "https://raw.githubusercontent.com/Time-1-ADS/ProjetoGSW/sprints/Imagens%20Geral/fotodanilo.jpeg" height="50"/>|
 |**Lucas César**|Desenvolvedor 1|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/lucas-cesar-2020k/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/LucasACES)|<img src = "https://avatars.githubusercontent.com/u/66032756?s=400&u=031b12f3adce22b79bad8791b1a30a7ead840cea&v=4" height="50"/>|
 |**Marcus Rocha**|Desenvolvedor 2|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/marcus-vin%C3%ADcius-augusto-rocha-568bb8192/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/mvarocha)|<img src = "https://avatars.githubusercontent.com/u/71012953?s=460&u=28b8bad2bb28aefe147fe3ba39de5af03ed62e43&v=4" height="50"/>|
 |**Jeferson Henrique**|Desenvolvedor 3|[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/jeferson-silva-249884149/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/JefersonHenrique)|<img src = "https://avatars.githubusercontent.com/u/71130553?s=460&u=3f2eb7fb8915bfb53bf3393d2af1cec1139dc770&v=4" height="50"/>|
