@@ -17,11 +17,11 @@ Para essa sprint, focamos em integrar os gráficos do frontend com o back e exp�
 
 Tela Inicial             |  Tela de Projeto
 :-------------------------:|:-------------------------:
-![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/tela2.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/tela3.png)
+![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela2.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela3.png)
 
 Tela de Colaboradores             |  Tela de Horas
 :-------------------------:|:-------------------------:
-![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/tela4.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/tela5.png)
+![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela4.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela5.png)
 
 #### 🔗 [Visualizar *Link do Figma* atualizado](https://www.figma.com/proto/Lt2vtG0fxj7RqIF3SUGmc9/GSW-Dashboard?node-id=368%3A620&scaling=scale-down-width&page-id=0%3A1)
 
@@ -89,7 +89,7 @@ Tela de Colaboradores             |  Tela de Horas
 
 <img src = "/Imagens Geral/product_backlog3.png" width="900" height="1500"/></h1>
 
-#### 🔗 [Visualizar *product backlog* da terceira sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/product_backlog3.png)
+#### 🔗 [Visualizar *product backlog* da terceira sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/product_backlog3.png)
 
-#### 🔗 [Visualizar *sprint backlog* da terceira sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlog_sprint3.png)
+#### 🔗 [Visualizar *sprint backlog* da terceira sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/backlog_sprint3.png)
 
