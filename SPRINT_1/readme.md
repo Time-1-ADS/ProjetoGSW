@@ -72,8 +72,6 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 
 <img src = "/Imagens Geral/backlogproduto1.png" width="1300" height="700"/></h1>
 
-#### 🔗 [Visualizar *product backlog* da primeira sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/main/Imagens%20Geral/backlogproduto1.png)
-
 <br>
 
 ## :sparkles: Wireframe Figma
@@ -96,19 +94,19 @@ Após a conclusão do projeto os seguintes “deliverables” deverão ser produ
 
 ## :clubs: Modelo Conceitual
 
-<img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Modelagem%20de%20dados/modelo_conceitual.png" width="900" height="450"/></h1>
+<img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/SPRINT_1/Modelagem%20de%20dados/modelo_conceitual.png" width="900" height="450"/></h1>
 
 <br>
 
 ## :spades: Modelo Lógico Relacional
 
-<img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/main/SPRINT_1/Modelagem%20de%20dados/modelo_logico.png" width="700" height="500"/></h1>
+<img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/SPRINT_1/Modelagem%20de%20dados/modelo_logico.png" width="700" height="500"/></h1>
 
 <br>
 
 ## :elephant: Dados PostgreSQL
 **O cliente forneceu os dados dos projetos (.json), sendo eles:**
-> :space_invader: [Jira e Trello](https://github.com/Time-1-ADS/ProjetoGSW/tree/main/data)
+> :space_invader: [Jira e Trello](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/data)
 
 <br>
 
