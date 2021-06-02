@@ -7,5 +7,12 @@ $(document).ready(function () {
             .then(function (dados) {
                 $("horasgeral").append(dados);
             });
+        fetch('https://apigsw.herokuapp.com/data/mediahoras/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtgeral").append(dados);
+            });
     });
 });

@@ -80,6 +80,13 @@ $(document).ready(function () {
                     $("colab37").append(dados[1][18]);
                 $("horas19").append(dados[3][18]);
             });
+        fetch('https://apigsw.herokuapp.com/data/mediahoras/albuquerque/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtalb").append(dados[1]);
+            });
     });
 });
 
@@ -164,6 +171,13 @@ $(document).ready(function () {
                 $("colab74").append(dados[0][18]),
                     $("colab75").append(dados[1][18]);
                 $("horas38").append(dados[3][18]);
+            });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/batista/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtbat").append(dados[1]);
             });
     });
 });
@@ -250,6 +264,13 @@ $(document).ready(function () {
                     $("colab113").append(dados[1][18]);
                 $("horas57").append(dados[3][18]);
             });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/carvalho/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtcar").append(dados[1]);
+            });
     });
 });
 
@@ -334,6 +355,13 @@ $(document).ready(function () {
                 $("colab150").append(dados[0][18]),
                     $("colab151").append(dados[1][18]);
                 $("horas76").append(dados[3][18]);
+            });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/costacomercio/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtcosc").append(dados[1]);
             });
     });
 });
@@ -420,6 +448,13 @@ $(document).ready(function () {
                     $("colab189").append(dados[1][18]);
                 $("horas95").append(dados[3][18]);
             });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/costaltda/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtcosl").append(dados[1]);
+            });
     });
 });
 
@@ -504,6 +539,13 @@ $(document).ready(function () {
                 $("colab226").append(dados[0][18]),
                     $("colab227").append(dados[1][18]);
                 $("horas114").append(dados[3][18]);
+            });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/melo/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtmel").append(dados[2]);
             });
     });
 });
@@ -590,6 +632,13 @@ $(document).ready(function () {
                     $("colab265").append(dados[1][18]);
                 $("horas133").append(dados[3][18]);
             });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/pereira/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtper").append(dados[1]);
+            });
     });
 });
 
@@ -674,6 +723,13 @@ $(document).ready(function () {
                 $("colab302").append(dados[0][18]),
                     $("colab303").append(dados[1][18]);
                 $("horas152").append(dados[3][18]);
+            });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/santos/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtsan").append(dados[1]);
             });
     });
 });
@@ -760,6 +816,13 @@ $(document).ready(function () {
                     $("colab341").append(dados[1][18]);
                 $("horas171").append(dados[3][18]);
             });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/souza/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtsou").append(dados[1]);
+            });
     });
 });
 
@@ -844,6 +907,13 @@ $(document).ready(function () {
                 $("colab378").append(dados[0][18]),
                     $("colab379").append(dados[1][18]);
                 $("horas190").append(dados[3][18]);
+            });
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/xavier/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("mtxav").append(dados[1]);
             });
     });
 });
