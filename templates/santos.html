@@ -1,356 +1,358 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Santos</title>
-        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../static/css/projetos.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../static/css/menu.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/projetos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <nav class="navbar navbar-light">
-            <div class="container-fluid">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="/">Geral</a>
-                    <a href="#">Upload</a>
-                    <a href="#">Cadastro</a>
-                    <button class="dropdown-btn">Projetos 
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Geral</a>
+                <a href="#">Upload</a>
+                <a href="#">Cadastro</a>
+                <button class="dropdown-btn">Projetos 
                     <i class="fa fa-caret-down"></i>
                   </button>
-                    <div class="dropdown-container">
-                        <a href="/project/albuquerque">Albuquerque</a>
-                        <a href="/project/batista">Batista</a>
-                        <a href="/project/carvalho">Carvalho</a>
-                        <a href="/project/costacomercio">Costa Comércio</a>
-                        <a href="/project/costaltda">Costa LTDA</a>
-                        <a href="/project/melo">Melo</a>
-                        <a href="/project/pereira">Pereira</a>
-                        <a href="/project/santos">Santos</a>
-                        <a href="/project/souza">Souza</a>
-                        <a href="/project/xavier">Xavier</a>
-                    </div>
-                    <a href="/collaborators">Colaboradores</a>
-                    <script>
-                        var dropdown = document.getElementsByClassName("dropdown-btn");
-                        var i;
-
-                        for (i = 0; i < dropdown.length; i++) {
-                            dropdown[i].addEventListener("click", function() {
-                                this.classList.toggle("active");
-                                var dropdownContent = this.nextElementSibling;
-                                if (dropdownContent.style.display === "block") {
-                                    dropdownContent.style.display = "none";
-                                } else {
-                                    dropdownContent.style.display = "block";
-                                }
-                            });
-                        }
-                    </script>
-                </div>
-
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button" class="btn btn-outline-success"><svg viewBox="0 0 24 24" width="25" height="25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></span>
-
+                  <div class="dropdown-container">
+                    <a href="#">Albuquerque</a>
+                    <a href="#">Batista</a>
+                    <a href="#">Carvalho</a>
+                    <a href="#">Costa Comércio</a>
+                    <a href="#">Costa LTDA</a>
+                    <a href="#">Melo</a>
+                    <a href="#">Pereira</a>
+                    <a href="#">Santos</a>
+                    <a href="#">Souza</a>
+                    <a href="#">Xavier</a>
+                  </div>
+                <a href="#">Colaboradores</a>
                 <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "250px";
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
                     }
-
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                </script>
-                <a class="navbar-brand">
-                    <div class="projeto">
-                        Stand-alone well-modulated policy
-                    </div>
-                </a>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="row space">
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                        <h5 class="top-card-title text-center">Tasks Abertas</h5>
-                        <p class="top-card-text text-center">
-                            <tasan></tasan>
-                        </p>
-                    </div>
+                    </script>
+              </div>
+              
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button" class="btn btn-outline-success"><svg viewBox="0 0 24 24" width="25" height="25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></span>
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+              </script>
+            <a class="navbar-brand">
+                <div class="projeto">
+                    Stand-alone well-modulated policy
                 </div>
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                        <h5 class="top-card-title text-center">Tasks Fechadas</h5>
-                        <p class="top-card-text text-center">
-                            <tfsan></tfsan>
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                        <h5 class="top-card-title text-center">Horas de Projeto</h5>
-                        <p class="top-card-text text-center">
-                            <hsan></hsan>
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                        <h5 class="top-card-title text-center">Tempo Médio das Tasks</h5>
-                        <p class="top-card-text text-center">N</p>
-                    </div>
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row space">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="top-card-title text-center">Tasks Abertas</h5>
+                    <p class="top-card-text text-center">
+                        <tasan></tasan>
+                    </p>
                 </div>
             </div>
-            <div class="row space">
-                <div class="card pd" style="width: 27rem;">
-                    <div class="card-body">
-                        <h5 class="top-card-title text-center">Status</h5>
-                        <div class="grafico">
-                            <canvas id="Status" height="230"></canvas>
-                        </div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="top-card-title text-center">Tasks Fechadas</h5>
+                    <p class="top-card-text text-center">
+                        <tfsan></tfsan>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="top-card-title text-center">Horas de Projeto</h5>
+                    <p class="top-card-text text-center">
+                        <hsan></hsan>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="top-card-title text-center">Tempo Médio das Tasks</h5>
+                    <p class="top-card-text text-center">
+                        <mtsan></mtsan>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row space">
+            <div class="card pd" style="width: 27rem;">
+                <div class="card-body">
+                    <h5 class="top-card-title text-center">Status</h5>
+                    <div class="grafico">
+                        <canvas id="Status" height="230"></canvas>
                     </div>
                 </div>
-                <div class="card pd" style="width: 27rem; height: 400px;">
-                    <h5 class="top-card-title text-center" style="padding-top: 20px;">Colaboradores</h5>
-                    <div class="card-body mt-6 overflow-auto">
-                        <div class="lista">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <colab266></colab266>
-                                    </td>
-                                    <td>
-                                        <colab267></colab267>
-                                    </td>
-                                    <td>
-                                        <horas134></horas134>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab268></colab268>
-                                    </td>
-                                    <td>
-                                        <colab269></colab269>
-                                    </td>
-                                    <td>
-                                        <horas135></horas135>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab270></colab270>
-                                    </td>
-                                    <td>
-                                        <colab271></colab271>
-                                    </td>
-                                    <td>
-                                        <horas136></horas136>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab272></colab272>
-                                    </td>
-                                    <td>
-                                        <colab273></colab273>
-                                    </td>
-                                    <td>
-                                        <horas137></horas137>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab274></colab274>
-                                    </td>
-                                    <td>
-                                        <colab275></colab275>
-                                    </td>
-                                    <td>
-                                        <horas138></horas138>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab276></colab276>
-                                    </td>
-                                    <td>
-                                        <colab277></colab277>
-                                    </td>
-                                    <td>
-                                        <horas139></horas139>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab278></colab278>
-                                    </td>
-                                    <td>
-                                        <colab279></colab279>
-                                    </td>
-                                    <td>
-                                        <horas140></horas140>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab280></colab280>
-                                    </td>
-                                    <td>
-                                        <colab281></colab281>
-                                    </td>
-                                    <td>
-                                        <horas141></horas141>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab282></colab282>
-                                    </td>
-                                    <td>
-                                        <colab283></colab283>
-                                    </td>
-                                    <td>
-                                        <horas142></horas142>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab284></colab284>
-                                    </td>
-                                    <td>
-                                        <colab285></colab285>
-                                    </td>
-                                    <td>
-                                        <horas143></horas143>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab286></colab286>
-                                    </td>
-                                    <td>
-                                        <colab287></colab287>
-                                    </td>
-                                    <td>
-                                        <horas144></horas144>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab288></colab288>
-                                    </td>
-                                    <td>
-                                        <colab289></colab289>
-                                    </td>
-                                    <td>
-                                        <horas145></horas145>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab290></colab290>
-                                    </td>
-                                    <td>
-                                        <colab291></colab291>
-                                    </td>
-                                    <td>
-                                        <horas146></horas146>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab292></colab292>
-                                    </td>
-                                    <td>
-                                        <colab293></colab293>
-                                    </td>
-                                    <td>
-                                        <horas147></horas147>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab294></colab294>
-                                    </td>
-                                    <td>
-                                        <colab295></colab295>
-                                    </td>
-                                    <td>
-                                        <horas148></horas148>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab296></colab296>
-                                    </td>
-                                    <td>
-                                        <colab297></colab297>
-                                    </td>
-                                    <td>
-                                        <horas149></horas149>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab298></colab298>
-                                    </td>
-                                    <td>
-                                        <colab299></colab299>
-                                    </td>
-                                    <td>
-                                        <horas150></horas150>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab300></colab300>
-                                    </td>
-                                    <td>
-                                        <colab301></colab301>
-                                    </td>
-                                    <td>
-                                        <horas151></horas151>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <colab302></colab302>
-                                    </td>
-                                    <td>
-                                        <colab303></colab303>
-                                    </td>
-                                    <td>
-                                        <horas152></horas152>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+            </div>
+            <div class="card pd" style="width: 27rem; height: 400px;">
+                <h5 class="top-card-title text-center" style="padding-top: 20px;">Colaboradores</h5>
+                <div class="card-body mt-6 overflow-auto">
+                    <div class="lista">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <colab266></colab266>
+                                </td>
+                                <td>
+                                    <colab267></colab267>
+                                </td>
+                                <td>
+                                    <horas134></horas134>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab268></colab268>
+                                </td>
+                                <td>
+                                    <colab269></colab269>
+                                </td>
+                                <td>
+                                    <horas135></horas135>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab270></colab270>
+                                </td>
+                                <td>
+                                    <colab271></colab271>
+                                </td>
+                                <td>
+                                    <horas136></horas136>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab272></colab272>
+                                </td>
+                                <td>
+                                    <colab273></colab273>
+                                </td>
+                                <td>
+                                    <horas137></horas137>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab274></colab274>
+                                </td>
+                                <td>
+                                    <colab275></colab275>
+                                </td>
+                                <td>
+                                    <horas138></horas138>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab276></colab276>
+                                </td>
+                                <td>
+                                    <colab277></colab277>
+                                </td>
+                                <td>
+                                    <horas139></horas139>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab278></colab278>
+                                </td>
+                                <td>
+                                    <colab279></colab279>
+                                </td>
+                                <td>
+                                    <horas140></horas140>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab280></colab280>
+                                </td>
+                                <td>
+                                    <colab281></colab281>
+                                </td>
+                                <td>
+                                    <horas141></horas141>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab282></colab282>
+                                </td>
+                                <td>
+                                    <colab283></colab283>
+                                </td>
+                                <td>
+                                    <horas142></horas142>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab284></colab284>
+                                </td>
+                                <td>
+                                    <colab285></colab285>
+                                </td>
+                                <td>
+                                    <horas143></horas143>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab286></colab286>
+                                </td>
+                                <td>
+                                    <colab287></colab287>
+                                </td>
+                                <td>
+                                    <horas144></horas144>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab288></colab288>
+                                </td>
+                                <td>
+                                    <colab289></colab289>
+                                </td>
+                                <td>
+                                    <horas145></horas145>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab290></colab290>
+                                </td>
+                                <td>
+                                    <colab291></colab291>
+                                </td>
+                                <td>
+                                    <horas146></horas146>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab292></colab292>
+                                </td>
+                                <td>
+                                    <colab293></colab293>
+                                </td>
+                                <td>
+                                    <horas147></horas147>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab294></colab294>
+                                </td>
+                                <td>
+                                    <colab295></colab295>
+                                </td>
+                                <td>
+                                    <horas148></horas148>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab296></colab296>
+                                </td>
+                                <td>
+                                    <colab297></colab297>
+                                </td>
+                                <td>
+                                    <horas149></horas149>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab298></colab298>
+                                </td>
+                                <td>
+                                    <colab299></colab299>
+                                </td>
+                                <td>
+                                    <horas150></horas150>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab300></colab300>
+                                </td>
+                                <td>
+                                    <colab301></colab301>
+                                </td>
+                                <td>
+                                    <horas151></horas151>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <colab302></colab302>
+                                </td>
+                                <td>
+                                    <colab303></colab303>
+                                </td>
+                                <td>
+                                    <horas152></horas152>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="card pd" style="width: 27rem;">
-                    <div class="card-body">
-                        <h5 class="top-card-title text-center">Tasks Abertas e Fechadas</h5>
-                        <div class="grafico">
-                            <canvas id="Task" height="230"></canvas>
-                        </div>
+            </div>
+            <div class="card pd" style="width: 27rem;">
+                <div class="card-body">
+                    <h5 class="top-card-title text-center">Tasks Abertas e Fechadas</h5>
+                    <div class="grafico">
+                        <canvas id="Task" height="230"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
-        <script src="../static/js/graficos-projetos/status/santos.js"></script>
-        <script src="../static/js/graficos-projetos/task/santos.js"></script>
-        <script src="../static/js/info-projetos.js"></script>
-    </body>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="../static/js/graficos-projetos/status/santos.js"></script>
+    <script src="../static/js/graficos-projetos/task/santos.js"></script>
+    <script src="../static/js/info-projetos.js"></script>
+</body>
 
 </html>
