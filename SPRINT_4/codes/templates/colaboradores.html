@@ -1,395 +1,901 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard Geral</title>
-        <link href="../static/css/colaboradores.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/colaboradores.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Geral</title>
+    <link href="../static/css/Tasks.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/colaboradores.css') }}">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    </head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <body>
-        <div class="container-fluid container-top">
-            <div class="container">
-                <div class="d-flex flex-row justify-content-between align-items-center mt-5">
-                    <div class="col-3">
-                        <button class="bvoltar dash_title">
-            <div class="voltar">
-              <a href="javascript:history.back()" style="text-decoration: none; color: black">
-              <svg viewBox="0 0 24 24" width="23" height="23" stroke="currentColor" stroke-width="3" fill="none"
-                stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
-              </svg>
-            </div>
-            <span>voltar</span>
-          </button>
-                        </a>
-                    </div>
+    <style>
+        .span-name {
+            font-size: 15px;
+        }
+    </style>
+</head>
 
-                    <div class="col-6 text-center">
-                        <h1>Lista de Colaboradores</h1>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="form-outline">
-                            <div class="search_icon">
-                                <svg viewBox="0 0 24 24" width="25" height="25" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-                            </div>
-                            <input id="search-input" type="search" id="form1" class="form-control search-input" />
-                            <label class="form-label" for="form1"></label>
+<body>
+    <div class="container-fluid container-top">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between align-items-center mt-5">
+                <div class="col-3">
+                    <button class="bvoltar dash_title">
+                        <div class="voltar">
+                            <a href="javascript:history.back()" style="text-decoration: none; color: black">
+                                <svg viewBox="0 0 24 24" width="23" height="23" stroke="currentColor" stroke-width="3"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
                         </div>
-                    </div>
+                        <span class="span-name" id="voltar">voltar</span class="span-name">
+                    </button>
+                    </a>
                 </div>
 
-                <div class="container block1 mt-5 overflow-auto" id="style-8">
-                    <div class="row px-4">
-                        <!-- COLUNA COLABORADORES-->
-                        <div class="col-3 justify-content-around py-4">
-                            <div class="title titulos mt-3">
-                                <h2>Colaboradores</h2>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CONTEUDO -->
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 2</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 4</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 5</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 6</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 7</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 8</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 9</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px" class="me-3 rounded-circle float-right">
-                                        <span>Colaborador 10</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FIM CONTEUDO -->
+                <div class="col-6 text-center">
+                    <h1>Lista de Colaboradores</h1>
+                </div>
+
+                <div class="col-3">
+                    <div class="form-outline">
+                        <div class="search_icon">
+                            <svg viewBox="0 0 24 24" width="25" height="25" stroke="currentColor" stroke-width="3"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
                         </div>
-                        <!-- FIM COLUNA -->
-
-                        <!-- COLUNA EMAIL-->
-
-
-                        <!-- COLUNA  HORA MES-->
-                        <div class="col-3 justify-content-around py-4">
-                            <div class="title titulos mt-3">
-                                <h2>Hora por Mês</h2>
-                            </div>
-                            <!-- CONTEUDO -->
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FIM CONTEUDO -->
-                        </div>
-                        <!-- FIM COLUNA -->
-
-                        <!-- COLUNA HORA ANO-->
-                        <div class="col-3 justify-content-around py-4">
-                            <div class="title titulos mt-3">
-                                <h2>Horas por Ano</h2>
-                            </div>
-                            <!-- CONTEUDO -->
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>00:00h</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FIM CONTEUDO -->
-                        </div>
-                        <!-- FIM COLUNA -->
-
-                        <div class="col-3 justify-content-around py-4">
-                            <div class="title titulos2 mt-3">
-                                <h2>Ranking</h2>
-                            </div>
-                            <!-- CONTEUDO -->
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>1°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>2°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>3°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>4°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>5°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>6°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>7°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>8°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>9°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content my-3">
-                                <div class="section d-flex justify-content-center">
-                                    <div class='section-content'>
-                                        <span>10°</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FIM CONTEUDO -->
-                        </div>
-                        <!-- FIM COLUNA -->
+                        <input id="search-input" type="search" id="form1" class="form-control search-input" />
+                        <label class="form-label" for="form1"></label>
                     </div>
                 </div>
             </div>
-    </body>
+
+            <div class="container block1 mt-5 overflow-auto" id="style-8">
+                <div class="row px-4">
+                    <!-- COLUNA COLABORADORES-->
+                    <div class="col-3 justify-content-around py-4">
+                        <div class="title titulos mt-3">
+                            <h2>Colaboradores</h2>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px"
+                                        class="me-3 rounded-circle float-right">
+                                    <span class="span-name" >
+                                        <colab380></colab380>
+                                        <colab381></colab381>
+                                    </span >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CONTEUDO -->
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px"
+                                        class="me-3 rounded-circle float-right">
+                                    <span class="span-name" >
+                                        <colab385></colab385>
+                                        <colab386></colab386>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px"
+                                        class="me-3 rounded-circle float-right">
+                                    <span class="span-name" >
+                                        <colab390></colab390>
+                                        <colab391></colab391>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" width="30px"
+                                        class="me-3 rounded-circle float-right">
+                                    <span class="span-name" >
+                                        <colab395></colab395>
+                                        <colab396></colab396>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab400></colab400>
+                                        <colab401></colab401>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab405></colab405>
+                                        <colab406></colab406>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab410></colab410>
+                                        <colab411></colab411>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab415></colab415>
+                                        <colab416></colab416>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab420></colab420>
+                                        <colab421></colab421>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab425></colab425>
+                                        <colab426></colab426>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab430></colab430>
+                                        <colab431></colab431>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab435></colab435>
+                                        <colab436></colab436>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab440></colab440>
+                                        <colab441></colab441>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab445></colab445>
+                                        <colab446></colab446>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab450></colab450>
+                                        <colab451></colab451>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab455></colab455>
+                                        <colab456></colab456>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab460></colab460>
+                                        <colab461></colab461>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab465></colab465>
+                                        <colab466></colab466>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab470></colab470>
+                                        <colab471></colab471>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        width="30px" class="me-3 rounded-circle float-right">
+                                    <span class="span-name">
+                                        <colab551></colab551>
+                                        <colab552></colab552>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM CONTEUDO -->
+                    </div>
+                    <!-- FIM COLUNA -->
+
+                    <!-- COLUNA EMAIL-->
+
+
+                    <!-- COLUNA  HORA MES-->
+                    <div class="col-3 justify-content-around py-4">
+                        <div class="title titulos mt-3">
+                            <h2>E-mail</h2>
+                        </div>
+                        <!-- CONTEUDO -->
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab382></colab382>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab387></colab387>
+                                    </span">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab392></colab392>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab397></colab397>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab402></colab402>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab407></colab407>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab412></colab412>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab417></colab417>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab422></colab422>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab427></colab427>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab432></colab432>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab437></colab437>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab442></colab442>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab447></colab447>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab452></colab452>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab457></colab457>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab462></colab462>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab467></colab467>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab472></colab472>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-between">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab553></colab553>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM CONTEUDO -->
+                    </div>
+                    <!-- FIM COLUNA -->
+
+                    <!-- COLUNA HORA ANO-->
+                    <div class="col-3 justify-content-around py-4">
+                        <div class="title titulos2 mt-3">
+                            <h2>Tasks Abertas</h2>
+                        </div>
+                        <!-- CONTEUDO -->
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab383></colab383>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab388></colab388>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab393></colab393>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab398></colab398>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab403></colab403>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab408></colab408>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab413></colab413>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab418></colab418>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab423></colab423>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab428></colab428>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab433></colab433>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab438></colab438>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab443></colab443>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab448></colab448>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab453></colab453>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab458></colab458>
+                                    </span >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab463></colab463>
+                                    </span >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab468></colab468>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab473></colab473>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab554></colab554>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIM CONTEUDO -->
+                    </div>
+                    <!-- FIM COLUNA -->
+
+                    <div class="col-3 justify-content-around py-4">
+                        <div class="title titulos3 mt-3">
+                            <h2>Tasks Fechadas</h2>
+                        </div>
+                        <!-- CONTEUDO -->
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab384></colab384>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab389></colab389>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab394></colab394>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab399></colab399>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab404></colab404>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab409></colab409>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab414></colab414>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab419></colab419>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab424></colab424>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab429></colab429>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab434></colab434>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab439></colab439>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab444></colab444>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab449></colab449>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab454></colab454>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab459></colab459>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab464></colab464>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab469></colab469>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab474></colab474>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content my-3">
+                            <div class="section d-flex justify-content-center">
+                                <div class='section-content'>
+                                    <span class="span-name">
+                                        <colab555></colab555>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM CONTEUDO -->
+                    </div>
+                    <!-- FIM COLUNA -->
+                </div>
+            </div>
+        </div>
+        <script src="../static/js/info-colaboradores.js"></script>
+</body>
 
 </html>
