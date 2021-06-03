@@ -12,7 +12,7 @@ def login():
 
 @auth.route('/signup')
 def signup():
-    return 'signup'
+    return render_template('cadastro.html')
 
 @auth.route('/logout')
 @login_required
