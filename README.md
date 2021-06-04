@@ -32,15 +32,17 @@
 "https://camo.githubusercontent.com/b13ed67c809178963ce9d538175b02649800772be1ce0cb02da5879e5614e236/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f426f6f7473747261702d3536334437433f7374796c653d666f722d7468652d6261646765266c6f676f3d626f6f747374726170266c6f676f436f6c6f723d7768697465" /></a>
 </h4>
 
+<br>
+
+> Status do Projeto: <img src = "/Imagens Geral/barra3.png" width="90" height="20" /> Concluído ☑️
 
 <br>
 
 ## :pencil2: O Projeto
-> Status do Projeto: <img src = "/Imagens Geral/barra2.png" width="90" height="20" />
 
 O objetivo desse projeto é criar um Dashboard que exibirá os status e acompanhamentos dos Projetos, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente, a empresa GSW Soluções Integradas. Foi solicitado o desenvolvimento de um Dashboard para a diretoria visualizar o andamento e analisar os projetos da mesma.
 
-#### 🔗 Para mais informações, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_1)
+#### 🔗 Para mais informações, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW)
 
 <br>
 
@@ -75,8 +77,8 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <br>
 
-**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da terceira sprint.** 
-> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/product_backlog3.png)
+**:link: Clique no link abaixo para visualizar o *Backlog do Produto* da última sprint.** 
+> [Product Backlog](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/product_backlog4.png)
 
 <br>
 
@@ -110,7 +112,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 🔖 SPRINT 3 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_3)):  Concluído ☑️  
 
-🔖 SPRINT 4 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_4)):  Em Andamento 🕗
+🔖 SPRINT 4 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_4)):  Concluído ☑️
 
 <br>
 
@@ -144,7 +146,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 
 ## :dart: Backlog das Sprints
 
-<h1 align="center"> <img src = "/Imagens Geral/backlog_sprint3.png" /></h1>
+<h1 align="center"> <img src = "/Imagens Geral/backlog_sprint4.png" /></h1>
 
 <br>
 
