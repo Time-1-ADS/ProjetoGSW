@@ -5,8 +5,8 @@ from flask_login import login_required
 main = Blueprint('main', __name__)
 
 
-@main.route('/home')
-# @login_required
+@main.route('/')
+@login_required
 def index():
     return render_template('geral.html')
 
@@ -16,7 +16,7 @@ def profile():
     return render_template('Tasks.html')
 
 @main.route('/collaborators')
-# @login_required
+@login_required
 def collaborators():
     return render_template('colaboradores.html')
 
