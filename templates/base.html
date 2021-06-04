@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block tittle %}{% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/geral.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="{{ url_for('main.index') }}">Geral</a>
+                <a href="#">Upload</a>
+                <a href="{{ url_for('auth.signup') }}">Cadastro</a>
+                <button class="dropdown-btn">Projetos 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="/project/albuquerque">Albuquerque</a>
+                    <a href="/project/batista">Batista</a>
+                    <a href="/project/carvalho">Carvalho</a>
+                    <a href="/project/costacomercio">Costa Comércio</a>
+                    <a href="/project/costaltda">Costa LTDA</a>
+                    <a href="/project/melo">Melo</a>
+                    <a href="/project/pereira">Pereira</a>
+                    <a href="/project/santos">Santos</a>
+                    <a href="/project/souza">Souza</a>
+                    <a href="/project/xavier">Xavier</a>
+                  </div>
+                <a href="{{ url_for('main.collaborators') }}">Colaboradores</a>
+                <script>
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                    </script>
+              </div>
+              
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button" class="btn btn-outline-success"><svg viewBox="0 0 24 24" width="25" height="25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></span>
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+              </script>
+            
+            <a class="navbar-brand">
+                <div class="projeto">
+                    {% block titulo %}{% endblock %}
+                </div>
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    {% block conteudo %}{% endblock %}
+</body>

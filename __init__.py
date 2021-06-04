@@ -1,7 +1,13 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 def create_app():
     app = Flask(__name__)
+    
+    app.config['SQLALCHEMY_DATABASE_URI'] = "#"
+    db = SQLAlchemy(app)
+    migrate = Migrate(app, db)
 
     app.config['SECRET_KEY'] = 'secret-key-goes-here'
 
@@ -13,3 +19,4 @@ def create_app():
     app.register_blueprint(main_blueprint)
 
     return app
+
