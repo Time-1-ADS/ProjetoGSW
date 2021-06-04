@@ -76,6 +76,38 @@ for item in jira_data:
     jira_details["gitmetadata_hash"] = item["gitMetadata"]["hash"]
     data_list.append(jira_details)
 
+# Separando dados para as tabelas FUNCIONARIO e PROJETOS
+# FUNCIONARIOS:
+func_list = []
+for item in data_list:
+    sp_details = {"usuario_id": None, "usuario_first_name": None,
+                  "usuario_last_name": None, "usuario_email": None, "usuario_avatar": None, }
+    sp_details["usuario_id"] = item["usuario_id"]
+    sp_details["usuario_first_name"] = item["usuario_first_name"]
+    sp_details["usuario_last_name"] = item["usuario_last_name"]
+    sp_details["usuario_email"] = item["usuario_email"]
+    sp_details["usuario_avatar"] = item["usuario_avatar"]
+    func_list.append(sp_details)
+
+with open('funcionarios.json', 'w') as f:
+    json.dump(func_list, f, ensure_ascii=False)
+
+# PROJETOS:
+proj_list = []
+for item in data_list:
+    spr_details = {"id": None, "status": None, "amounthours": None, "startedat": None, "project": None,
+                   "carddescription": None, "gitmetadata_branch": None, "gitmetadata_hash": None, "finished": None, }
+    spr_details["id"] = item["id"]
+    spr_details["status"] = item["status"]
+    spr_details["amounthours"] = item["amounthours"]
+    spr_details["startedat"] = item["startedat"]
+    spr_details["project"] = item["project"]
+    spr_details["carddescription"] = item["carddescription"]
+    spr_details["startedat"] = item["startedat"]
+    spr_details["gitmetadata_branch"] = item["gitmetadata_branch"]
+    spr_details["gitmetadata_hash"] = item["gitmetadata_hash"]
+    spr_details["finished"] = item["finished"]
+    proj_list.append(spr_details)
 
 
 # Criando arquivo
@@ -767,72 +799,142 @@ while(z < pcll):
 
 print("Horas por ano e horas por mês por colaborador criado\n")
 
+with open('projetos.json', 'w') as f:
+    json.dump(proj_list, f, ensure_ascii=False)
 
-# Inserindo no database
+    # Inserindo projetos no database
 
-# with open('dadosFormatados.json') as json_data:
-#     record_list = json.load(json_data)
+with open('projetos.json') as json_data:
+    record_list = json.load(json_data)
 
-# if type(record_list) == list:
-#     first_record = record_list[0]
+if type(record_list) == list:
+    first_record = record_list[0]
 
-#     columns = list(first_record.keys())
-#     # print("\ncolumn names:", columns)
+    columns = list(first_record.keys())
+    # print("\ncolumn names:", columns)
 
-# columns = [list(x.keys()) for x in record_list][0]
+columns = [list(x.keys()) for x in record_list][0]
 
-# table_name = "projetos"
-# sql_string = 'INSERT INTO {}'.format(table_name)
-# sql_string += "("+', '.join(columns)+")\nVALUES "
-
-
-# for i, record_dict in enumerate(record_list):
-
-#     values = []
-#     for col_name, val in record_dict.items():
-
-#         if type(val) == str:
-#             val = val.replace("'", "''")
-#             val = "'" + val + "'"
-
-#         values += [str(val)]
-#     sql_string += "(" + ','.join(values) + "),\n"
-
-# sql_string = sql_string[:-2] + ";"
+table_name = "projetos"
+sql_string = 'INSERT INTO {}'.format(table_name)
+sql_string += "("+', '.join(columns)+")\nVALUES "
 
 
-# try:
+for i, record_dict in enumerate(record_list):
 
-#     conn = connect(
-#         dbname="dashboard",
-#         user="admin3",
-#         host="127.0.0.1",
-#         password="admin321",
+    values = []
+    for col_name, val in record_dict.items():
 
-#         connect_timeout=3
-#     )
+        if type(val) == str:
+            val = val.replace("'", "''")
+            val = "'" + val + "'"
 
-#     cur = conn.cursor()
-#     # print("\ncreated cursor object: ", cur)
+        values += [str(val)]
+    sql_string += "(" + ','.join(values) + "),\n"
 
-
-# except(Exception, Error) as err:
-#     print(f"psycopg2 connect error: {err}\n")
-#     conn = None
-#     cur = None
+sql_string = sql_string[:-2] + ";"
 
 
-# if cur != None:
+try:
 
-#     try:
-#         cur.execute(sql_string)
-#         conn.commit()
+    conn = connect(
+        dbname="dashboardapi",
+        user="admin3",
+        host="127.0.0.1",
+        password="admin321",
 
-#         print('INSERT finalizado dentro de projetos\n')
+        connect_timeout=3
+    )
 
-#     except (Exception, Error) as error:
-#         print(f"execute_sql() error: {error}\n")
-#         conn.rollback()
+    cur = conn.cursor()
+    # print("\ncreated cursor object: ", cur)
 
-#     cur.close()
-#     conn.close()
+
+except(Exception, Error) as err:
+    print(f"psycopg2 connect error: {err}\n")
+    conn = None
+    cur = None
+
+
+if cur != None:
+
+    try:
+        cur.execute(sql_string)
+        conn.commit()
+
+        print('INSERT finalizado dentro de projetos\n')
+
+    except (Exception, Error) as error:
+        print(f"execute_sql() error: {error}\n")
+        conn.rollback()
+
+    cur.close()
+    conn.close()
+
+# Inserindo funcionarios no database
+with open('funcionarios.json') as json_data:
+    record_list = json.load(json_data)
+
+if type(record_list) == list:
+    first_record = record_list[0]
+
+    columns = list(first_record.keys())
+    # print("\ncolumn names:", columns)
+
+columns = [list(x.keys()) for x in record_list][0]
+
+table_name = "funcionarios"
+sql_string = 'INSERT INTO {}'.format(table_name)
+sql_string += "("+', '.join(columns)+")\nVALUES "
+
+
+for i, record_dict in enumerate(record_list):
+
+    values = []
+    for col_name, val in record_dict.items():
+
+        if type(val) == str:
+            val = val.replace("'", "''")
+            val = "'" + val + "'"
+
+        values += [str(val)]
+    sql_string += "(" + ','.join(values) + "),\n"
+
+sql_string = sql_string[:-2] + ";"
+
+
+try:
+
+    conn = connect(
+        dbname="dashboardapi",
+        user="admin3",
+        host="127.0.0.1",
+        password="admin321",
+
+        connect_timeout=3
+    )
+
+    cur = conn.cursor()
+    # print("\ncreated cursor object: ", cur)
+
+
+except(Exception, Error) as err:
+    print(f"psycopg2 connect error: {err}\n")
+    conn = None
+    cur = None
+
+
+if cur != None:
+
+    try:
+        cur.execute(sql_string)
+        conn.commit()
+
+        print('INSERT finalizado dentro de funcionarios\n')
+
+    except (Exception, Error) as error:
+        print(f"execute_sql() error: {error}\n")
+        conn.rollback()
+
+    cur.close()
+    conn.close()
