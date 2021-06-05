@@ -1,47 +1,116 @@
+/*
+Azul Clarinho = #36B9CC
+Verde = #1CC88A
+Branco = #F8F9FC
+Azul Suave = #4E73DF
+Amarelo Suave = #F6C23E
+Branco Suave (fundo) = #ECEDF3
+Roxo estranho = #8680BC
+Laranja Claro = #EA8A4F
+Cinza Claro = #858796
+Azul Escuro = #25408F
+Laranja Escuro = #F1662D
+Cinza Escuro = #5A5C69
+Azul muito escuro = #272753
+Vermelho Suave = #E74A3B
+*/
+
 body{
     background: #25408F;
-}
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
 
-  *::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: #363636;
-    border-radius: 20px;
-  }
-.box{
-    color: white;
+
 }
-.login{
-    color: white;
+h1{
+    color: #F1662D;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150px;
+    margin-top: 90px;
+    margin-left: 60px;
+    display: flex;
+
+
 }
-h2{
-    font-size: 64px;
+
+p{
+    color: #F1662D;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 65px;
+    margin-top: -130px;
+    align-items: flex-start;
+    font-weight: bold;
+    margin-left: 65px;
+
+
 }
-.card-box{
+
+.Imagem{
+    display: flex;
+    margin-top: 900px;
+    margin-left: -360px;
+    display: flex;
+    align-self: auto;
+    
+}
+
+
+.container {
+    width: 100%;
+    background: #25408F;
+    
+
+    
+}
+
+.nav{
+    width: 94%;
     height: 50px;
-    font-size: 20px;
-}
-.btn-login {
-    background-color: #F1662D;
-    width: 170px;
-    color: #fff;
-    border-radius: 2px
+    display: flex;
+    align-items: center;
+    /*background: red;*/
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 90px;
 }
 
-.btn-login:hover {
-    background-color: #ee581c;
+.input100{
+    border-radius: 12.5px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-left: 245px;
+    margin-top: 40px;
+    width: 390px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #5A5C69;
+    font-style: bold;
+
+}
+
+.login100-form-title{
+    margin-top: 500px;
     color: white;
-    cursor: pointer
+    display: flex;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-left: 230px;
+    
 }
 
-.bg-login {
-    color: #fff;
+.login100-form-btn{
+    border-radius: 12.5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    width: 270px;
     background-color: #F1662D;
-}
-.btn-distance{
+    color: white;
     margin-top: 30px;
-    justify-content: center;
+    margin-left: 320px;
+    height: 65px;
+    font-size: 30px;
+    font-weight: bold;
 }

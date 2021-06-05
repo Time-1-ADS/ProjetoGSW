@@ -14,7 +14,10 @@ body{
     color: white;
     font-size: 30px;
     font-weight: bolder;
+    width: 1200px;
     font-family: var(--bs-font-sans-serif);
+    display: flex;
+    justify-content: center;
 }
 .top-card-text{
     font-size: 44px;
