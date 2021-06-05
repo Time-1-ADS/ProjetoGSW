@@ -14,5 +14,13 @@ $(document).ready(function () {
             .then(function (dados) {
                 $("mtgeral").append(dados);
             });
+        fetch('https://apigsw.herokuapp.com/data/task/')
+            .then(function (task) {
+                return task.json();
+            })
+            .then(function (dados) {
+                $("tag").append(dados[2][1]),
+                $("tfg").append(dados[1][1]);
+            });
     });
 });
