@@ -1,6 +1,10 @@
+{% extends 'base.html' %}
+
+{% block tittle %}Dashboard Geral{% endblock %}
 
 <body>
-    
+    {% block titulo %}Dashboard{% endblock %}
+    {% block conteudo %}
     <div class="container-fluid">
         <div class="row space">
             <div class="card" style="width: 20rem;">
@@ -106,6 +110,7 @@
     <script src="../static/js/status-geral.js"></script>
     <script src="../static/js/task-geral.js"></script>
     <script src="../static/js/info-geral.js"></script>
+    {% endblock %}
 </body>
 
 </html>

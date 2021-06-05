@@ -22,6 +22,7 @@ def collaborators():
 
 # @main.route('/project/')
 # @main.route('/project/<nome>')
+# @login_required
 # def projetoname(nome):
 #     projeto = projet( nome)
 #     return projeto
