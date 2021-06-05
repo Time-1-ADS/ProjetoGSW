@@ -21,10 +21,10 @@
                 <a href="#">Geral</a>
                 <a href="#">Upload</a>
                 <a href="#">Cadastro</a>
-                <button class="dropdown-btn">Projetos 
+                <button class="dropdown-btn">Projetos
                     <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-container">
+                </button>
+                <div class="dropdown-container">
                     <a href="#">Albuquerque</a>
                     <a href="#">Batista</a>
                     <a href="#">Carvalho</a>
@@ -35,46 +35,56 @@
                     <a href="#">Santos</a>
                     <a href="#">Souza</a>
                     <a href="#">Xavier</a>
-                  </div>
-                <a href="#">Colaboradores</a>
+                </div>
+                <button class="dropdown-btn">Colaboradores
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Horas</a>
+                    <a href="#">Tasks</a>
+                </div>
                 <script>
                     var dropdown = document.getElementsByClassName("dropdown-btn");
                     var i;
-                    
+
                     for (i = 0; i < dropdown.length; i++) {
-                      dropdown[i].addEventListener("click", function() {
-                      this.classList.toggle("active");
-                      var dropdownContent = this.nextElementSibling;
-                      if (dropdownContent.style.display === "block") {
-                      dropdownContent.style.display = "none";
-                      } else {
-                      dropdownContent.style.display = "block";
-                      }
-                      });
+                        dropdown[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var dropdownContent = this.nextElementSibling;
+                            if (dropdownContent.style.display === "block") {
+                                dropdownContent.style.display = "none";
+                            } else {
+                                dropdownContent.style.display = "block";
+                            }
+                        });
                     }
-                    </script>
-              </div>
-              
-              <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button" class="btn btn-outline-success"><svg viewBox="0 0 24 24" width="25" height="25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></span>
-              
-              <script>
-              function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-              }
-              
-              function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-              }
-              </script>
+                </script>
+            </div>
+
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button"
+                    class="btn btn-outline-success"><svg viewBox="0 0 24 24" width="25" height="25"
+                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" class="css-i6dzq1">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></button></span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
             <a class="navbar-brand">
                 <div class="projeto">
                     Innovative background implementation
                 </div>
             </a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
         </div>
     </nav>
     <div class="container-fluid">
@@ -107,7 +117,7 @@
                 <div class="card-body">
                     <h5 class="top-card-title text-center">Tempo Médio das Tasks</h5>
                     <p class="top-card-text text-center">
-                        <mtsou></mtsou>
+                        <tsou></tsou>
                     </p>
                 </div>
             </div>
@@ -126,6 +136,9 @@
                 <div class="card-body mt-6 overflow-auto">
                     <div class="lista">
                         <table class="table">
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Horas</th>
                             <tr>
                                 <td>
                                     <colab304></colab304>

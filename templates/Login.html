@@ -26,14 +26,6 @@
                 <div class="border-0 text-center py-5 mb-5">
                     <h2 class="mb-0 mr-4 mt-2 login">Login</h2>
                 </div>
-                {% with masssages = get_flashed_messages() %}
-                {% if messages %}
-                    <div class="notication is-danger">
-                        {{ messages[0] }}
-                    </div>
-                {% endif %}
-                {% endwith %}
-                <form action='/login' method="POST">
                 <div class="row px-5"> <label class="mb-1">
                         <h5 class="mb-0 text-sm box">E-mail</h5>
                     </label> <input class="mb-4 card card-box" type="text" name="email" placeholder="Insira seu e-mail">
@@ -44,7 +36,6 @@
                         placeholder="Insira sua senha"> </div>
                 <div class="row btn-distance"> <button type="submit" class="btn btn-login text-center">Acessar</button>
                 </div>
-                </form>
             </div>
         </div>
     </div>

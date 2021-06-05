@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+% extends 'base.html' %}
 
 {% block tittle %}Albuquerque{% endblock %}
 
@@ -35,7 +35,7 @@
                 <div class="card-body">
                     <h5 class="top-card-title text-center">Tempo Médio das Tasks</h5>
                     <p class="top-card-text text-center">
-                        <mtalb></mtalb>
+                        <talb></talb>
                     </p>
                 </div>
             </div>
@@ -54,6 +54,9 @@
                 <div class="card-body mt-6 overflow-auto">
                     <div class="lista">
                         <table class="table">
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Horas</th>
                             <tr>
                                 <td>
                                     <colab></colab>
@@ -281,8 +284,5 @@
     <script src="../static/js/graficos-projetos/status/albuquerque.js"></script>
     <script src="../static/js/graficos-projetos/task/albuquerque.js"></script>
     <script src="../static/js/info-projetos.js"></script>
-
     {% endblock %}
 </body>
-
-</html>

@@ -80,12 +80,12 @@ $(document).ready(function () {
                     $("colab37").append(dados[1][18]);
                 $("horas19").append(dados[3][18]);
             });
-        fetch('https://apigsw.herokuapp.com/data/mediahoras/albuquerque/')
+            fetch('https://apigsw.herokuapp.com/data/mediahoras/albuquerque/')
             .then(function (task) {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtalb").append(dados[1]);
+                $("talb").append(dados[1]);
             });
     });
 });
@@ -177,7 +177,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtbat").append(dados[1]);
+                $("tbat").append(dados[1]);
             });
     });
 });
@@ -269,7 +269,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtcar").append(dados[1]);
+                $("tcar").append(dados[1]);
             });
     });
 });
@@ -361,7 +361,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtcosc").append(dados[1]);
+                $("tcosc").append(dados[1]);
             });
     });
 });
@@ -453,7 +453,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtcosl").append(dados[1]);
+                $("tcosl").append(dados[1]);
             });
     });
 });
@@ -545,7 +545,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtmel").append(dados[2]);
+                $("tmel").append(dados[1]);
             });
     });
 });
@@ -637,7 +637,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtper").append(dados[1]);
+                $("tper").append(dados[1]);
             });
     });
 });
@@ -729,7 +729,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtsan").append(dados[1]);
+                $("tsan").append(dados[1]);
             });
     });
 });
@@ -821,7 +821,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtsou").append(dados[1]);
+                $("tsou").append(dados[1]);
             });
     });
 });
@@ -913,7 +913,7 @@ $(document).ready(function () {
                 return task.json();
             })
             .then(function (dados) {
-                $("mtxav").append(dados[1]);
+                $("txav").append(dados[1]);
             });
     });
 });

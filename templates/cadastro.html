@@ -26,13 +26,6 @@
                 <div class="border-0 text-center py-0 mb-5">
                     <h1 class="mb-0 mr-4 mt-2 login">Cadastro</h1>
                 </div>
-                {% with masssages = get_flashed_messages() %}
-                {% if messages %}
-                    <div class="notication is-danger">
-                        {{ messages[0] }} vá para <a {{ url_for('auth.login') }}>pagina de login</a>.
-                    </div>
-                {% endif %}
-                {% endwith %}
                 <div class="container">
                 <div class="row" style="justify-content: center;">
                     <div class="col-lg-3">
@@ -54,7 +47,7 @@
                 </div>
             </div>
 
-                <form action="/signup" method="POST">
+
                 <div class="row px-5"> <label class="mb-1">
                         <h5 class="mb-0 text-sm box">Nome</h5>
                     </label> <input class="mb-2 card card-box" type="text" name="name"
@@ -93,7 +86,6 @@
                         class="btn btn-login text-center">Voltar</button> <button type="submit"
                         class="btn btn-login text-center">Cadastrar</button>
                 </div>
-                </form>
             </div>
         </div>
     </div>

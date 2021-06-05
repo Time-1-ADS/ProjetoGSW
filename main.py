@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 from flask_login import login_required
-# from funcoes import projet
+from funcoes import projet
 
 main = Blueprint('main', __name__)
 
@@ -20,9 +20,9 @@ def profile():
 def collaborators():
     return render_template('colaboradores.html')
 
-# @main.route('/project/')
-# @main.route('/project/<nome>')
-# @login_required
-# def projetoname(nome):
-#     projeto = projet( nome)
-#     return projeto
+@main.route('/project/')
+@main.route('/project/<nome>')
+@login_required
+def projetoname(nome):
+    projeto = projet( nome)
+    return projeto
