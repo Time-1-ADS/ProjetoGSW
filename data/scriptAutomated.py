@@ -838,10 +838,10 @@ sql_string = sql_string[:-2] + ";"
 try:
 
     conn = connect(
-        dbname="d8kpa3sbvvpfv6",
-        user="dguhfxnpzaymvj",
-        host="ec2-35-171-250-21.compute-1.amazonaws.com",
-        password="431b570f86c6fdfef338bced394c9d93fee7a05b5b064ddc47de6bf1fbdf110c",
+        dbname="myDatabase",
+        user="administrador",
+        host="dashboard-gsw-fatec.cyrmoymsjutf.sa-east-1.rds.amazonaws.com",
+        password="teste321",
 
         connect_timeout=3
     )
@@ -906,10 +906,10 @@ sql_string = sql_string[:-2] + ";"
 try:
 
     conn = connect(
-        dbname="d8kpa3sbvvpfv6",
-        user="dguhfxnpzaymvj",
-        host="ec2-35-171-250-21.compute-1.amazonaws.com",
-        password="431b570f86c6fdfef338bced394c9d93fee7a05b5b064ddc47de6bf1fbdf110c",
+        dbname="myDatabase",
+        user="administrador",
+        host="dashboard-gsw-fatec.cyrmoymsjutf.sa-east-1.rds.amazonaws.com",
+        password="teste321",
 
         connect_timeout=3
     )
