@@ -1,4 +1,3 @@
-from .models import User
 from flask import Flask
 from flask_login.utils import login_required
 from flask_sqlalchemy import SQLAlchemy
