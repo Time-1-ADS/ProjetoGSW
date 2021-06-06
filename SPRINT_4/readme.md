@@ -27,6 +27,80 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 <br>
 
+## :rocket: GSW Dashboard está no ar
+
+🔗 **[Clique aqui](http://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/dashboard4.gif"/></h1>
+
+> Link: http://dashboardgsw.herokuapp.com/
+
+  _Nota 1: A aplicação web está em produção no Heroku, conforme indicado pelo cliente. Sendo protegida com acesso de Login e Senha._
+ 
+  _Nota 2: O presente projeto tem apenas fins didáticos, portanto não cumprirá a Lei n° 13.853, de 08/07/2019 da Lei Geral de Proteção de Dados Pessoais (LGPD) em sua totalidade._
+
+<br>
+
+## :desktop_computer: Tela de Login
+
+<h3 align="center">Tela de Login</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/login4.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela de Cadastro
+
+<h3 align="center">Tela de Cadastro</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/cadastro4.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela Geral
+
+<h3 align="center">Tela Inicial do Dashboard</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/geral4.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela de Projetos
+
+<h3 align="center">Tela de Projetos</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/projeto4.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela de Tasks
+
+<h3 align="center">Tela de Tasks</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tasks4.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela de Horas
+
+<h3 align="center">Tela de Ranking e Horas Dedicadas</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/horas4.gif"/></h1>
+
+<br>
+
+## :artificial_satellite: Links das API's 
+
+Com base nos dados disponibilizados pelo cliente, organizamos os arquivos (json), **[Clique aqui](https://apigsw.herokuapp.com/)** para mais detalhes.
+
+<br>
+
+## :cloud: Banco de Dados na Nuvem
+
+O Banco de Dados deste projeto está integrado no sistema Cloud AWS da Amazon.
+
+<br>
+
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "/Imagens Geral/burn4.png" width="600" height="450"/></h1>
