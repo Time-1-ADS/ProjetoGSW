@@ -45,7 +45,13 @@
                     <a href="/project/souza">Souza</a>
                     <a href="/project/xavier">Xavier</a>
                   </div>
-                <a href="{{ url_for('main.collaborators') }}">Colaboradores</a>
+                <button class="dropdown-btn">Colaboradores
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="{{ url_for('main.collaborators') }}">Horas</a>
+                    <a href="{{ url_for('main.tasks') }}">Tasks</a>
+                </div>
                 <a href="{{ url_for('auth.logout') }}">Sair</a>
                 <script>
                     var dropdown = document.getElementsByClassName("dropdown-btn");

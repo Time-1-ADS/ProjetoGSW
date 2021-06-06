@@ -12,7 +12,7 @@ def index():
 
 @main.route('/task')
 @login_required
-def profile():
+def tasks():
     return render_template('Tasks.html')
 
 @main.route('/collaborators')
