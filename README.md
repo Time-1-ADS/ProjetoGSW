@@ -11,7 +11,7 @@
 
 <br />
 
-[**Saiba mais**](https://github.com/Time-1-ADS/ProjetoGSW) |
+[**Saiba mais**](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints) |
 [Dashboard](http://dashboardgsw.herokuapp.com)
 
 <br />
@@ -19,11 +19,23 @@
 
 <br>
 
+## :milky_way: Acesse o repositório do nosso projeto!
+
+Este repositório (main) é utilizado para arquivos do Dashboard.
+
+Para mais informações do projeto, acesse a branch "Sprints" **[clicando aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints)** ou acessando o link abaixo:
+
+#### Link: https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints
+
+<br>
+
 ## :rocket: GSW Dashboard está no ar
 
 🔗 **[Clique aqui](http://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
 
-<br>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/dashboard4.gif"/></h1>
+
+> Link: http://dashboardgsw.herokuapp.com/
 
   _Nota 1: A aplicação web está em produção no Heroku, conforme indicado pelo cliente. Sendo protegida com acesso de Login e Senha._
  
@@ -31,7 +43,7 @@
 
 <br>
 
-## :ringed_planet: Links das API's 
+## :artificial_satellite: Links das API's 
 
 Com base nos dados disponibilizados pelo cliente, organizamos os arquivos (json), **[Clique aqui](https://apigsw.herokuapp.com/)** para mais detalhes.
 
