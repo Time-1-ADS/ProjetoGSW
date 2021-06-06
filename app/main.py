@@ -15,10 +15,10 @@ def index():
 def tasks():
     return render_template('Tasks.html')
 
-@main.route('/collaborators')
+@main.route('/horas')
 @login_required
-def collaborators():
-    return render_template('colaboradores.html')
+def horas():
+    return render_template('dedicatedhours.html')
 
 @main.route('/project/')
 @main.route('/project/<nome>')

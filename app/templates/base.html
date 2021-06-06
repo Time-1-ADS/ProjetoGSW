@@ -28,7 +28,8 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="{{ url_for('main.index') }}">Geral</a>
-                <a href="#">Upload</a>
+                <a href="#"><label for='selecao-arquivo'>Upload</label>
+                  <input id='selecao-arquivo' type='file'></a>
                 <a href="{{ url_for('auth.signup') }}">Cadastro</a>
                 <button class="dropdown-btn">Projetos 
                     <i class="fa fa-caret-down"></i>
@@ -49,7 +50,7 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
-                    <a href="{{ url_for('main.collaborators') }}">Horas</a>
+                    <a href="{{ url_for('main.horas') }}">Horas</a>
                     <a href="{{ url_for('main.tasks') }}">Tasks</a>
                 </div>
                 <a href="{{ url_for('auth.logout') }}">Sair</a>
