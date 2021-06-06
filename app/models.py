@@ -2,7 +2,7 @@ from flask_login import UserMixin
 from uuid import uuid4
 
 
-from . import db
+from .init import db
 
 class User (UserMixin, db.Model):
     __tablename__ = 'autenticacao'
