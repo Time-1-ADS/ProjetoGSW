@@ -1,7 +1,7 @@
 //PABLO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/pablomartins/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/pablomartins/')
             .then(function (task) {
                 return task.json();
             })
@@ -17,7 +17,7 @@ $(document).ready(function () {
 //ELISIO MARTINS
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/elisiomartins/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/elisiomartins/')
             .then(function (task) {
                 return task.json();
             })
@@ -33,7 +33,7 @@ $(document).ready(function () {
 //CARLOS
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/carlosbatista/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/carlosbatista/')
             .then(function (task) {
                 return task.json();
             })
@@ -49,7 +49,7 @@ $(document).ready(function () {
 //VICENTE
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/vicentemoraes/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/vicentemoraes/')
             .then(function (task) {
                 return task.json();
             })
@@ -65,7 +65,7 @@ $(document).ready(function () {
 //ANA JULIA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/anajulia/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/anajulia/')
             .then(function (task) {
                 return task.json();
             })
@@ -81,7 +81,7 @@ $(document).ready(function () {
 //DAVI
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/davibatista/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/davibatista/')
             .then(function (task) {
                 return task.json();
             })
@@ -97,7 +97,7 @@ $(document).ready(function () {
 //BERNARDO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/bernardosouza/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/bernardosouza/')
             .then(function (task) {
                 return task.json();
             })
@@ -113,7 +113,7 @@ $(document).ready(function () {
 //GABRIEL
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/gabrielpereira/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/gabrielpereira/')
             .then(function (task) {
                 return task.json();
             })
@@ -129,7 +129,7 @@ $(document).ready(function () {
 //CELIA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/celiaoliveira/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/celiaoliveira/')
             .then(function (task) {
                 return task.json();
             })
@@ -145,7 +145,7 @@ $(document).ready(function () {
 //ANTONIO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/antonionogueira/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/antonionogueira/')
             .then(function (task) {
                 return task.json();
             })
@@ -161,7 +161,7 @@ $(document).ready(function () {
 //ENZO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/enzogabriel/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/enzogabriel/')
             .then(function (task) {
                 return task.json();
             })
@@ -177,7 +177,7 @@ $(document).ready(function () {
 //FABIO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/fabiosouza/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/fabiosouza/')
             .then(function (task) {
                 return task.json();
             })
@@ -193,7 +193,7 @@ $(document).ready(function () {
 //LUCCA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/luccamelo/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/luccamelo/')
             .then(function (task) {
                 return task.json();
             })
@@ -209,7 +209,7 @@ $(document).ready(function () {
 //RAFAEL
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/rafaelxavier/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/rafaelxavier/')
             .then(function (task) {
                 return task.json();
             })
@@ -225,7 +225,7 @@ $(document).ready(function () {
 //MATHEUS
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/matheusbarros/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/matheusbarros/')
             .then(function (task) {
                 return task.json();
             })
@@ -241,7 +241,7 @@ $(document).ready(function () {
 //GUSTAVO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/gustavosantos/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/gustavosantos/')
             .then(function (task) {
                 return task.json();
             })
@@ -257,7 +257,7 @@ $(document).ready(function () {
 //TALITA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/talitabraga/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/talitabraga/')
             .then(function (task) {
                 return task.json();
             })
@@ -273,7 +273,7 @@ $(document).ready(function () {
 //ELISIO ALBUQUERQUE
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/elisioalbuquerque/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/elisioalbuquerque/')
             .then(function (task) {
                 return task.json();
             })
@@ -289,7 +289,7 @@ $(document).ready(function () {
 //CECILIA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/ceciliamoreira/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/ceciliamoreira/')
             .then(function (task) {
                 return task.json();
             })
@@ -305,7 +305,7 @@ $(document).ready(function () {
 //KLEBER
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/horascolaborador/kleberoliveira/')
+        fetch('https://apigsw.herokuapp.com/data/horascolaborador/kleberoliveira/')
             .then(function (task) {
                 return task.json();
             })

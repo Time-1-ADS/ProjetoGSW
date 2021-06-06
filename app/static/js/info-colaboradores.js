@@ -1,7 +1,7 @@
 //ANA JULIA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/anajulia/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/anajulia/')
             .then(function (task) {
                 return task.json();
             })
@@ -18,7 +18,7 @@ $(document).ready(function () {
 //ANTONIO   
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/antonionogueira/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/antonionogueira/')
             .then(function (task) {
                 return task.json();
             })
@@ -35,7 +35,7 @@ $(document).ready(function () {
 //BERNARDO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/bernardosouza/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/bernardosouza/')
             .then(function (task) {
                 return task.json();
             })
@@ -52,7 +52,7 @@ $(document).ready(function () {
 //CARLOS
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/carlosbatista/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/carlosbatista/')
             .then(function (task) {
                 return task.json();
             })
@@ -69,7 +69,7 @@ $(document).ready(function () {
 //CECILIA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/ceciliamoreira/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/ceciliamoreira/')
             .then(function (task) {
                 return task.json();
             })
@@ -86,7 +86,7 @@ $(document).ready(function () {
 //CELIA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/celiaoliveira/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/celiaoliveira/')
             .then(function (task) {
                 return task.json();
             })
@@ -103,7 +103,7 @@ $(document).ready(function () {
 //DAVI
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/davibatista/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/davibatista/')
             .then(function (task) {
                 return task.json();
             })
@@ -120,7 +120,7 @@ $(document).ready(function () {
 //ELISIO ALBUQUERQUE
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/elisioalbuquerque/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/elisioalbuquerque/')
             .then(function (task) {
                 return task.json();
             })
@@ -137,7 +137,7 @@ $(document).ready(function () {
 //ELISIO MARTINS
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/elisiomartins/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/elisiomartins/')
             .then(function (task) {
                 return task.json();
             })
@@ -154,7 +154,7 @@ $(document).ready(function () {
 //ENZO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/enzogabriel/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/enzogabriel/')
             .then(function (task) {
                 return task.json();
             })
@@ -171,7 +171,7 @@ $(document).ready(function () {
 //FABIO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/fabiosouza/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/fabiosouza/')
             .then(function (task) {
                 return task.json();
             })
@@ -188,7 +188,7 @@ $(document).ready(function () {
 //GABRIEL
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/gabrielpereira/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/gabrielpereira/')
             .then(function (task) {
                 return task.json();
             })
@@ -205,7 +205,7 @@ $(document).ready(function () {
 //GUSTAVO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/gustavosantos/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/gustavosantos/')
             .then(function (task) {
                 return task.json();
             })
@@ -222,7 +222,7 @@ $(document).ready(function () {
 //KLEBER
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/kleberoliveira/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/kleberoliveira/')
             .then(function (task) {
                 return task.json();
             })
@@ -239,7 +239,7 @@ $(document).ready(function () {
 //LUCCA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/luccamelo/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/luccamelo/')
             .then(function (task) {
                 return task.json();
             })
@@ -256,7 +256,7 @@ $(document).ready(function () {
 //MATHEUS
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/luccamelo/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/luccamelo/')
             .then(function (task) {
                 return task.json();
             })
@@ -273,7 +273,7 @@ $(document).ready(function () {
 //PABLO
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/pablomartins/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/pablomartins/')
             .then(function (task) {
                 return task.json();
             })
@@ -290,7 +290,7 @@ $(document).ready(function () {
 //RAFAEL
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/rafaelxavier/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/rafaelxavier/')
             .then(function (task) {
                 return task.json();
             })
@@ -307,7 +307,7 @@ $(document).ready(function () {
 //TALITA
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/talitabraga/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/talitabraga/')
             .then(function (task) {
                 return task.json();
             })
@@ -324,7 +324,7 @@ $(document).ready(function () {
 //VICENTE
 $(document).ready(function () {
     $(function () {
-        fetch('http://apigsw.herokuapp.com/data/taskcolaborador/vicentemoraes/')
+        fetch('https://apigsw.herokuapp.com/data/taskcolaborador/vicentemoraes/')
             .then(function (task) {
                 return task.json();
             })
