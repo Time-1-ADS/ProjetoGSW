@@ -27,6 +27,14 @@
                 <div class="border-0 text-center py-0 mb-5">
                     <h1 class="mb-0 mr-4 mt-2 login">Cadastro</h1>
                 </div>
+                {% with masssages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="notication is-danger">
+                        {{ messages[0] }} vá para <a {{ url_for('auth.login') }}>pagina de login</a>.
+                    </div>
+                {% endif %}
+                {% endwith %}
+                <form action="/signup" method="POST"></form>
                 <div class="container">
                 <div class="row" style="justify-content: center;">
                     <div class="col-lg-3">
@@ -87,6 +95,7 @@
                         class="btn btn-login text-center">Voltar</button> <button type="submit"
                         class="btn btn-login text-center">Cadastrar</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
