@@ -1,92 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santos</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/projetos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../static/css/menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+{% block tittle %}Santos{% endblock %}
 
 <body>
-    <nav class="navbar navbar-light">
-        <div class="container-fluid">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Geral</a>
-                <a href="#">Upload</a>
-                <a href="#">Cadastro</a>
-                <button class="dropdown-btn">Projetos
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Albuquerque</a>
-                    <a href="#">Batista</a>
-                    <a href="#">Carvalho</a>
-                    <a href="#">Costa Comércio</a>
-                    <a href="#">Costa LTDA</a>
-                    <a href="#">Melo</a>
-                    <a href="#">Pereira</a>
-                    <a href="#">Santos</a>
-                    <a href="#">Souza</a>
-                    <a href="#">Xavier</a>
-                </div>
-                <button class="dropdown-btn">Colaboradores
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Horas</a>
-                    <a href="#">Tasks</a>
-                </div>
-                <script>
-                    var dropdown = document.getElementsByClassName("dropdown-btn");
-                    var i;
-
-                    for (i = 0; i < dropdown.length; i++) {
-                        dropdown[i].addEventListener("click", function () {
-                            this.classList.toggle("active");
-                            var dropdownContent = this.nextElementSibling;
-                            if (dropdownContent.style.display === "block") {
-                                dropdownContent.style.display = "none";
-                            } else {
-                                dropdownContent.style.display = "block";
-                            }
-                        });
-                    }
-                </script>
-            </div>
-
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button"
-                    class="btn btn-outline-success"><svg viewBox="0 0 24 24" width="25" height="25"
-                        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round" class="css-i6dzq1">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg></button></span>
-
-            <script>
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                }
-
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                }
-            </script>
-            <a class="navbar-brand">
-                <div class="projeto">
-                    Stand-alone well-modulated policy
-                </div>
-            </a>
-            
-        </div>
-    </nav>
+    {% block titulo %}Stand-alone well-modulated policy{% endblock %}
+    {% block conteudo %}
     <div class="container-fluid">
         <div class="row space">
             <div class="card" style="width: 20rem;">
@@ -366,6 +284,5 @@
     <script src="../static/js/graficos-projetos/status/santos.js"></script>
     <script src="../static/js/graficos-projetos/task/santos.js"></script>
     <script src="../static/js/info-projetos.js"></script>
+    {% endblock %}
 </body>
-
-</html>
