@@ -46,3 +46,7 @@ body{
 .btn-outline-success:hover{
     background: #ffbf00;
 }
+
+input[type='file'] {
+        display: none;
+}
