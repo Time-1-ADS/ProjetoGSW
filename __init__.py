@@ -34,8 +34,8 @@ def create_app():
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-    if __name__ == '__main__':
-        port = int(os.environ.get("PORT", 5000))
-        app.run(host='0.0.0.0', port=port, debug=False)
+    # if __name__ == '__main__':
+    #     port = int(os.environ.get("PORT", 5000))
+    #     app.run(host='0.0.0.0', port=port, debug=False)
 
     return app
