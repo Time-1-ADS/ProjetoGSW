@@ -43,6 +43,20 @@ Para mais informações do projeto, acesse a branch "Sprints" **[clicando aqui](
 
 <br>
 
+## :date: As Sprints
+
+<img align="right" width="200" height="180" src="https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/sprintsimg.png">
+
+🔖 SPRINT 1 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_1)):  Concluído ☑️ 
+
+🔖 SPRINT 2 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_2)):  Concluído ☑️ 
+
+🔖 SPRINT 3 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_3)):  Concluído ☑️  
+
+🔖 SPRINT 4 ([Link da Pasta](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_4)):  Concluído ☑️
+
+<br>
+
 ## :artificial_satellite: Links das API's 
 
 Com base nos dados disponibilizados pelo cliente, organizamos os arquivos (json), **[Clique aqui](https://apigsw.herokuapp.com/)** para mais detalhes.
@@ -52,6 +66,17 @@ Com base nos dados disponibilizados pelo cliente, organizamos os arquivos (json)
 ## :cloud: Banco de Dados na Nuvem
 
 O Banco de Dados deste projeto está integrado no sistema Cloud AWS da Amazon.
+
+<br>
+
+## :computer: Tecnologias Utilizadas
+
+<img align="right" width="250" height="190" src="https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tecnologiasimg.png">
+
+* **Banco de Dados:** PostgreSQL
+* **Back-end:** JavaScript, Python e HTML
+* **Front-end:** CSS, HTML, Bootstrap e Chart.js
+* **Ferramentas:** Visual Studio Code e Figma
 
 <br>
 
