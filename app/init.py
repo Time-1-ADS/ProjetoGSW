@@ -8,30 +8,31 @@ import os
 
 db = SQLAlchemy()
 
-def create_app():
-    app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'secret-key-goes-here'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://administrador:teste321@dashboard-gsw-fatec.cyrmoymsjutf.sa-east-1.rds.amazonaws.com/myDatabase'
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'secret-key-goes-here'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://administrador:teste321@dashboard-gsw-fatec.cyrmoymsjutf.sa-east-1.rds.amazonaws.com/myDatabase'
 
 
-    db.init_app(app)
+db.init_app(app)
 
-    login_manager = LoginManager()
-    login_manager.login_view = 'auth.login'
-    login_manager.init_app(app)
+login_manager = LoginManager()
+login_manager.login_view = 'auth.login'
+login_manager.init_app(app)
 
-    from .models import User
+from .models import User
 
-    @login_manager.user_loader
-    def load_user(user_id):
-        return User.query.get(user_id)
-
-        
-    from .auth import auth as auth_blueprint
-    app.register_blueprint(auth_blueprint)
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(user_id)
 
     
-    from .main import main as main_blueprint
-    app.register_blueprint(main_blueprint)
+from .auth import auth as auth_blueprint
+app.register_blueprint(auth_blueprint)
 
-    return app
+
+from .main import main as main_blueprint
+app.register_blueprint(main_blueprint)
+
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
