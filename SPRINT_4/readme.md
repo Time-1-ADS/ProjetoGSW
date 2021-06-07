@@ -93,6 +93,8 @@ Neste botão, o usuário pode fazer o upload de arquivos (json) no Dashboard.
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/upload4.gif"/></h1>
 
+_Nota: Neste botão é possível selecionar um arquivo do computador, porém os dados não são direcionados para o dashboard automaticamente. É possível inseri-los diretamente na aplicação._
+
 <br>
 
 ## :desktop_computer: Tela de Tasks
