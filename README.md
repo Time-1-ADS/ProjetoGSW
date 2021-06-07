@@ -12,7 +12,7 @@
 <br />
 
 [**Saiba mais**](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints) |
-[Dashboard](http://dashboardgsw.herokuapp.com)
+[Dashboard](https://dashboardgsw.herokuapp.com)
 
 <br />
 </div>
@@ -31,11 +31,11 @@ Para mais informações do projeto, acesse a branch "Sprints" **[clicando aqui](
 
 ## :rocket: GSW Dashboard está no ar
 
-🔗 **[Clique aqui](http://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
+🔗 **[Clique aqui](https://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/dashboard4.gif"/></h1>
 
-> Link: http://dashboardgsw.herokuapp.com/
+> Link: https://dashboardgsw.herokuapp.com/
 
   _Nota 1: A aplicação web está em produção no Heroku, conforme indicado pelo cliente. Sendo protegida com acesso de Login e Senha._
  
@@ -77,56 +77,6 @@ O Banco de Dados deste projeto está integrado no sistema Cloud AWS da Amazon.
 * **Back-end:** JavaScript, Python e HTML
 * **Front-end:** CSS, HTML, Bootstrap e Chart.js
 * **Ferramentas:** Visual Studio Code e Figma
-
-<br>
-
-## :computer: Como instalar o GSW Dashboard?
-
-
-**Instalação:**
-
-- Create your venv
-
-```
-$ python -m venv <venvname>
-```
-
-- Activate your venv
-```
-$ ./venvname/Scripts/activate
-```
-
-- Clone the repository
-```
-$ git clone https://github.com/Time-1-ADS/ProjetoGSW
-```
-
-- Install requirements
-```
-$ pip install requirements.txt
-```
-
-- Create the role on PostgreSQL
-```
-CREATE ROLE admin3 WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'admin321';
-```
-
-- Restore database
-```
-// Restore the database using the pgadmin
-```
-
-**Go to folder where have the file manage.py**
-
-- Create migrate on database
-```
-$ python manage.py migrate
-```
-
-- Run server
-```
-$ python manage.py runserver
-```
 
 <br>
 
