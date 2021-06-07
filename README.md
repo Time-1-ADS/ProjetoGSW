@@ -84,11 +84,11 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 ## :rocket: GSW Dashboard está no ar
 
-🔗 **[Clique aqui](http://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
+🔗 **[Clique aqui](https://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/dashboard4.gif"/></h1>
 
-> Link: http://dashboardgsw.herokuapp.com/
+> Link: https://dashboardgsw.herokuapp.com/
 
   _Nota 1: A aplicação web está em produção no Heroku, conforme indicado pelo cliente. Sendo protegida com acesso de Login e Senha._
  
