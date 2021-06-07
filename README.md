@@ -82,6 +82,20 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 <br>
 
+## :rocket: GSW Dashboard está no ar
+
+🔗 **[Clique aqui](http://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/dashboard4.gif"/></h1>
+
+> Link: http://dashboardgsw.herokuapp.com/
+
+  _Nota 1: A aplicação web está em produção no Heroku, conforme indicado pelo cliente. Sendo protegida com acesso de Login e Senha._
+ 
+  _Nota 2: O presente projeto tem apenas fins didáticos, portanto não cumprirá a Lei n° 13.853, de 08/07/2019 da Lei Geral de Proteção de Dados Pessoais (LGPD) em sua totalidade._
+
+<br>
+
 ## :hourglass_flowing_sand: Planejamento de Entregas
 
 <img align="right" width="400" height="250" src="/Imagens Geral/planejamemtpimg.png">
@@ -96,7 +110,7 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 
 - [x] [SPRINT 4](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_4) - 17/05/2021 a 05/06/2021
 
-- [ ] Apresentação Final - 07/06/2021 a 11/06/2021
+- [x] Apresentação Final - 07/06/2021 a 11/06/2021
 
 - [ ] Feira de Soluções - 14/06/2021 a 18/06/2021
 
