@@ -29,11 +29,11 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :rocket: GSW Dashboard está no ar
 
-🔗 **[Clique aqui](http://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
+🔗 **[Clique aqui](https://dashboardgsw.herokuapp.com)** para acessar o Dashboard Online no Heroku.
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/dashboard4.gif"/></h1>
 
-> Link: http://dashboardgsw.herokuapp.com/
+> Link: https://dashboardgsw.herokuapp.com/
 
   _Nota 1: A aplicação web está em produção no Heroku, conforme indicado pelo cliente. Sendo protegida com acesso de Login e Senha._
  
@@ -43,13 +43,21 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Login
 
-<h3 align="center">:space_invader: Email e Senha para acesso</h3>
+Nesta tela, o usuário pode acessar o Dashboard através de um Login com e-mail e senha.
+
+<h3 align="center">:space_invader: E-mail e Senha para acesso</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/login4.gif"/></h1>
 
 <br>
 
 ## :desktop_computer: Tela de Cadastro
+
+Nesta tela, o cliente pode criar um acesso de usuário ou administrador. Inserindo os dados do colaborador e projeto destinado.
+
+> **Usuário:** Tem acesso aos projetos da empresa.
+
+> **Administrador:** Tem acesso a todos os projetos, botão de upload e tela de cadastro para um novo usuário.
 
 <h3 align="center">:ringed_planet: Cadastro de Usuário e Administrador</h3>
 
@@ -59,6 +67,8 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela Geral
 
+Nesta tela, o cliente tem uma visão geral do andamento de todos os projetos, status e cards para análise.
+
 <h3 align="center">:dizzy: Tela Inicial com dados para análise</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/geral4.gif"/></h1>
@@ -66,6 +76,8 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 <br>
 
 ## :desktop_computer: Tela de Projetos
+
+Nesta tela, o usuário tem acesso a um projeto individual com dados específicos para análise.
 
 <h3 align="center">:flying_saucer: Tela para um projeto específico</h3>
 
@@ -75,6 +87,8 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Tasks
 
+Tela com lista de colaboradores, informando avatar, nome, email, tasks abertas e fechadas de cada um.
+
 <h3 align="center">:busts_in_silhouette: Lista com informações dos colaboradores</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tasks4.gif"/></h1>
@@ -82,6 +96,10 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 <br>
 
 ## :desktop_computer: Tela de Horas
+
+Tela de horas dedicadas, informando horas p/mês e horas p/ano de cada colaborador.
+
+Possuindo também um ranking de colaboradores, baseado nas horas dedicadas aos projetos. 
 
 <h3 align="center">:medal_sports: Horas Dedicadas aos projetos e Ranking</h3>
 
@@ -98,6 +116,14 @@ Com base nos dados disponibilizados pelo cliente, organizamos os arquivos (json)
 ## :cloud: Banco de Dados na Nuvem
 
 O Banco de Dados deste projeto está integrado no sistema Cloud AWS da Amazon.
+
+<br>
+
+## :dart: Backlog das Sprints
+
+Após finalizarmos todo o processo de planejamento. Foi concluído o backlog das etapas de cada entrega:
+
+🔗 **[Clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/backlog_sprint4.png)** para mais detalhes.
 
 <br>
 
