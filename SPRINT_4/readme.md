@@ -85,6 +85,16 @@ Nesta tela, o usuário tem acesso a um projeto individual com dados específicos
 
 <br>
 
+## :desktop_computer: Botão de upload
+
+Neste botão, o usuário pode fazer o upload de arquivos (json) no Dashboard.
+
+<h3 align="center">:outbox_tray: Upload de arquivo (json)</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/upload4.gif"/></h1>
+
+<br>
+
 ## :desktop_computer: Tela de Tasks
 
 Tela com lista de colaboradores, informando avatar, nome, email, tasks abertas e fechadas de cada um.
