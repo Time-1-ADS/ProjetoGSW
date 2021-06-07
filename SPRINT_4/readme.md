@@ -4,7 +4,7 @@
 
 Diante do exposto, chegamos na etapa final do projeto. Concluímos as listas e títulos do Dashboard.
 
-Dessa forma, todos os dados estão integrados com a API. , como apresentado no card a seguir:
+Dessa forma, todos os dados estão integrados com a API, como apresentado no card a seguir:
 <h1 align="center"> <img src = "/Imagens Geral/card04.png" width="710" height="420" /></h1>
 
 <br>
@@ -43,7 +43,7 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Login
 
-<h3 align="center">Tela de Login</h3>
+<h3 align="center">:space_invader: Email e Senha para acesso</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/login4.gif"/></h1>
 
@@ -51,7 +51,7 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Cadastro
 
-<h3 align="center">Tela de Cadastro</h3>
+<h3 align="center">:ringed_planet: Cadastro de Usuário e Administrador</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/cadastro4.gif"/></h1>
 
@@ -59,7 +59,7 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela Geral
 
-<h3 align="center">Tela Inicial do Dashboard</h3>
+<h3 align="center">:dizzy: Tela Inicial com dados para análise</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/geral4.gif"/></h1>
 
@@ -67,7 +67,7 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Projetos
 
-<h3 align="center">Tela de Projetos</h3>
+<h3 align="center">:flying_saucer: Tela para um projeto específico</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/projeto4.gif"/></h1>
 
@@ -75,7 +75,7 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Tasks
 
-<h3 align="center">Tela de Tasks</h3>
+<h3 align="center">:busts_in_silhouette: Lista com informações dos colaboradores</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tasks4.gif"/></h1>
 
@@ -83,7 +83,7 @@ Tela de Colaboradores e Tasks             |  Tela Ranking de Horas
 
 ## :desktop_computer: Tela de Horas
 
-<h3 align="center">Tela de Ranking e Horas Dedicadas</h3>
+<h3 align="center">:medal_sports: Horas Dedicadas aos projetos e Ranking</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/horas4.gif"/></h1>
 
