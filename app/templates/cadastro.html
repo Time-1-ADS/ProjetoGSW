@@ -29,70 +29,63 @@
                 </div>
                 {% with masssages = get_flashed_messages() %}
                 {% if messages %}
-                    <div class="notication is-danger">
-                        {{ messages[0] }} vá para <a {{ url_for('auth.login') }}>pagina de login</a>.
-                    </div>
+                <div class="notication is-danger">
+                    {{ messages[0] }} vá para <a {{ url_for('auth.login') }}>pagina de login</a>.
+                </div>
                 {% endif %}
                 {% endwith %}
                 <form action="/signup" method="POST">
-                <div class="container">
-                <div class="row" style="justify-content: center;">
-                    <div class="col-lg-3">
-                <div class="form-check px-5">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Administrador
-                    </label>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-check px-5">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Colaborador
-                    </label>
-                  </div>
-                </div>
-                </div>
-            </div>
-                <div class="row px-5"> <label class="mb-1">
-                        <h5 class="mb-0 text-sm box">Nome</h5>
-                    </label> <input class="mb-2 card card-box" type="text" name="name"
-                        placeholder="Insira o nome completo">
-                </div>
-                <div class="row px-5"> <label class="mb-1">
-                        <h5 class="mb-0 text-sm box">E-mail</h5>
-                    </label> <input class="mb-2 card card-box" type="text" name="email" placeholder="Insira seu e-mail">
-                </div>
-                <div class="row px-5"> <label class="mb-1">
-                        <h5 class="mb-0 text-sm box">Senha</h5>
-                    </label> <input class="mb-2 card card-box" type="password" name="password"
-                        placeholder="Insira sua senha"> </div>
+                    <div class="container">
+
+                    </div>
+                    <div class="row px-5"> <label class="mb-1">
+                            <h5 class="mb-0 text-sm box">Nome</h5>
+                        </label> <input class="mb-2 card card-box" type="text" name="name"
+                            placeholder="Insira o nome completo">
+                    </div>
+                    <div class="row px-5"> <label class="mb-1">
+                            <h5 class="mb-0 text-sm box">E-mail</h5>
+                        </label> <input class="mb-2 card card-box" type="text" name="email"
+                            placeholder="Insira seu e-mail">
+                    </div>
+                    <div class="row px-5"> <label class="mb-1">
+                            <h5 class="mb-0 text-sm box">Senha</h5>
+                        </label> <input class="mb-2 card card-box" type="password" name="password"
+                            placeholder="Insira sua senha"> </div>
+
+                    <div class="row px-5"> <label for="Projetos" class=" form-label mb-1">
+                            <h5 class="mb-0 text-sm box">Projeto</h5>
+                        </label> <input class="form-control card card-box mb-2" list="datalistOptions" type="text"
+                            name="project" placeholder="Insira o nome do projeto">
+                        <datalist id="datalistOptions">
+                            <option value="Mandatory human-resource open architecture">
+                            <option value="Monitored multi-state installation">
+                            <option value="Ergonomic methodical methodology">
+                            <option value="Sharable non-volatile internet solution">
+                            <option value="Total asynchronous secured line">
+                            <option value="Organized impactful instruction set">
+                            <option value="Mandatory fault-tolerant Graphical User Interface">
+                            <option value="Stand-alone well-modulated policy">
+                            <option value="Innovative background implementation">
+                            <option value="Vision-oriented holistic architecture">
+                        </datalist>
+                    </div>
+
+                    <div class="row px-5 mb-0"> <label for="cargo" class=" form-label mb-1">
+                            <h5 class="mb-0 text-sm box">Cargo</h5>
+                        </label> <input class="form-control card card-box" list="cargo" type="text" name="cargo"
+                            placeholder="Insira o cargo">
+                        <datalist id="cargo">
+                            <option value="Administrador">
+                            <option value="Colaborador">
+                        </datalist>
+                    </div>
 
 
-                <div class="row px-5"> <label for="Projetos" class=" form-label mb-1">
-                        <h5 class="mb-0 text-sm box">Projeto</h5>
-                    </label> <input class="form-control card card-box" list="datalistOptions" type="text" name="project"
-                        placeholder="Insira o nome do projeto">
-                    <datalist id="datalistOptions">
-                        <option value="Mandatory human-resource open architecture">
-                        <option value="Monitored multi-state installation">
-                        <option value="Ergonomic methodical methodology">
-                        <option value="Sharable non-volatile internet solution">
-                        <option value="Total asynchronous secured line">
-                        <option value="Organized impactful instruction set">
-                        <option value="Mandatory fault-tolerant Graphical User Interface">
-                        <option value="Stand-alone well-modulated policy">
-                        <option value="Innovative background implementation">
-                        <option value="Vision-oriented holistic architecture">
-                    </datalist>
-                </div>
-
-
-                <div class="row btn-distance px-5" style="justify-content: space-between;"> <button type="submit"
-                        class="btn btn-login text-center">Voltar</button> <button type="submit"
-                        class="btn btn-login text-center">Cadastrar</button>
-                </div>
+                    <div class="row btn-distance px-5" style="justify-content: space-between;"> <button type="submit"
+                            class="btn btn-login text-center">Voltar</button> <button type="submit"
+                            class="btn btn-login text-center">Cadastrar</button>
+                    </div>
                 </form>
             </div>
         </div>
