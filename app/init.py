@@ -11,7 +11,7 @@ db = SQLAlchemy()
 app = Flask(__name__, template_folder= 'templates', static_folder= 'static')
 app.config['SECRET_KEY'] = 'secret-key-goes-here'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://administrador:teste321@dashboard-gsw-fatec.cyrmoymsjutf.sa-east-1.rds.amazonaws.com/myDatabase'
-
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 

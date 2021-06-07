@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from flask.helpers import flash
+from flask_user import roles_required
 from flask_login import login_user, logout_user, login_required
-from werkzeug.security import generate_password_hash, check_password_hash
-from .models import User
+from werkzeug.security import generate_password_hash, check_password_hash, Unauthorized
+from .models import User, Role, UserRoles
 from .init import db
 
 
@@ -17,6 +18,8 @@ def login():
 
 
 @auth.route('/signup')
+#@login_required
+#@roles_required('Administrador')
 def signup():
     return render_template('cadastro.html')
 
@@ -51,7 +54,7 @@ def signup_post():
     name = request.form.get('name')
     password = request.form.get('password')
     project = request.form.get('project')
-
+    role = request.form.get('cargo')
     db.create_all()
 
     user = User.query.filter_by(email=email).first()
@@ -60,10 +63,12 @@ def signup_post():
         flash('Email já cadastrado')
         return redirect(url_for('auth.signup'))
 
+    def_role = Role(name=role)
+    
     new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'), project=project)
-
+    new_user.roles = [def_role]
     db.session.add(new_user)
     db.session.commit()
     
 
-    return redirect(url_for('auth.login'))
+    return redirect(url_for('main.index'))
