@@ -146,9 +146,9 @@ Desenvolver uma aplicação que reúna informações sobre projetos a partir de 
 <img align="right" width="250" height="190" src="/Imagens Geral/tecnologiasimg.png">
 
 * **Banco de Dados:** PostgreSQL
-* **Back-end:** JavaScript, Python e HTML
-* **Front-end:** CSS, HTML, Bootstrap e Chart.js
-* **Ferramentas:** Visual Studio Code e Figma
+* **Back-end:** JavaScript e Python
+* **Front-end:** CSS, HTML, Bootstrap, JavaScript e Chart.js
+* **Ferramentas:** Visual Studio Code, GitHub e Figma
 
 <br>
 
