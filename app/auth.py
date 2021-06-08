@@ -3,7 +3,7 @@ from flask.helpers import flash
 from flask_user import roles_required
 from flask_login import login_user, logout_user, login_required
 from werkzeug.security import generate_password_hash, check_password_hash
-from .models import User, Role, UserRoles
+from .models import User
 from .init import db
 import email_validator
 
