@@ -13,7 +13,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(100))
     project = db.Column(db.String(255))
     
-    roles = db.relationship('Role', secondary='user_roles')
+    roles = db.relationship('Role', secondary='UserRoles')
 
 class Role(db.Model):
     __tablename__ = 'roles'
