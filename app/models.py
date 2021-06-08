@@ -1,9 +1,9 @@
-from enum import unique
+from flask_login import UserMixin
 from uuid import uuid4
 from .init import db
 
 
-class User(db.Model):
+class User(db.Model, UserMixin):
     __tablename__ = 'autenticacao'
 
     id = db.Column(primary_key=True, default=uuid4,)
