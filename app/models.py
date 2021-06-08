@@ -22,7 +22,7 @@ class Role(db.Model):
 
     id = db.Column(primary_key=True, default=uuid4,)
     name = db.Column(db.String(100), unique=True)
-    user_id = db.Column(db.Interger , db.ForeignKey('User.id'))
+    user_id = db.Column(db.Interger() , db.ForeignKey('User.id'))
 
 
 class UserRoles(db.Model):
