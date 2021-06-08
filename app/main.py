@@ -1,6 +1,7 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect, url_for
 from flask.globals import request
 from flask_login import login_required
+from werkzeug.utils import redirect
 from .funcoes import projet
 from werkzeug import secure_filename
 from .init import app
@@ -41,4 +42,5 @@ def upload_file():
         if file:
             filename = secure_filename(file.filename)
 
-    file.save(os.path)
+    file.save(os.path.join(app.config['upload_folder'], filename))
+    return redirect(url_for('main.index'))
