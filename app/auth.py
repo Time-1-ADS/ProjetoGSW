@@ -19,7 +19,6 @@ def login():
 
 @auth.route('/signup')
 #@login_required
-#@roles_required('Administrador')
 def signup():
     return render_template('cadastro.html')
 
@@ -63,10 +62,8 @@ def signup_post():
         flash('Email já cadastrado')
         return redirect(url_for('auth.signup'))
 
-    def_role = Role(name=role)
     
-    new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'), project=project)
-    new_user.roles = [def_role]
+    new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'), project=project, role=role)
     db.session.add(new_user)
     db.session.commit()
     
