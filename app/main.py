@@ -1,11 +1,16 @@
 from flask import Blueprint, render_template
+from flask.globals import request
 from flask_login import login_required
 from .funcoes import projet
 from werkzeug import secure_filename
+from .init import app
 import os
 
-main = Blueprint('main', __name__)
+main = Blueprint('main', __name__, static_folder= 'static')
 
+upload_folder = 'static/files'
+
+app.config['upload_folder'] = upload_folder
 
 @main.route('/')
 @login_required
@@ -29,3 +34,11 @@ def projetoname(nome):
     projeto = projet( nome)
     return projeto
 
+@main.route('/upload/', methods = ['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        file = request.files['file[]']
+        if file:
+            filename = secure_filename(file.filename)
+
+    file.save(os.path)
