@@ -50,7 +50,3 @@ body{
 input[type='file'] {
         display: none;
 }
-
-input[type='submit'] {
-    display: none;
-}
