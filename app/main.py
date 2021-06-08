@@ -45,7 +45,7 @@ def projetoname(nome):
 #         return redirect(url_for('main.index'))
 
 
-@ app.route ('/ uploader', methods = ['GET', 'POST']) 
+@ app.route ('/uploader', methods = ['GET', 'POST']) 
 def upload_file () : 
     if request.method == 'POST' :       
         f = request.files [ 'file' ]       
