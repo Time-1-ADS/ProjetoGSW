@@ -35,12 +35,11 @@ def projetoname(nome):
     projeto = projet( nome)
     return projeto
 
-@main.route('/upload/', methods = ['GET', 'POST'])
+@main.route('/upload', methods = ['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         file = request.files['file[]']
         if file:
             filename = secure_filename(file.filename)
-
-    file.save(os.path.join(app.config['upload_folder'], filename))
-    return redirect(url_for('main.index'))
+        file.save(os.path.join(app.config['upload_folder'], filename))
+        return redirect(url_for('main.index'))
