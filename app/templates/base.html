@@ -28,7 +28,7 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="{{ url_for('main.index') }}">Geral</a>
-                {% if user.roles == "Administrator" %}
+                {% if User.roles == "Administrator" %}
                 <form action="" method="POST" enctype="multipart/form-data"> <p><input type="file" name="file[]" multiple=''>
                 <input type="submit" value="upload">
                 </p></form>
