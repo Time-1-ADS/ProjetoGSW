@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template
 from flask_login import login_required
 from .funcoes import projet
+from werkzeug import secure_filename
+import os
 
 main = Blueprint('main', __name__)
 
@@ -26,3 +28,4 @@ def horas():
 def projetoname(nome):
     projeto = projet( nome)
     return projeto
+
